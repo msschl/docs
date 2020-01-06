@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b39b3320-fac7-41f1-9a03-ab6fb0cd89c7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ECustomDumpFlavor Enumeration
 Contains values that indicate which items to include in a custom subset of a heap dump when reporting errors.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_FLAVOR_Mini            = 1,  
     DUMP_FLAVOR_NonHeapCLRState = 2  
@@ -49,6 +47,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

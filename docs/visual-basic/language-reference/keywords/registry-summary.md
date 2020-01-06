@@ -1,5 +1,5 @@
 ---
-title: "Registry Summary (Visual Basic)"
+title: "Registry Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry [Visual Basic]"
@@ -17,6 +17,7 @@ Visual Studio language keywords and run-time library members are organized by pu
 |Save program settings.|<xref:Microsoft.VisualBasic.Interaction.SaveSetting%2A>|  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
 - [Reading from and Writing to the Registry](../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

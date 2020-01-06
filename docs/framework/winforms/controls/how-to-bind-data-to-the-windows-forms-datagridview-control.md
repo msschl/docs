@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "data binding [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: 1660f69c-5711-45d2-abc1-e25bc6779124
-author: rpetrusha
-ms.author: ronpet
 ---
 # How to: Bind data to the Windows Forms DataGridView control
 
@@ -42,6 +40,7 @@ Populate the `connectionString` variable in the example with the values for your
 [!code-vb[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.BindingSource>

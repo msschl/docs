@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget Interface
 Provides methods that control reference counts, enumerate processes, and free the memory associated with a debugger that is attached to a remote Macintosh Silverlight target.  
   
 ## Syntax  
   
-```  
+```cpp  
 class ICoreClrDebugTarget {  
       HRESULT EnumProcesses (  
           [out] DWORD*                    pcProcs,  
@@ -64,6 +62,7 @@ class ICoreClrDebugTarget {
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

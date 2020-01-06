@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::CountEnum Method
 Gets the number of elements in the enumeration that was retrieved by the specified enumerator.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CountEnum (  
    [in]  HCORENUM    hEnum,   
    [out] ULONG       *pulCount  
@@ -50,5 +48,6 @@ HRESULT CountEnum (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

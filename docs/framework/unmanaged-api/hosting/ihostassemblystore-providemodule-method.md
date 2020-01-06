@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAssemblyStore::ProvideModule Method
 Resolves a module within an assembly or a linked (but not an embedded) resource file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProvideModule (  
     [in]  ModuleBindInfo *pBindInfo,  
     [out] DWORD          *pdwModuleId,  
@@ -71,6 +69,7 @@ HRESULT ProvideModule (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)
 - [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)

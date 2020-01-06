@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_PRF_ASSEMBLY_REFERENCE_INFO Structure
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -53,6 +51,7 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)
 - [GetAssemblyReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)
 - [AddAssemblyReference Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-addassemblyreference-method.md)

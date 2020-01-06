@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 68661fbd-09cf-46dc-890b-e694f8a3880a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateManualEvent Method
 Creates a manual-reset event object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateManualEvent (  
     [in]  BOOL bInitialState,  
     [out] IHostManualEvent **ppEvent  
@@ -62,6 +60,7 @@ HRESULT CreateManualEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

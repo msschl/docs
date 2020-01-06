@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRErrorReportingManager::BeginCustomDump Method
 Specifies the configuration of custom heap dumps for error reporting.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginCustomDump (  
     [in] ECustomDumpFlavor dwFlavor,  
     [in] DWORD dwNumItems,  
@@ -60,7 +58,7 @@ HRESULT BeginCustomDump (
  The `BeginCustomDump` method sets custom heap dump configuration. The [EndCustomDump](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-endcustomdump-method.md) method clears the custom heap dump configuration and frees any associated state. It should be called after the custom heap dump is complete.  
   
 > [!IMPORTANT]
->  Failure to call `EndCustomDump` causes memory to leak.  
+> Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -72,6 +70,7 @@ HRESULT BeginCustomDump (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [CustomDumpItem Structure](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md)
 - [ECustomDumpFlavor Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md)
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)

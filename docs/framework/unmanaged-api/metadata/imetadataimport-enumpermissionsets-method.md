@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 347d7e5c-c90f-45ad-bd1e-2c7912b0b19c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumPermissionSets Method
 Enumerates permissions for the objects in a specified metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumPermissionSets  
    [in, out] HCORENUM      *phEnum,   
    [in]      mdToken       tk,   
@@ -70,5 +68,6 @@ HRESULT EnumPermissionSets
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

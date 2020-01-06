@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRReferenceAssemblyEnum::Get Method
 Gets the assembly identity at the supplied index.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Get (  
     [in] DWORD dwIndex,  
     [out, size_is(*pcchBufferSize)] LPWSTR pwzBuffer,  
@@ -67,5 +65,6 @@ HRESULT Get (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [ICLRReferenceAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md)

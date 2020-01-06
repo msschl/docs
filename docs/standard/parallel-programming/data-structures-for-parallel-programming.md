@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "data structures, multi-threading"
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Data Structures for Parallel Programming
 The .NET Framework version 4 introduces several new types that are useful in parallel programming, including a set of concurrent collection classes, lightweight synchronization primitives, and types for lazy initialization. You can use these types with any multithreaded application code, including the Task Parallel Library and PLINQ.  
@@ -42,9 +40,9 @@ The .NET Framework version 4 introduces several new types that are useful in par
   
  For more information, see:  
   
--   [How to: Use SpinLock for Low-Level Synchronization](../../../docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md)  
+- [How to: Use SpinLock for Low-Level Synchronization](../../../docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md)  
   
--   [How to: Synchronize Concurrent Operations with a Barrier](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
+- [How to: Synchronize Concurrent Operations with a Barrier](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
   
 ## Lazy Initialization Classes  
  With lazy initialization, the memory for an object is not allocated until it is needed. Lazy initialization can improve performance by spreading object allocations evenly across the lifetime of a program. You can enable lazy initialization for any custom type by wrapping the type <xref:System.Lazy%601>.  

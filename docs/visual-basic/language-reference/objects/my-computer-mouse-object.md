@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Mouse Object (Visual Basic)"
+title: "My.Computer.Mouse Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Mouse object"
@@ -21,4 +21,5 @@ Provides properties for getting information about the format and configuration o
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

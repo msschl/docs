@@ -36,18 +36,15 @@ Namespaces have the following properties:
 - The `using` directive obviates the requirement to specify the name of the namespace for every class.  
 - The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET <xref:System> namespace.  
 
-## C# Language Specification
+## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
   
 ## See also
 
-- [Using Namespaces](using-namespaces.md)
-- [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)
-- [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
 - [C# Programming Guide](../index.md)
+- [Using Namespaces](using-namespaces.md)
+- [How to use the My namespace](how-to-use-the-my-namespace.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
-- [Namespace Keywords](../../language-reference/keywords/namespace-keywords.md)
 - [using Directive](../../language-reference/keywords/using-directive.md)
-- [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)
-- [. Operator](../../language-reference/operators/member-access-operator.md)
+- [:: Operator](../../language-reference/operators/namespace-alias-qualifier.md)

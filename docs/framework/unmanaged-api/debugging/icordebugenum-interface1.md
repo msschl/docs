@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 80be7efe-2c32-4b9f-8c52-40c6f6268219
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum Interface
 
@@ -33,50 +31,50 @@ Serves as the abstract base interface for the enumerators that are used by a deb
 ## Remarks  
  The following enumerators derive from `ICorDebugEnum`:  
   
--   "ICorDebugAppDomainEnum"  
+- "ICorDebugAppDomainEnum"  
   
--   "ICorDebugAssemblyEnum"  
+- "ICorDebugAssemblyEnum"  
   
--   [ICorDebugBlockingObjectEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-interface.md)  
+- [ICorDebugBlockingObjectEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-interface.md)  
   
--   "ICorDebugBreakpointEnum"  
+- "ICorDebugBreakpointEnum"  
   
--   "ICorDebugChainEnum"  
+- "ICorDebugChainEnum"  
   
--   "ICorDebugCodeEnum"  
+- "ICorDebugCodeEnum"  
   
--   "ICorDebugErrorInfoEnum"  
+- "ICorDebugErrorInfoEnum"  
   
--   [ICorDebugExceptionObjectCallStackEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)  
+- [ICorDebugExceptionObjectCallStackEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)  
   
--   "ICorDebugFrameEnum"  
+- "ICorDebugFrameEnum"  
   
--   [ICorDebugGCReferenceEnum](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
+- [ICorDebugGCReferenceEnum](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
   
--   [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
+- [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
   
--   [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
+- [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
   
--   [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
+- [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
   
--   "ICorDebugModuleEnum"  
+- "ICorDebugModuleEnum"  
   
--   "ICorDebugObjectEnum"  
+- "ICorDebugObjectEnum"  
   
--   "ICorDebugProcessEnum"  
+- "ICorDebugProcessEnum"  
   
--   "ICorDebugStepperEnum"  
+- "ICorDebugStepperEnum"  
   
--   "ICorDebugThreadEnum"  
+- "ICorDebugThreadEnum"  
   
--   "ICorDebugTypeEnum"  
+- "ICorDebugTypeEnum"  
   
--   "ICorDebugValueEnum"  
+- "ICorDebugValueEnum"  
   
--   [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
+- [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -88,4 +86,5 @@ Serves as the abstract base interface for the enumerators that are used by a deb
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

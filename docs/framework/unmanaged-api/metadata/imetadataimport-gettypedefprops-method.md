@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 00061a25-ba05-47a7-b984-fd916b06b149
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetTypeDefProps Method
 Returns metadata information for the <xref:System.Type> represented by the specified TypeDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeDefProps (  
    [in]  mdTypeDef   td,  
    [out] LPWSTR      szTypeDef,  
@@ -63,5 +61,6 @@ HRESULT GetTypeDefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

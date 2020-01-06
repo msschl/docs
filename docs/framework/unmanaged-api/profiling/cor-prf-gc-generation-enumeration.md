@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: d6ece160-26ad-4d39-abd7-05acd6f78c48
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_GC_GENERATION Enumeration
 Identifies a garbage-collection generation.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_GC_GEN_0 = 0,  
     COR_PRF_GC_GEN_1 = 1,  
@@ -57,4 +55,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

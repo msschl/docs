@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ExportNestedTypeForwarder Method
 Adds a type forwarder for a nested type to the type table of the given assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportNestedTypeForwarder(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  
@@ -63,6 +61,7 @@ HRESULT ExportNestedTypeForwarder(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

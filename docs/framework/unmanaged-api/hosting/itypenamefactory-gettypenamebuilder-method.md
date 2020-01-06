@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c682f744-996e-43c7-a9ea-c57cbc755398
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameFactory::GetTypeNameBuilder Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeNameBuilder (  
     [out, retval] ITypeNameBuilder** ppTypeBuilder  
 );  
@@ -39,4 +37,5 @@ HRESULT GetTypeNameBuilder (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

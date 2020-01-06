@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 8635ee3a-c84b-4626-876c-416bee54f787
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # VariableLocationType Enumeration
 Indicates the native location type of a variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum VariableLocationType  
 {  
     VLT_REGISTER,               
@@ -52,4 +50,5 @@ typedef enum VariableLocationType
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

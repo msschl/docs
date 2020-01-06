@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e986986-2223-4d5f-b040-85d716146924
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::DefineConstant Method
 Defines a name for a constant value.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineConstant(  
     [in] const WCHAR *name,  
     [in] VARIANT value,  
@@ -51,5 +49,6 @@ HRESULT DefineConstant(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [DefineConstant2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineconstant2-method.md)

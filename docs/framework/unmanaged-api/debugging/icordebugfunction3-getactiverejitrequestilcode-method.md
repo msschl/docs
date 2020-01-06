@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction3::GetActiveReJitRequestILCode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -47,6 +45,7 @@ HRESULT GetActiveReJitRequestILCode(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorDebugFunction3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [ReJIT: A How-To Guide](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+- [ReJIT: A How-To Guide](https://blogs.msdn.microsoft.com/davbr/2011/10/12/rejit-a-how-to-guide/)

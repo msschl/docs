@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0ea73055-ece0-4151-a094-414c88ef8941
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetMemberRefProps Method
 Gets metadata associated with the member referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemberRefProps (  
    [in]  mdMemberRef       mr,   
    [out] mdToken           *ptk,   
@@ -67,5 +65,6 @@ HRESULT GetMemberRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

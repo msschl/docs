@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugUserState Enumeration
 Indicates the user state of a thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugUserState {  
     USER_STOP_REQUESTED     =  0x01,  
     USER_SUSPEND_REQUESTED  =  0x02,  
@@ -65,4 +63,5 @@ typedef enum CorDebugUserState {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

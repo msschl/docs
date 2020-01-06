@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7fbbac42-b966-406d-9ae9-67bf3aea74ce
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetNamespace Method
 Gets the namespace within which this method is defined.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespace(  
    [out] ISymUnmanagedNamespace  **pRetVal);  
 ```  
@@ -39,4 +37,5 @@ HRESULT GetNamespace(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

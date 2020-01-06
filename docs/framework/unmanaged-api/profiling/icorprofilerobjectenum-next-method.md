@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b420433c-5ebe-4986-bba1-97902e6db819
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerObjectEnum::Next Method
 Gets the specified number of contiguous objects from a sequential collection of objects, starting at the enumerator's current position in the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG                    celt,  
     [out, size_is(celt), length_is(*pceltFetched)]    
@@ -52,4 +50,5 @@ HRESULT Next (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerObjectEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)

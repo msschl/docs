@@ -84,7 +84,7 @@ The static class above is the simplest thing that can work. We need to
 write the single implementation for the method that writes messages
 to the console: 
 
-[!code-csharp[LogToConsole](../../samples/csharp/delegates-and-events/Program.cs#LogToConsole "A Console logger.")]
+[!code-csharp[LogToConsole](../../samples/csharp/delegates-and-events/LoggingMethods.cs#LogToConsole "A Console logger.")]
 
 Finally, you need to hook up the delegate by attaching it to
 the WriteMessage delegate declared in the logger:
@@ -147,7 +147,6 @@ Here is that file based logger:
 
 [!code-csharp[FileLogger](../../samples/csharp/delegates-and-events/FileLogger.cs#FileLogger "Log to files")]
 
-
 Once you've created this class, you can instantiate it and it attaches
 its LogMessage method to the Logger component:
 
@@ -158,14 +157,14 @@ methods and generate messages to the console and a file:
 
 ```csharp
 var fileOutput = new FileLogger("log.txt");
-Logger.WriteMessage += LogToConsole;
+Logger.WriteMessage += LoggingMethods.LogToConsole; // LoggingMethods is the static class we utilized earlier
 ```
 
 Later, even in the same application, you can remove one of the
 delegates without any other issues to the system:
 
 ```csharp
-Logger.WriteMessage -= LogToConsole;
+Logger.WriteMessage -= LoggingMethods.LogToConsole;
 ```
 
 ## Practices

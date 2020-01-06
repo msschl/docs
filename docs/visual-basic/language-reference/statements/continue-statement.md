@@ -1,5 +1,5 @@
 ---
-title: "Continue Statement (Visual Basic)"
+title: "Continue Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.continue"
@@ -13,7 +13,7 @@ Transfers control immediately to the next iteration of a loop.
   
 ## Syntax  
   
-```  
+```vb  
 Continue { Do | For | While }  
 ```  
   
@@ -34,6 +34,7 @@ Continue { Do | For | While }
  [!code-vb[VbVbalrStatements#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#14)]  
   
 ## See also
+
 - [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 82b03a59-5a87-43ed-9b75-e04b256e1a46
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorChangeTimer Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorChangeTimer (  
     [in]  HANDLE Timer,   
     [in]  ULONG  DueTime,   
@@ -42,4 +40,5 @@ HRESULT CorChangeTimer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)

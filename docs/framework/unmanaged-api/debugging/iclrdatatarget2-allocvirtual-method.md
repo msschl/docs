@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget2::AllocVirtual Method
 Called by the common language runtime (CLR) data access services to allocate memory in the address space of this target process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  
@@ -64,5 +62,6 @@ HRESULT AllocVirtual(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)
 - [FreeVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-freevirtual-method.md)

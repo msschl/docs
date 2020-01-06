@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: aaf5938d-179c-4eaa-8d35-8523a4fadded
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::ExceptionUnwind Method
 Provides a status notification during the exception unwinding process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwind (  
     [in] ICorDebugAppDomain                  *pAppDomain,  
     [in] ICorDebugThread                     *pThread,  
@@ -60,5 +58,6 @@ HRESULT ExceptionUnwind (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

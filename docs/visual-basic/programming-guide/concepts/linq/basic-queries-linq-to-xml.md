@@ -1,5 +1,5 @@
 ---
-title: "Basic Queries (LINQ to XML) (Visual Basic)"
+title: "Basic Queries (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: aec6ef60-f6f4-4548-b3db-cf6c94bb0008
 ---
@@ -25,4 +25,5 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Debug Empty Query Results Sets (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   
 ## See also
+
 - [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

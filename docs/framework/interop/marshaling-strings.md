@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "marshaling, platform invoke"
   - "sample applications [.NET Framework], marshaling strings"
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Marshaling Strings
 Platform invoke copies string parameters, converting them from the .NET Framework format (Unicode) to the unmanaged format (ANSI), if needed. Because managed strings are immutable, platform invoke does not copy them back from unmanaged memory to managed memory when the function returns.  
@@ -33,6 +31,8 @@ Platform invoke copies string parameters, converting them from the .NET Framewor
 |As an array of structures that contain strings by value.|Creates an array of structures that contain strings and the array is passed by value.|[Arrays](marshaling-different-types-of-arrays.md)|  
   
 ## See also
+
+- [Default Marshaling for Strings](default-marshaling-for-strings.md)
 - [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
 - [Marshaling Classes, Structures, and Unions](marshaling-classes-structures-and-unions.md)
 - [Marshaling Different Types of Arrays](marshaling-different-types-of-arrays.md)

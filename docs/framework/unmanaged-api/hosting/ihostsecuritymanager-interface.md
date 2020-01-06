@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c3be2cbd-2d93-438b-9888-9a0251b63c03
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager Interface
 Provides methods that allow access to and control over the security context of the currently executing thread.  
@@ -36,13 +34,13 @@ Provides methods that allow access to and control over the security context of t
   
  The CLR handles managed thread context internally. It queries the process-specific `IHostSecurityManager` in the following situations:  
   
--   On the finalizer thread, during finalizer execution.  
+- On the finalizer thread, during finalizer execution.  
   
--   During class and module constructor execution.  
+- During class and module constructor execution.  
   
--   At asynchronous points on the worker thread, in calls to the [IHostThreadPoolManager::QueueUserWorkItem](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-queueuserworkitem-method.md) method.  
+- At asynchronous points on the worker thread, in calls to the [IHostThreadPoolManager::QueueUserWorkItem](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-queueuserworkitem-method.md) method.  
   
--   In servicing of I/O completion ports.  
+- In servicing of I/O completion ports.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -54,5 +52,6 @@ Provides methods that allow access to and control over the security context of t
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

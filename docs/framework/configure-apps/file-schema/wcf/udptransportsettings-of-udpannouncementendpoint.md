@@ -6,10 +6,12 @@ ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
 # \<udpTransportSettings> of \<udpAnnouncementEndpoint>
 This configuration element exposes UDP transport settings for [\<udpAnnouncementEndpoint>](udpannouncementendpoint.md).  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
-\<udpAnnouncementEndpoint>  
-  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<udpAnnouncementEndpoint>**](udpannouncementendpoint.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<updTransportSettings>**  
+
 ## Syntax  
   
 ```xml  
@@ -59,4 +61,5 @@ This configuration element exposes UDP transport settings for [\<udpAnnouncement
 |[\<udpAnnouncementEndpoint>](udpannouncementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.UdpTransportSettings>

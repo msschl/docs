@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 426f4e4f-e60d-4ad1-b546-a10e3c55c283
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::OpenNamespace Method
 Opens a new namespace. Call this method before defining methods or variables that occupy a namespace. Namespaces can be nested.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenNamespace(  
     [in] const WCHAR *name);  
 ```  
@@ -39,5 +37,6 @@ HRESULT OpenNamespace(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [CloseNamespace Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closenamespace-method.md)

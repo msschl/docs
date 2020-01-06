@@ -1,5 +1,5 @@
 ---
-title: "Serializing XML Trees (Visual Basic)"
+title: "Serializing XML Trees"
 ms.date: 07/20/2015
 ms.assetid: 2c340695-a726-4030-85be-6975d8a149cf
 ---
@@ -18,4 +18,5 @@ Serializing an XML tree means generating XML from the XML tree. You can serializ
 |[Serializing to an XmlReader (Invoking XSLT) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md)|Describes how to create a <xref:System.Xml.XmlReader> that enables another module to read the contents of an XML tree.|  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

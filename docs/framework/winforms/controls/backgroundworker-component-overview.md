@@ -21,19 +21,19 @@ ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
 # BackgroundWorker Component Overview
 There are many commonly performed operations that can take a long time to execute. For example:  
   
--   Image downloads  
+- Image downloads  
   
--   Web service invocations  
+- Web service invocations  
   
--   File downloads and uploads (including for peer-to-peer applications)  
+- File downloads and uploads (including for peer-to-peer applications)  
   
--   Complex local computations  
+- Complex local computations  
   
--   Database transactions  
+- Database transactions  
   
--   Local disk access, given its slow speed relative to memory access  
+- Local disk access, given its slow speed relative to memory access  
   
- Operations like these can cause your user interface to hang while they are running. When you want a responsive UI and you are faced with long delays associated with such operations, the <xref:System.ComponentModel.BackgroundWorker> component provides a convenient solution.  
+ Operations like these can cause your user interface to block while they are running. When you want a responsive UI and you are faced with long delays associated with such operations, the <xref:System.ComponentModel.BackgroundWorker> component provides a convenient solution.  
   
  The <xref:System.ComponentModel.BackgroundWorker> component gives you the ability to execute time-consuming operations asynchronously ("in the background"), on a thread different from your application's main UI thread. To use a <xref:System.ComponentModel.BackgroundWorker>, you simply tell it what time-consuming worker method to execute in the background, and then you call the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method. Your calling thread continues to run normally while the worker method runs asynchronously. When the method is finished, the <xref:System.ComponentModel.BackgroundWorker> alerts the calling thread by firing the <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event, which optionally contains the results of the operation.  
   
@@ -50,7 +50,7 @@ There are many commonly performed operations that can take a long time to execut
  For more information on using event handlers, see [Events](../../../standard/events/index.md).  
   
 > [!CAUTION]
->  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
+> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
  For more information on using the <xref:System.ComponentModel.BackgroundWorker> class, see [How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md).  
   

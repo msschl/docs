@@ -9,7 +9,7 @@ ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
 Windows Communication Foundation (WCF) provides three attributes for configuring transactions for a service: `transactionFlow`, `transactionProtocol`, and `transactionTimeout`.  
   
 ## Configuring transactionFlow  
- Most of the predefined bindings WCF provides contain the `transactionFlow` and `transactionProtocol` attributes, so that you can configure the binding to accept incoming transactions for a specific endpoint using a specific transaction flow protocol. In addition, you can use the `transactionFlow` element and its `transactionProtocol` attribute to build your own custom binding. For more information about setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md) and [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md).  
+ Most of the predefined bindings WCF provides contain the `transactionFlow` and `transactionProtocol` attributes, so that you can configure the binding to accept incoming transactions for a specific endpoint using a specific transaction flow protocol. In addition, you can use the `transactionFlow` element and its `transactionProtocol` attribute to build your own custom binding. For more information about setting the configuration elements, see [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) and [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md).  
   
  The `transactionFlow` attribute specifies whether transaction flow is enabled for service endpoints that use the binding.  
   
@@ -57,5 +57,6 @@ Windows Communication Foundation (WCF) provides three attributes for configuring
  Note that the time-out value used is the smaller value between this `transactionTimeout` configuration setting and any <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> property.  
   
 ## See also
-- [\<binding>](../../../../docs/framework/misc/binding.md)
+
+- [\<binding>](../../configure-apps/file-schema/wcf/bindings.md)
 - [WCF Configuration Schema](../../../../docs/framework/configure-apps/file-schema/wcf/index.md)

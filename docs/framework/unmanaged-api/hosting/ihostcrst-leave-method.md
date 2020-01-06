@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostCrst::Leave Method
 Leaves the critical section that is represented by the current instance of [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Leave ();  
 ```  
   
@@ -51,6 +49,7 @@ HRESULT Leave ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

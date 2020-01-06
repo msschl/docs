@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e4372384-ee69-48d7-97e0-8fab7866597a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::SetSecurityContext Method
 Sets the security context of the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSecurityContext (  
     [in]  EContextType eContextType,  
     [out] IHostSecurityContext** ppSecurityContext  
@@ -63,6 +61,7 @@ HRESULT SetSecurityContext (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool?displayProperty=nameWithType>
 - [EContextType Enumeration](../../../../docs/framework/unmanaged-api/hosting/econtexttype-enumeration.md)
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)

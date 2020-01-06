@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fa21dc7b-5da7-440b-b59e-9180e5181f9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostProtectionManager::SetProtectedCategories Method
 Specifies which categories of managed types and members should be blocked from running in partially trusted code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProtectedCategories (  
     [in] EApiCategories  categories  
 );  
@@ -57,6 +55,7 @@ HRESULT SetProtectedCategories (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Security.Permissions.HostProtectionAttribute>
 - <xref:System.Security.Permissions.HostProtectionResource>
 - [EApiCategories Enumeration](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md)

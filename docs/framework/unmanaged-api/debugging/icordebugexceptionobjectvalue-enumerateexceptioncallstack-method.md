@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 00c64533-15dd-47f4-bb97-fe80a1ebadef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionObjectValue::EnumerateExceptionCallStack Method
 Gets an enumerator to the call stack embedded in an exception object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateExceptionCallStack(  
     [out] ICorDebugExceptionObjectCallStackEnum **ppCallStackEnum  
 );  
@@ -48,5 +46,6 @@ HRESULT EnumerateExceptionCallStack(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectvalue-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

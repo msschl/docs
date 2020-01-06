@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 308183ee-fd44-4432-9d86-ef00d181b49b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::GetVersionString Method
 Gets the version number of the runtime that was used to build the assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVersionString (  
    [out] LPWSTR      pwzBuf,  
    [in]  DWORD       ccBufSize,  
@@ -54,5 +52,6 @@ HRESULT GetVersionString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

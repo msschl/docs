@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetTypeRefProps Method
 Gets the metadata associated with the <xref:System.Type> referenced by the specified TypeRef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeRefProps (  
    [in]  mdTypeRef   tr,  
    [out] mdToken     *ptkResolutionScope,  
@@ -59,5 +57,6 @@ HRESULT GetTypeRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

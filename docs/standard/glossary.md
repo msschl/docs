@@ -79,9 +79,10 @@ The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its
 In general, a comprehensive collection of APIs that facilitates development and deployment of applications that are based on a particular technology. In this general sense, ASP.NET Core and Windows Forms are examples of application frameworks. See also [library](#library).
 
 The word "framework" has a more specific technical meaning in the following terms:
-* [.NET Framework](#net-framework)
-* [target framework](#target-framework)
-* [TFM (target framework moniker)](#tfm)
+
+- [.NET Framework](#net-framework)
+- [target framework](#target-framework)
+- [TFM (target framework moniker)](#tfm)
 
 In the existing documentation, "framework" sometimes refers to an [implementation of .NET](#implementation-of-net). For example, an article may call .NET Core a framework. We plan to eliminate this confusing usage from the documentation.
 
@@ -262,7 +263,7 @@ See [Target Frameworks](frameworks.md).
 
 Universal Windows Platform.
 
-An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, VB.NET, and JavaScript. When using C# and VB.NET, the .NET APIs are provided by .NET Core.
+An implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
 
 ## See also
 

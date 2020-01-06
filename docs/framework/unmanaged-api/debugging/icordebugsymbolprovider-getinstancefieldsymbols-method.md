@@ -2,15 +2,13 @@
 title: "ICorDebugSymbolProvider::GetInstanceFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: a29b9233-ee67-4b53-b8bc-c00b281e7edb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetInstanceFieldSymbols Method
 Gets the instance field symbols that correspond to a typespec signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInstanceFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -39,7 +37,7 @@ HRESULT GetInstanceFieldSymbols(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -51,6 +49,7 @@ HRESULT GetInstanceFieldSymbols(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [GetStaticFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getstaticfieldsymbols-method.md)
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

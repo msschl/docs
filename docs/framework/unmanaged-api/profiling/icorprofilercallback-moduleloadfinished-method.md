@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 050649e5-ffc0-4458-a0a4-d9ee128a219e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ModuleLoadFinished Method
 Notifies the profiler that a module has finished loading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleLoadFinished(  
     [in] ModuleID moduleId,  
     [in] HRESULT  hrStatus);  
@@ -51,5 +49,6 @@ HRESULT ModuleLoadFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ModuleLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadstarted-method.md)

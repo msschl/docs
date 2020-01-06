@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::Initialize Method
 Called to initialize the code profiler whenever a new common language runtime (CLR) application is started.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize(  
     [in] IUnknown     *pICorProfilerInfoUnk);  
 ```  
@@ -45,5 +43,6 @@ HRESULT Initialize(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [Shutdown Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-shutdown-method.md)

@@ -1,5 +1,5 @@
 ---
-title: "Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)"
+title: "Adding Elements, Attributes, and Nodes to an XML Tree"
 ms.date: 07/20/2015
 ms.assetid: e243e694-c987-43aa-8b22-1e33dace582c
 ---
@@ -75,4 +75,5 @@ Console.WriteLine(xmlTree)
 ```  
   
 ## See also
+
 - [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

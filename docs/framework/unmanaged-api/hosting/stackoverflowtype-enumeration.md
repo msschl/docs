@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: dab648ad-972b-479c-b129-b4c1dcbd932e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StackOverflowType Enumeration
 Contains values that indicate the underlying cause of a stack overflow event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     SO_Managed,  
     SO_ClrEngine,  
@@ -51,4 +49,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

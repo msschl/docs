@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FINALIZER_FLAGS Enumeration
 Describes the finalizer for an object.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_FINALIZER_CRITICAL = 0x1  
 } COR_PRF_FINALIZER_FLAGS;  
@@ -47,4 +45,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

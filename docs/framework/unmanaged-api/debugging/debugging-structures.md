@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging Structures
 
@@ -75,7 +73,7 @@ This section describes the unmanaged structures that the debugging API uses.
  Represents stack frame information from an exception object.
 
  [CorDebugGuidToTypeMapping Structure](../../../../docs/framework/unmanaged-api/debugging/cordebugguidtotypemapping-structure.md)
- Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) object.
+ Maps a Windows Runtime GUID to its corresponding [ICorDebugType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-interface.md) object.
 
  [DacpGetModuleAddress Structure](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
  Defines the container for a module address request.

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1fbbf572-6d28-41a5-82fb-579ac90bfcf5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject Interface
 Provides methods for controlling a managed object.  
@@ -37,4 +35,5 @@ Provides methods for controlling a managed object.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

@@ -2,15 +2,13 @@
 title: "ICorDebugExceptionDebugEvent::GetStackPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent::GetStackPointer Method
 Gets the stack pointer for this exception debug event.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackPointer(  
    [out]CORDB_ADDRESS *pStackPointer  
 );  
@@ -31,7 +29,7 @@ HRESULT GetStackPointer(
 |[MANAGED_EXCEPTION_UNHANDLED](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|`pStackPointer` is **null**.|  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
  The event type is available from the [ICorDebugDebugEvent::GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method.  
   
@@ -45,5 +43,6 @@ HRESULT GetStackPointer(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "<param> (Visual Basic)"
+title: "<param>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "param XML tag"
@@ -27,11 +27,11 @@ Defines a parameter name and description.
   
  The text for the `<param>` tag will appear in the following locations:  
   
--   Parameter Info of IntelliSense. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
+- Parameter Info of IntelliSense. For more information, see [Using IntelliSense](/visualstudio/ide/using-intellisense).  
   
--   Object Browser. For more information, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
+- Object Browser. For more information, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<param>` tag to describe the `id` parameter.  
@@ -39,4 +39,5 @@ Defines a parameter name and description.
  [!code-vb[VbVbcnXmlDocComments#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#6)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

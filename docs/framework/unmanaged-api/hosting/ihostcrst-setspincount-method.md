@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 863fc8ce-9b8a-477e-8dd8-75c8544bb43a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostCrst::SetSpinCount Method
 Sets the spin count for the current [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSpinCount (  
     [in] DWORD dwSpinCount  
 );  
@@ -59,6 +57,7 @@ HRESULT SetSpinCount (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

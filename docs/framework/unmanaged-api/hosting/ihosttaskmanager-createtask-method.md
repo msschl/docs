@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::CreateTask Method
 Requests that the host create a new task.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateTask (  
     [in]  DWORD stacksize,   
     [in]  LPTHREAD_START_ROUTINE pStartAddress,  
@@ -70,6 +68,7 @@ HRESULT CreateTask (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

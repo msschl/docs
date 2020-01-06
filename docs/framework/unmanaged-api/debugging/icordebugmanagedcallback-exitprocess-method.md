@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 63a7d47a-0d54-4e29-9767-9f09feaa38b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::ExitProcess Method
 Notifies the debugger that a process has exited.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitProcess (  
     [in] ICorDebugProcess *pProcess  
 );  
@@ -50,4 +48,5 @@ HRESULT ExitProcess (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

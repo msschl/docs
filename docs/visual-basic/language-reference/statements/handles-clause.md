@@ -1,5 +1,5 @@
 ---
-title: "Handles Clause (Visual Basic)"
+title: "Handles Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Handles"
@@ -13,7 +13,7 @@ Declares that a procedure handles a specified event.
   
 ## Syntax  
   
-```  
+```vb  
 proceduredeclaration Handles eventlist  
 ```  
   
@@ -49,6 +49,7 @@ proceduredeclaration Handles eventlist
  [!code-vb[VbVbalrEvents#42](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/class3.vb#42)]  
   
 ## See also
+
 - [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)
 - [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
 - [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)

@@ -1,5 +1,5 @@
 ---
-title: "Enumerations and Name Qualification (Visual Basic)"
+title: "Enumerations and Name Qualification"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], enumerations"
@@ -43,6 +43,7 @@ Normally, when referring to a member of an enumeration, you must qualify the mem
  [!code-vb[VbEnumsTask#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#32)]  
   
 ## See also
+
 - [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
 - [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
 - [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)

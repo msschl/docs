@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 0e350a1b-6997-46d0-bfc5-962a5011ef43
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugEHClause Structure
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -70,5 +68,6 @@ typedef struct _CorDebugEHClause {
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

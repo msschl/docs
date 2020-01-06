@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5fa68a67-ced6-41c6-a2c0-467060fd0692
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionLeave3WithInfo Function
 Notifies the profiler that control is being returned from a function, and provides a handle that can be passed to the [ICorProfilerInfo3::GetFunctionLeave3Info method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctionleave3info-method.md) to retrieve the stack frame and the return value.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave3WithInfo(  
                [in] FunctionIDOrClientID functionIDOrClientID,  
                [in] COR_PRF_ELT_INFO eltInfo);  
@@ -42,9 +40,9 @@ void __stdcall FunctionLeave3WithInfo(
   
  The execution engine does not save any registers before calling this function.  
   
--   On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
+- On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
   
--   On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
+- On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
   
  The implementation of `FunctionLeave3WithInfo` should not block, because it will delay garbage collection. The implementation should not attempt a garbage collection, because the stack may not be in a garbage collection-friendly state. If a garbage collection is attempted, the runtime will block until `FunctionLeave3WithInfo` returns.  
   
@@ -60,6 +58,7 @@ void __stdcall FunctionLeave3WithInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [GetFunctionLeave3Info](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctionleave3info-method.md)
 - [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)
 - [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], enumerating"
   - "enumerating time zones [.NET Framework]"
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Enumerate time zones present on a computer
 
@@ -57,9 +55,7 @@ Most list controls (such as the <xref:System.Windows.Forms.ListBox?displayProper
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   <xref:System> (in C# code)
 

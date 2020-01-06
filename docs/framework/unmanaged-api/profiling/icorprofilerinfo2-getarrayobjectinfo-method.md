@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bda75017-739f-4ce5-9000-f3b526e8473c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetArrayObjectInfo Method
 Gets detailed information about an array object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayObjectInfo(  
     [in] ObjectID objectId,  
     [in] ULONG32 cDimensions,  
@@ -61,5 +59,6 @@ HRESULT GetArrayObjectInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

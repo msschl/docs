@@ -2,15 +2,13 @@
 title: "ICorDebugVirtualUnwinder::GetContext Method"
 ms.date: "03/30/2017"
 ms.assetid: fe502a76-3068-47e5-a0a0-85ccb72dfac3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVirtualUnwinder::GetContext Method
 Gets the current context of this unwinder.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext(  
    [in] ULONG32 contextFlags,  
    [in] ULONG32 cbContextBuf,  
@@ -39,7 +37,7 @@ HRESULT GetContext(
  You set the initial value of the `contextBuf` argument to the context buffer returned by calling the [ICorDebugStackWalk::GetContext](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-getcontext-method.md) method.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
  Because unwinding may only restore a subset of the registers, such as the non-volatile registers only, the context may not exactly match the register state at the time of the actual method call.  
   
@@ -53,5 +51,6 @@ HRESULT GetContext(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

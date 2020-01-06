@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Programming Overview (Visual Basic)"
+title: "LINQ to XML Programming Overview"
 ms.date: 07/20/2015
 ms.assetid: a7c07d0a-1fae-4610-ae51-56dd7075cc14
 ---
@@ -18,4 +18,5 @@ These topics provide high-level overview information about the [!INCLUDE[sqltecx
 |[How to: Build LINQ to XML Examples (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md)|Contains the `Imports` statements that are required to build the LINQ to XML examples.|  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

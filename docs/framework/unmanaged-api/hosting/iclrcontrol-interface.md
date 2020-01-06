@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRControl Interface
 Provides methods that allow a host to get references to, and configure aspects of, the common language runtime (CLR).  
@@ -37,6 +35,7 @@ Provides methods that allow a host to get references to, and configure aspects o
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
 - [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetRegisterSet Method
 Gets the register set for this stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  
@@ -43,4 +41,3 @@ HRESULT GetRegisterSet (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

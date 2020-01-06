@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c2f45801-dd38-4b78-b6b7-64397dc73f83
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITInlining Method
 Notifies the profiler that the just-in-time (JIT) compiler is about to insert a function in line with another function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITInlining(  
     [in]  FunctionID callerId,  
     [in]  FunctionID calleeId,  
@@ -55,4 +53,5 @@ HRESULT JITInlining(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4f86ff37-2dab-4e64-819a-76b3bfe828ff
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorNativeLinkType Enumeration
 Provides values that indicate the type linked in native code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum   
 {  
     nltNone       = 1,  
@@ -55,4 +53,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

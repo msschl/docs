@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dbb21e67-712b-49e7-a27c-a1e73ffd46c5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::GetGenericParamProps Method
 Gets the metadata associated with the generic parameter represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenericParamProps (  
    [in]  mdGenericParam  gp,  
    [out] ULONG           *pulParamSeq,  
@@ -71,5 +69,6 @@ HRESULT GetGenericParamProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

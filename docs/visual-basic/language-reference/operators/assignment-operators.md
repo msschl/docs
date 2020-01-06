@@ -1,5 +1,5 @@
 ---
-title: "Assignment Operators (Visual Basic)"
+title: "Assignment Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "assignment operators [Visual Basic], Visual Basic"
@@ -32,6 +32,7 @@ The following are the assignment operators defined in Visual Basic.
  [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
   
 ## See also
+
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
 - [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
 - [Statements](../../../visual-basic/language-reference/statements/index.md)

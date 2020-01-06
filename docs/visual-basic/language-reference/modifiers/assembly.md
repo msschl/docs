@@ -1,5 +1,5 @@
 ---
-title: "Assembly (Visual Basic)"
+title: "Assembly"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Assembly"
@@ -22,6 +22,6 @@ Specifies that an attribute at the beginning of a source file applies to the ent
  You can also apply an attribute to an assembly in the AssemblyInfo.vb file, in which case you do not have to use an attribute block in your main source-code file.  
   
 ## See also
+
 - [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)
 - [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-

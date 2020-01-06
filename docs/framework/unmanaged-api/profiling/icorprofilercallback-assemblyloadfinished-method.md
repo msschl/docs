@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 86d98f39-52e6-4c61-a625-9760f695ff12
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AssemblyLoadFinished Method
 Notifies the profiler that an assembly has finished loading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyLoadFinished(  
     [in] AssemblyID assemblyId,  
     [in] HRESULT    hrStatus);  
@@ -51,4 +49,5 @@ HRESULT AssemblyLoadFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

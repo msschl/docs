@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 73f536f6-4668-4a4a-b3e4-ac7df862d5be
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::EnumerateThreads Method
 Gets an enumerator for the active managed threads in the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateThreads (  
     [out] ICorDebugThreadEnum **ppThreads  
 );  
@@ -46,4 +44,3 @@ HRESULT EnumerateThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

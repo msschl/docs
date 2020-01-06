@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 69156fbf-7219-43bf-b4b8-b13f1a2fcb86
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorCallingConvention Enumeration
 Contains values that describe the types of calling conventions that are made in managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorCallingConvention  
 {  
     IMAGE_CEE_CS_CALLCONV_DEFAULT       = 0x0,  
@@ -70,4 +68,5 @@ typedef enum CorCallingConvention
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::UpdateModuleSymbols Method
 Notifies the debugger that the symbols for a common language runtime module have changed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateModuleSymbols (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugModule    *pModule,  
@@ -58,4 +56,5 @@ HRESULT UpdateModuleSymbols (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

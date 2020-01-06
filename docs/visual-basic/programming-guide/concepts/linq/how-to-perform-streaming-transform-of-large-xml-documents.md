@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform Streaming Transform of Large XML Documents (Visual Basic)"
+title: "How to: Perform Streaming Transform of Large XML Documents"
 ms.date: 07/20/2015
 ms.assetid: 3d954cc9-4b3c-4b47-8132-ff7541cff53b
 ---
@@ -434,4 +434,5 @@ End Class
 ```  
   
 ## See also
+
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

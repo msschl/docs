@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0163412f-f617-4428-89e0-03992fec31e8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyDelete Method
 Deletes the specified key container.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyDelete (  
     [in]  LPCWSTR   wszKeyContainer  
 );  
@@ -49,5 +47,6 @@ HRESULT StrongNameKeyDelete (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameKeyInstall Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

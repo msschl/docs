@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 20fc1b9d-e228-4107-bd76-53934c1724b9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapSegmentEnum Interface
 Provides an enumerator for the memory regions of the managed heap. This interface is a subclass of the ICorDebugEnum interface.  
@@ -43,4 +41,5 @@ Provides an enumerator for the memory regions of the managed heap. This interfac
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

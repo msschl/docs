@@ -8,7 +8,7 @@ ms.custom: "seodec18"
 
 # Organizing and testing projects with the .NET Core command line
 
-This tutorial follows [Get started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
+This tutorial follows [Get started with .NET Core on Windows/Linux/macOS using the command line](cli-create-console-app.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
 
 ## Using folders to organize code
 
@@ -81,7 +81,7 @@ Create the following folder structure with file content indicated:
 
 Execute the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -102,15 +102,15 @@ Navigate back to the *src* folder and create a *test* folder with a *NewTypesTes
 
 The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```
-dotnet add reference ../../NewTypes/NewTypes.csproj
+```dotnetcli
+dotnet add reference ../../src/NewTypes/NewTypes.csproj
 ```
 
 Or, you also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../../NewTypes/NewTypes.csproj" />
+  <ProjectReference Include="../../src/NewTypes/NewTypes.csproj" />
 </ItemGroup>
 ```
 
@@ -184,7 +184,7 @@ Start in the *test/NewTypesTests* directory. Restore the test project with the [
 
 As expected, testing fails, and the console displays the following output:
 
-```
+```output
 Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -218,7 +218,7 @@ Change the assertions of your tests from `Assert.NotEqual` to `Assert.Equal`:
 
 Re-run the tests with the `dotnet test` command and obtain the following output:
 
-```
+```output
 Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
 Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.

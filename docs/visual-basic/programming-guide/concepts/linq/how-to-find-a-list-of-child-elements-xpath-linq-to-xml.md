@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find a List of Child Elements (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
 ---
@@ -36,7 +36,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Street>123 Maple Street</Street>  
@@ -47,4 +47,5 @@ Results are identical
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

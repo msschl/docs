@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b1d74e83-a200-4d00-8fbd-27918808616d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDispose Interface
 Disposes of unmanaged resources.  
@@ -30,4 +28,5 @@ Disposes of unmanaged resources.
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "Aggregation Operations (Visual Basic)"
+title: "Aggregation Operations"
 ms.date: 07/20/2015
 ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
 ---
@@ -8,7 +8,7 @@ An aggregation operation computes a single value from a collection of values. An
   
  The following illustration shows the results of two different aggregation operations on a sequence of numbers. The first operation sums the numbers. The second operation returns the maximum value in the sequence.  
   
- ![LINQ Aggregation Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_aggregation.png "LINQ_Aggregation")  
+ ![Illustration that shows LINQ aggregation operations.](./media/aggregation-operations/linq-aggregation-operations.png)  
   
  The standard query operator methods that perform aggregation operations are listed in the following section.  
   
@@ -57,6 +57,7 @@ An aggregation operation computes a single value from a collection of values. An
  [!code-vb[CsLINQAggregating#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/CsLINQAggregating/VB/Aggregating.vb#6)]  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)

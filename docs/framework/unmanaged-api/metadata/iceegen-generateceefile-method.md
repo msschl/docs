@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: cca4a9a1-731b-4411-9e04-00cffe7a56d8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GenerateCeeFile Method
 Generates a code-base file that contains the code base currently loaded into this [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) interface.  
@@ -25,7 +23,7 @@ Generates a code-base file that contains the code base currently loaded into thi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GenerateCeeFile ();  
 ```  
   
@@ -42,4 +40,5 @@ HRESULT GenerateCeeFile ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

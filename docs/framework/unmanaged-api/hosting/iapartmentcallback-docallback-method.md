@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8edad30c-30ff-4bee-813c-75525a82fc93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IApartmentCallback::DoCallback Method
 Executes the specified function within an apartment.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _stdcall DoCallback(  
     [in] SIZE_T pFunc,  
     [in] SIZE_T pData  
@@ -47,4 +45,5 @@ HRESULT _stdcall DoCallback(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IApartmentCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iapartmentcallback-interface.md)

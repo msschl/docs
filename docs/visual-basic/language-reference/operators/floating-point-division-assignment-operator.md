@@ -1,5 +1,5 @@
 ---
-title: "/= Operator (Visual Basic)"
+title: "/= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb./="
@@ -16,7 +16,7 @@ Divides the value of a variable or property by the value of an expression and as
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty /= expression  
 ```  
   
@@ -43,6 +43,7 @@ variableorproperty /= expression
  [!code-vb[VbVbalrOperators#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#17)]  
   
 ## See also
+
 - [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)
 - [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)

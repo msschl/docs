@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cade1feb-71d2-43ed-85ca-7b2e9da12994
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorRegisterWaitForSingleObject Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorRegisterWaitForSingleObject (  
     [in]  HANDLE*             phNewWaitObject,  
     [in]  HANDLE              hWaitObject,  
@@ -45,4 +43,5 @@ HRESULT CorRegisterWaitForSingleObject (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)

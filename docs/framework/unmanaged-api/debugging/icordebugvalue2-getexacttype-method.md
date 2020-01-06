@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8e9aae1b-d1b7-4b6e-b577-6faf36dcec85
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue2::GetExactType Method
 Gets an interface pointer to an "ICorDebugType" object that represents the <xref:System.Type> of this value.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExactType (  
     [out] ICorDebugType   **ppType  
 );  
@@ -46,4 +44,3 @@ HRESULT GetExactType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-

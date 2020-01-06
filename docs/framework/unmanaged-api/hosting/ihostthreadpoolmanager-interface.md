@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c3a2cd90-7c4e-4374-bb87-b41befb8344f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager Interface
 Provides methods that enable the common language runtime (CLR) to configure the thread pool and to queue work items to the thread pool.  
@@ -44,6 +42,7 @@ Provides methods that enable the common language runtime (CLR) to configure the 
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading>
 - <xref:System.Threading.ThreadPool>
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

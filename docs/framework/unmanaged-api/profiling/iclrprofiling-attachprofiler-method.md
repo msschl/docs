@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICLRProfiling::AttachProfiler Method
 Attaches the specified profiler to the specified process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AttachProfiler(  
   [in] DWORD dwProfileeProcessID,  
   [in] DWORD dwMillisecondsMax,                     // optional  
@@ -85,6 +83,7 @@ HRESULT AttachProfiler(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

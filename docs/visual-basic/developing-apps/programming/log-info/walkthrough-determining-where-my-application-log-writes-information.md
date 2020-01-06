@@ -1,5 +1,5 @@
 ---
-title: "Determining Where My.Application.Log Writes Information (Visual Basic)"
+title: "Determining Where My.Application.Log Writes Information"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Log object, output location"
@@ -22,7 +22,7 @@ For more information about the default output locations, see [Working with Appli
 1. Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in Visual Studio from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.
 
     > [!NOTE]
-    >  Not every assembly has a configuration file.
+    > Not every assembly has a configuration file.
 
     The configuration file is an XML file.
 
@@ -30,7 +30,7 @@ For more information about the default output locations, see [Working with Appli
 
     If these sections do not exist, then the computer's configuration file may configure the `My.Application.Log` log listeners. The following steps describe how to determine what the computer configuration file defines:
 
-    1. Locate the computer's machine.config file. Typically, it is located in the *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG* directory, where `SystemRoot` is the operating system directory, and `frameworkVersion` is the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].
+    1. Locate the computer's machine.config file. Typically, it is located in the *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG* directory, where `SystemRoot` is the operating system directory, and `frameworkVersion` is the version of the .NET Framework.
 
         The settings in machine.config can be overridden by an application's configuration file.
 

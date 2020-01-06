@@ -1,5 +1,5 @@
 ---
-title: "Can't perform requested operation (Visual Basic)"
+title: "Can't perform requested operation"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID17"
@@ -10,7 +10,7 @@ An operation cannot be carried out because it would invalidate the current state
   
 ## To correct this error  
   
--   Stop the code execution, make modifications if necessary, and then retry the operation.  
+- Stop the code execution, make modifications if necessary, and then retry the operation.  
   
 ## See also
 

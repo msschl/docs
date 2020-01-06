@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumTypeRefs Method
 Enumerates TypeRef tokens defined in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeRefs (  
    [in, out] HCORENUM    *phEnum,   
    [out] mdTypeRef       rTypeRefs[],  
@@ -65,5 +63,6 @@ HRESULT EnumTypeRefs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

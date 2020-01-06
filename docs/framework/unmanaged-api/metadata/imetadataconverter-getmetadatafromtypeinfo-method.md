@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d44484bb-23a3-49c3-9e46-69d0d9ab4f0f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataConverter::GetMetaDataFromTypeInfo Method
 Gets a pointer to an [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) instance that represents the metadata signature of the type library referenced by the specified `ITypeInfo` instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataFromTypeInfo (  
     [in]  ITypeInfo         *pITI,  
     [out] IMetaDataImport   **ppMDI  
@@ -47,5 +45,6 @@ HRESULT GetMetaDataFromTypeInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

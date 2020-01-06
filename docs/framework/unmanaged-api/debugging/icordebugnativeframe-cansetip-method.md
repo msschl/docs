@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 13258ac6-f4e4-4f66-8fc3-f1244417a3c3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::CanSetIP Method
 Gets an HRESULT that indicates whether it is safe to set the instruction pointer (IP) to the specified offset location in native code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CanSetIP (  
     [in] ULONG32            nOffset  
 );  
@@ -46,4 +44,3 @@ HRESULT CanSetIP (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-

@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "Task-based Asynchronous Pattern, .NET Framework support for"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: 8cef1fcf-6f9f-417c-b21f-3fd8bac75007
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Task-based asynchronous pattern (TAP)
 The Task-based Asynchronous Pattern (TAP) is based on the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> types in the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace, which are used to represent arbitrary asynchronous operations. TAP is the recommended asynchronous design pattern for new development.  
@@ -33,9 +31,9 @@ TAP uses a single method to represent the initiation and completion of an asynch
 ## Initiating an asynchronous operation  
  An asynchronous method that is based on TAP can do a small amount of work synchronously, such as validating arguments and initiating the asynchronous operation, before it returns the resulting task. Synchronous work should be kept to the minimum so the asynchronous method can return quickly. Reasons for a quick return include the following:  
   
--   Asynchronous methods may be invoked from user interface (UI) threads, and any long-running synchronous work could harm the responsiveness of the application.  
+- Asynchronous methods may be invoked from user interface (UI) threads, and any long-running synchronous work could harm the responsiveness of the application.  
   
--   Multiple asynchronous methods may be launched concurrently. Therefore, any long-running work in the synchronous portion of an asynchronous method could delay the initiation of other asynchronous operations, thereby decreasing the benefits of concurrency.  
+- Multiple asynchronous methods may be launched concurrently. Therefore, any long-running work in the synchronous portion of an asynchronous method could delay the initiation of other asynchronous operations, thereby decreasing the benefits of concurrency.  
   
  In some cases, the amount of work required to complete the operation is less than the amount of work required to launch the operation asynchronously. Reading from a stream where the read operation can be satisfied by data that is already buffered in memory is an example of such a scenario. In such cases, the operation may complete synchronously, and may return a task that has already been completed.  
   
@@ -89,7 +87,7 @@ TAP uses a single method to represent the initiation and completion of an asynch
  If TAP implementations provide overloads that accept a `progress` parameter, they must allow the argument to be `null`, in which case no progress will be reported. TAP implementations should report the progress to the <xref:System.Progress%601> object synchronously, which enables the asynchronous method to quickly provide progress, and allow the consumer of the progress to determine how and where best to handle the information. For example, the progress instance could choose to marshal callbacks and raise events on a captured synchronization context.  
   
 ## IProgress\<T> implementations  
- The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
+ The .NET Framework 4.5 provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
   
 ```csharp  
 public class Progress<T> : IProgress<T>  

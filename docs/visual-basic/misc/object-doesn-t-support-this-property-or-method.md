@@ -1,5 +1,5 @@
 ---
-title: "Object doesn't support this property or method (Visual Basic)"
+title: "Object doesn't support this property or method"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID438"
@@ -10,7 +10,7 @@ You specified a method or property that does not exist for this automation objec
   
 ## To correct this error  
   
--   Read the object's documentation for more information on the object and check the spellings of properties and methods.  
+- Read the object's documentation for more information on the object and check the spellings of properties and methods.  
   
 ## See also
 

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50a58a83-6287-40a4-b315-47823cea0a5c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::GetTokenFromSig Method
 Gets a token for the specified metadata signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTokenFromSig (   
     [in]  PCCOR_SIGNATURE pvSig,   
     [in]  ULONG       cbSig,   
@@ -51,5 +49,6 @@ HRESULT GetTokenFromSig (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

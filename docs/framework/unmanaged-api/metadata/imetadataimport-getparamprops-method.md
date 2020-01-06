@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetParamProps Method
 Gets metadata values for the parameter referenced by the specified ParamDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamProps (  
    [in]  mdParamDef      tk,  
    [out] mdMethodDef     *pmd,  
@@ -83,5 +81,6 @@ The sequence values in `pulSequence` begin with 1 for parameters. A return value
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

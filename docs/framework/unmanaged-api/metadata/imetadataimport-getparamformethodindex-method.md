@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ec3bfa95-1920-4511-932e-3ff23d76fcb8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetParamForMethodIndex Method
 Gets the token that represents a specified parameter of the method represented by the specified MethodDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParamForMethodIndex (  
    [in]  mdMethodDef      md,  
    [in]  ULONG            ulParamSeq,  
@@ -51,5 +49,6 @@ HRESULT GetParamForMethodIndex (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

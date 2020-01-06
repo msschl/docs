@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6e47b7e5-0335-4dd3-8c42-d3c07d62b102
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AssemblyUnloadStarted Method
 Notifies the profiler that an assembly is being unloaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyUnloadStarted(  
     [in] AssemblyID assemblyId);  
 ```  
@@ -45,5 +43,6 @@ HRESULT AssemblyUnloadStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [AssemblyUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-assemblyunloadfinished-method.md)

@@ -1,5 +1,5 @@
 ---
-title: "<value> (Visual Basic)"
+title: "<value>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<value> XML tag"
@@ -22,7 +22,7 @@ Specifies the description of a property.
 ## Remarks  
  Use the `<value>` tag to describe a property. Note that when you add a property using the code wizard in the Visual Studio development environment, it will add a [\<summary>](../../../visual-basic/language-reference/xmldoc/summary.md) tag for the new property. You should then manually add a `<value>` tag to describe the value that the property represents.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<value>` tag to describe what value the `Counter` property holds.  
@@ -30,4 +30,5 @@ Specifies the description of a property.
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Info Object (Visual Basic)"
+title: "My.Computer.Info Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Info object"
@@ -19,4 +19,5 @@ Provides properties for getting information about the computer's memory, loaded 
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

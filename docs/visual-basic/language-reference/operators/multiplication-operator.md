@@ -1,5 +1,5 @@
 ---
-title: "* Operator (Visual Basic)"
+title: "* Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.*"
@@ -16,7 +16,7 @@ Multiplies two numbers.
   
 ## Syntax  
   
-```  
+```vb  
 number1 * number2  
 ```  
   
@@ -54,6 +54,7 @@ number1 * number2
  [!code-vb[VbVbalrOperators#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#4)]  
   
 ## See also
+
 - [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)

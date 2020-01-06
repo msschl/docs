@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 190f424d-5e37-4163-a191-0895686e9476
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionSearchCatcherFound Method
 Notifies the profiler that the search phase of exception handling has located a handler for the exception that was thrown.  
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT ExceptionSearchCatcherFound(  
     [in] FunctionID functionId);  
 ```  
@@ -42,4 +40,5 @@ RESULT ExceptionSearchCatcherFound(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

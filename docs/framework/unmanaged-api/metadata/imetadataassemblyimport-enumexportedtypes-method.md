@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e5912ed8-e4ce-438b-8ea3-d9e4c288d109
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumExportedTypes Method
 Enumerates the exported types referenced in the assembly manifest in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumExportedTypes (  
     [in, out] HCORENUM     *phEnum,   
     [out] mdExportedType   rExportedTypes[],   
@@ -62,4 +60,5 @@ HRESULT EnumExportedTypes (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

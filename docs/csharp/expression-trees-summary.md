@@ -2,6 +2,7 @@
 title: Expression Trees Summary
 description: Recaps how you can use expression trees to create dynamic programs that interpret code as data and build new functionality based on that code.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: eb687ebd-1149-4453-9fc1-12a084495a66
 ---
 
@@ -38,4 +39,3 @@ code that is represented as a data structure. It's a powerful
 tool, and it's one of the features of the .NET ecosystem that
 enables rich libraries such as Entity Framework to accomplish
 what they do.
-

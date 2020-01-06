@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 92d76893-683c-475d-9996-5bff03cdb10f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::FinalizeableObjectQueued Method
 Notifies the code profiler that an object with a finalizer has been queued to the finalizer thread for execution of its `Finalize` method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FinalizeableObjectQueued(  
     [in] DWORD finalizerFlags,  
     [in] ObjectID objectID);  
@@ -46,5 +44,6 @@ HRESULT FinalizeableObjectQueued(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

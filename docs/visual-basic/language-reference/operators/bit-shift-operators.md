@@ -1,5 +1,5 @@
 ---
-title: "Bit Shift Operators (Visual Basic)"
+title: "Bit Shift Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "shift operators [Visual Basic], bit"
@@ -15,4 +15,5 @@ The following are the bit shift operators defined in Visual Basic.
  [>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)  
   
 ## See also
+
 - [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

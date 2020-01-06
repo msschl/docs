@@ -1,5 +1,5 @@
 ---
-title: "Option <keyword> Statement (Visual Basic)"
+title: "Option <keyword> Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.option"
@@ -24,4 +24,5 @@ Introduces a statement that specifies a compiler option that applies to the enti
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

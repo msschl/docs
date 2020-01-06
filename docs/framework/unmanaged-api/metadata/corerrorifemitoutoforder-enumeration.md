@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 6d758aad-29a7-44fe-9481-bbff5b799a32
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorErrorIfEmitOutOfOrder Enumeration
 Contains flag values that indicate the conditions under which an error message should be generated when metadata is emitted out of order.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorErrorIfEmitOutOfOrder {  
   
     MDErrorOutOfOrderDefault    = 0x00000000,  
@@ -58,4 +56,5 @@ typedef enum CorErrorIfEmitOutOfOrder {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

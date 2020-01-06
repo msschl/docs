@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a4de6805-e159-4280-99e5-3390c86166d0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingServerInvocationReturned Method
 Notifies the profiler that the process has finished invoking a method in response to a remote method invocation request.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingServerInvocationReturned();  
 ```  
   
@@ -37,4 +35,5 @@ HRESULT RemotingServerInvocationReturned();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

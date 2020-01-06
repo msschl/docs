@@ -17,15 +17,13 @@ helpviewer_keywords:
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget::EnumProcesses Method
 Enumerates the processes that are running on a remote computer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProcesses (  
        [out]  DWORD*                  pcProcs,   
        [out]  CoreClrDebugProcInfo**  ppProcs  
@@ -62,4 +60,5 @@ HRESULT EnumProcesses (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

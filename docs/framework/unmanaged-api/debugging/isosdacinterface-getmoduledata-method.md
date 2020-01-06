@@ -24,7 +24,7 @@ Fetches the data corresponding to the module loaded at a given address.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetModuleData(
     CLRDATA_ADDRESS moduleAddr,
     DacpModuleData *data
@@ -38,7 +38,6 @@ HRESULT GetModuleData(
 
 `data`\
 [out] The [DacpModuleData structure](dacpmoduledata-structure.md) to hold the information of the loaded module.
-
 
 ## Remarks
 

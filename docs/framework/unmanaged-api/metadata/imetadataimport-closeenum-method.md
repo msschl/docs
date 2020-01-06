@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 727819d5-1dab-4ebb-ac25-950b4111dc72
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::CloseEnum Method
 Closes the enumerator that is identified by the specified handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
    [in] HCORENUM hEnum  
 );  
@@ -46,5 +44,6 @@ void CloseEnum (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

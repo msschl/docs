@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 31782b36-d311-4518-8f45-25f65385af5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITCompilationStarted Method
 Notifies the profiler that the just-in-time (JIT) compiler has started to compile a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCompilationStarted(  
     [in] FunctionID functionId,  
     [in] BOOL       fIsSafeToBlock);  
@@ -53,5 +51,6 @@ HRESULT JITCompilationStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [JITCompilationFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationfinished-method.md)

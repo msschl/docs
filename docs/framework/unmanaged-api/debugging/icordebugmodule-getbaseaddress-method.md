@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetBaseAddress Method
 Gets the base address of the module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
     [out] CORDB_ADDRESS *pAddress  
 );  
@@ -46,5 +44,3 @@ HRESULT GetBaseAddress(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetMaxThreads Method
 Gets the maximum number of threads that the host can allot to service I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxIoCompletionThreads  
 );  
@@ -58,5 +56,6 @@ HRESULT GetMaxThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "XML Processing Instruction Literal (Visual Basic)"
+title: "XML Processing Instruction Literal"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlLiteralProcessingInstruction"
@@ -40,12 +40,12 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
  The XML document literal uses syntax that is similar to that of the XML processing instruction. For more information, see [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md).  
   
 > [!NOTE]
->  The `piName` element cannot begin with the strings "xml" or "XML", because the XML 1.0 specification reserves those identifiers.  
+> The `piName` element cannot begin with the strings "xml" or "XML", because the XML 1.0 specification reserves those identifiers.  
   
  You can assign an XML processing instruction literal to a variable or include it in an XML document literal.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without needing line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
+> An XML literal can span multiple lines without needing line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
   
  The Visual Basic compiler converts the XML processing instruction literal to a call to the <xref:System.Xml.Linq.XProcessingInstruction.%23ctor%2A> constructor.  
   
@@ -55,6 +55,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
  [!code-vb[VbXMLSamples#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#28)]  
   
 ## See also
+
 - <xref:System.Xml.Linq.XProcessingInstruction>
 - [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
 - [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)

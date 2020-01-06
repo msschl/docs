@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0036fc10-e768-47a8-b9cf-bf47faf8d194
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedConstant::GetValue Method
 Gets the value of the constant.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
     [out]  VARIANT* pValue  
 );  
@@ -40,6 +38,7 @@ HRESULT GetValue(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedConstant Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-interface.md)
 - [GetName Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getname-method.md)
 - [GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedconstant-getsignature-method.md)

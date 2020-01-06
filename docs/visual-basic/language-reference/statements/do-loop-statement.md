@@ -1,5 +1,5 @@
 ---
-title: "Do...Loop Statement (Visual Basic)"
+title: "Do...Loop Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Do"
@@ -26,7 +26,7 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
   
 ## Syntax  
   
-```  
+```vb  
 Do { While | Until } condition  
     [ statements ]  
     [ Continue Do ]  
@@ -34,7 +34,7 @@ Do { While | Until } condition
     [ Exit Do ]  
     [ statements ]  
 Loop  
--or-  
+' -or-  
 Do  
     [ statements ]  
     [ Continue Do ]  
@@ -69,7 +69,7 @@ Loop { While | Until } condition
  You can nest `Do` loops by putting one loop within another. You can also nest different kinds of control structures within each other. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).  
   
 > [!NOTE]
->  The `Do...Loop` structure gives you more flexibility than the [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) because it enables you to decide whether to end the loop when `condition` stops being `True` or when it first becomes `True`. It also enables you to test `condition` at either the start or the end of the loop.  
+> The `Do...Loop` structure gives you more flexibility than the [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) because it enables you to decide whether to end the loop when `condition` stops being `True` or when it first becomes `True`. It also enables you to test `condition` at either the start or the end of the loop.  
   
 ## Exit Do  
  The [Exit Do](../../../visual-basic/language-reference/statements/exit-statement.md) statement can provide an alternative way to exit a `Do…Loop`. `Exit Do` transfers control immediately to the statement that follows the `Loop` statement.  
@@ -101,6 +101,7 @@ Loop { While | Until } condition
  [!code-vb[VbVbalrStatements#134](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#134)]  
   
 ## See also
+
 - [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)

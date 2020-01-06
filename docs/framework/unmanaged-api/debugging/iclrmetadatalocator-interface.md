@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 43c944f4-406a-4df6-981e-0eabb33dd5d0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetadataLocator Interface
 Used by the data access services layer to locate metadata of assemblies in a target process.  
@@ -39,4 +37,5 @@ Used by the data access services layer to locate metadata of assemblies in a tar
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

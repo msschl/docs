@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ec90ee83-bd4b-408b-9274-62a923ab86a1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::SetCLRTaskManager Method
 Provides the host with an interface pointer to an [ICLRTaskManager](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md) instance implemented by the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRTaskManager (  
     [in] ICLRTaskManager *pManager  
 );  
@@ -57,6 +55,7 @@ HRESULT SetCLRTaskManager (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

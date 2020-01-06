@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f069802a-198f-46dd-9f09-4f77adffc9ba
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetFunctionFromIP Method
 Maps a managed code instruction pointer to a `FunctionID`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromIP(  
     [in]  LPCBYTE    ip,  
     [out] FunctionID *pFunctionId);  
@@ -46,4 +44,5 @@ HRESULT GetFunctionFromIP(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

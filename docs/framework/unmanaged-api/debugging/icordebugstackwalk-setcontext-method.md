@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bac0b156-31a3-4e7f-be4d-ab21789c81f1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStackWalk::SetContext Method
 Sets the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object’s current context to a valid context for the thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetContext([in] CorDebugSetContextFlag flag,  
                    [in] ULONG32 contextSize,  
                    [in, size_is(contextSize)] BYTE context[]);  
@@ -68,5 +66,6 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

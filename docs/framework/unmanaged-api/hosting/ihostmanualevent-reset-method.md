@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0d101168-b5e3-49ce-90c7-85cf2db83c4c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostManualEvent::Reset Method
 Resets the current [IHostManualEvent](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md) instance to a non-signaled state.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   
@@ -48,6 +46,7 @@ HRESULT Reset ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

@@ -2,6 +2,7 @@
 title: Local functions vs. lambda expressions
 description: Learn why local functions might be a better choice than lambda expressions.
 ms.date: 06/27/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
 # Local functions compared to lambda expressions
@@ -95,7 +96,7 @@ functions version has 2 fewer allocations than the lambda expression version.
 > [!NOTE]
 > The local function equivalent of this method also uses a class for the closure. Whether the closure for a local function is implemented as a `class` or a `struct` is an implementation detail. A local function may use a `struct` whereas a lambda will always use a `class`.
 
-[!code-csharp[TaskLocalFunctionExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#29_TaskExample "Task returning method with local function")]
+[!code-csharp[TaskLocalFunctionExample](../../samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
 One final advantage not demonstrated in this sample is that local
 functions can be implemented as iterators, using the `yield return`

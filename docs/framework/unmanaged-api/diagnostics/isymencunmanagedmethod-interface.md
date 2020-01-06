@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod Interface
 Provides information for the Edit and Continue feature.  
@@ -34,4 +32,5 @@ Provides information for the Edit and Continue feature.
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

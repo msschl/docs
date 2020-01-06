@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::DefineAssembly Method
 Creates an `Assembly` structure containing metadata for the specified assembly and returns the associated metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineAssembly (  
     [in]  void                 *pbPublicKey,  
     [in]  ULONG                cbPublicKey,  
@@ -70,4 +68,5 @@ HRESULT DefineAssembly (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

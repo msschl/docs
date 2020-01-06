@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0500854e-2121-43d9-a028-64312da35258
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::ControlCTrap Method
 Notifies the debugger that a CTRL+C is trapped in the process that is being debugged.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ControlCTrap (  
     [in] ICorDebugProcess *pProcess  
 );  
@@ -53,4 +51,5 @@ HRESULT ControlCTrap (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

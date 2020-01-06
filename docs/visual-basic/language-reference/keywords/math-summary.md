@@ -1,5 +1,5 @@
 ---
-title: "Math Summary (Visual Basic)"
+title: "Math Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "math functions, summary"
@@ -21,6 +21,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Perform numeric conversions.|<xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
   
 ## See also
+
 - [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

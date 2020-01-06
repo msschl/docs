@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 90140b0f-a926-4a7e-b6fa-23e05f703cce
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetCodeInfo Method
 Gets the extent of native code associated with the specified function ID.  
@@ -25,7 +23,7 @@ Gets the extent of native code associated with the specified function ID.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo(  
     [in]  FunctionID functionId,  
     [out] LPCBYTE    *pStart,  
@@ -57,6 +55,7 @@ HRESULT GetCodeInfo(
  **.NET Framework Versions:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

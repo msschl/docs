@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a4926d0a-261b-46b1-9994-82633661a64b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteToken Method
 Deletes the specified token from the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteToken (   
     [in]  mdToken     tkObj   
 );  
@@ -43,5 +41,6 @@ HRESULT DeleteToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

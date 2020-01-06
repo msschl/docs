@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMAlloc::Alloc Method
 Requests that the host allocate the specified amount of memory from the heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Alloc (  
     [in] SIZE_T  cbSize,   
     [in] EMemoryCriticalLevel dwCriticalLevel,   
@@ -66,5 +64,6 @@ HRESULT Alloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
 - [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)

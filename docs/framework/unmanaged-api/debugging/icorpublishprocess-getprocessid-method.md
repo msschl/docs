@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f31185e0-f01d-463a-b392-42163e39bfe9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::GetProcessID Method
 Gets the operating system identifier for this process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcessID (  
     [out] unsigned   *pid  
 );  
@@ -43,4 +41,5 @@ HRESULT GetProcessID (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

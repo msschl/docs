@@ -1,5 +1,5 @@
 ---
-title: "Introduction to LINQ in Visual Basic"
+title: "Introduction to LINQ"
 ms.date: 08/28/2018
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
@@ -37,7 +37,7 @@ Language-Integrated Query (LINQ) adds query capabilities to Visual Basic and pro
 |LINQ to Objects|The LINQ to Objects provider enables you to query in-memory collections and arrays. If an object supports either the <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601> interface, the LINQ to Objects provider enables you to query it.<br /><br /> You can enable the LINQ to Objects provider by importing the <xref:System.Linq> namespace, which is imported by default for all Visual Basic projects.<br /><br /> For more information about the LINQ to Objects provider, see [LINQ to Objects](../../concepts/linq/linq-to-objects.md).|  
 |LINQ to SQL|The LINQ to SQL provider enables you to query and modify data in a SQL Server database. This makes it easy to map the object model for an application to the tables and objects in a database.<br /><br /> Visual Basic makes it easier to work with LINQ to SQL by including the Object Relational Designer (O/R Designer). This designer is used to create an object model in an application that maps to objects in a database. The O/R Designer also provides functionality to map stored procedures and functions to the <xref:System.Data.Linq.DataContext> object, which manages communication with the database and stores state for optimistic concurrency checks.<br /><br /> For more information about the LINQ to SQL provider, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md). For more information about the Object Relational Designer, see [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).|  
 |LINQ to XML|The LINQ to XML provider enables you to query and modify XML. You can modify in-memory XML, or you can load XML from and save XML to a file.<br /><br /> Additionally, the LINQ to XML provider enables XML literals and XML axis properties that enable you to write XML directly in your Visual Basic code. For more information, see [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md).|  
-|LINQ to DataSet|The LINQ to DataSet provider enables you to query and update data in an [!INCLUDE[vstecado](~/includes/vstecado-md.md)] dataset. You can add the power of LINQ to applications that use datasets in order to simplify and extend your capabilities for querying, aggregating, and updating the data in your dataset.<br /><br /> For more information, see [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md).|  
+|LINQ to DataSet|The LINQ to DataSet provider enables you to query and update data in an ADO.NET dataset. You can add the power of LINQ to applications that use datasets in order to simplify and extend your capabilities for querying, aggregating, and updating the data in your dataset.<br /><br /> For more information, see [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md).|  
   
 ## Structure of a LINQ query  
  A LINQ query, often referred to as a *query expression*, consists of a combination of query clauses that identify the data sources and iteration variables for the query. A query expression can also include instructions for sorting, filtering, grouping, and joining, or calculations to apply to the source data. Query expression syntax resembles the syntax of SQL; therefore, you may find much of the syntax familiar.  
@@ -176,11 +176,11 @@ You can use additional LINQ query features by calling members of the enumerable 
 ## Visual Basic features that support LINQ  
  Visual Basic includes other notable features that make the use of LINQ simple and reduce the amount of code that you must write to perform LINQ queries. These include the following:  
   
--   **Anonymous types**, which enable you to create a new type based on a query result.  
+- **Anonymous types**, which enable you to create a new type based on a query result.  
   
--   **Implicitly typed variables**, which enable you to defer specifying a type and let the compiler infer the type based on the query result.  
+- **Implicitly typed variables**, which enable you to defer specifying a type and let the compiler infer the type based on the query result.  
   
--   **Extension methods**, which enable you to extend an existing type with your own methods without modifying the type itself.  
+- **Extension methods**, which enable you to extend an existing type with your own methods without modifying the type itself.  
   
  For details, see [Visual Basic Features That Support LINQ](../../concepts/linq/features-that-support-linq.md).  
   
@@ -212,7 +212,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 |[XML](../../language-features/xml/index.md)|Describes the XML features in Visual Basic that can be queried and that enable you to include XML as first-class data objects in your Visual Basic code.|  
 |[Queries](../../../language-reference/queries/index.md)|Provides reference information about the query clauses that are available in Visual Basic.|  
 |[LINQ (Language-Integrated Query)](../../concepts/linq/index.md)|Includes general information, programming guidance, and samples for LINQ.|  
-|[LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
+|[LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)|Includes general information, programming guidance, and samples for LINQ to SQL.|  
 |[LINQ to Objects](../../concepts/linq/linq-to-objects.md)|Includes general information, programming guidance, and samples for LINQ to Objects.|  
 |[LINQ to ADO.NET (Portal Page)](../../concepts/linq/linq-to-adonet-portal-page.md)|Includes links to general information, programming guidance, and samples for LINQ to ADO.NET.|  
 |[LINQ to XML](../../concepts/linq/linq-to-xml.md)|Includes general information, programming guidance, and samples for LINQ to XML.|  
@@ -243,7 +243,7 @@ You can use additional LINQ query features by calling members of the enumerable 
 
 - [LINQ (Language-Integrated Query)](../../concepts/linq/index.md)
 - [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md)
-- [LINQ to DataSet Overview](~/docs/framework/data/adonet/linq-to-dataset-overview.md)
-- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

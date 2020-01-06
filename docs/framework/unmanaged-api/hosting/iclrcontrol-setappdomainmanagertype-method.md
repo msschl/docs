@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRControl::SetAppDomainManagerType Method
 Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManagerType (  
     [in] LPCWSTR pwzAppDomainManagerAssembly,  
     [in] LPCWSTR pwzAppDomainManagerType  
@@ -58,5 +56,6 @@ HRESULT SetAppDomainManagerType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)

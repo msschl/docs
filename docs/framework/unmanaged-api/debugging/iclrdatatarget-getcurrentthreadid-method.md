@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dc9a0a6c-d592-4fb7-86ed-62684da3b0e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetCurrentThreadID Method
 Gets the operating system identifier for the current thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentThreadID (  
     [out] ULONG32    *threadID  
 );  
@@ -46,4 +44,5 @@ HRESULT GetCurrentThreadID (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

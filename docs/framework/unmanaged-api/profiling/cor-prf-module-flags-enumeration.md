@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_MODULE_FLAGS Enumeration
 Specifies the properties of a module.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_MODULE_DISK             = 0x00000001,  
@@ -60,4 +58,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

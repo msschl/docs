@@ -2,15 +2,13 @@
 title: "ICorDebugProcess6::GetExportStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::GetExportStepInfo Method
 Provides information on runtime exported functions to help step through managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   
@@ -39,7 +37,7 @@ HRESULT GetExportStepInfo(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -51,5 +49,6 @@ HRESULT GetExportStepInfo(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

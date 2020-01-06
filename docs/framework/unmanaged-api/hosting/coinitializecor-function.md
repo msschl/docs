@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9b9079fb-579e-4141-b3f0-791072dd40dc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoInitializeCor Function
 `CoInitializeCor` is obsolete.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CoInitializeCor (  
     DWORD fFlags  
 );  
@@ -36,4 +34,5 @@ STDAPI CoInitializeCor (
  **Header:** Cor.h  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Hierarchy Using Grouping (Visual Basic)"
+title: "How to: Create Hierarchy Using Grouping"
 ms.date: 07/20/2015
 ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
 ---
@@ -74,4 +74,5 @@ Console.WriteLine(newData)
 ```  
   
 ## See also
+
 - [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

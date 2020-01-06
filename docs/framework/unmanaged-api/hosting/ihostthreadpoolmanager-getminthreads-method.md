@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dc07232b-b2e4-4dab-87e2-3c955974ab48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::GetMinThreads Method
 Gets the minimum number of idle threads that the host maintains in the thread pool in anticipation of requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *MinThreads  
 );  
@@ -58,6 +56,7 @@ HRESULT GetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool.GetMinThreads%2A>
 - <xref:System.Threading.ThreadPool>
 - [GetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getmaxthreads-method.md)

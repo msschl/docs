@@ -13,8 +13,6 @@ api_type:
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback6::GetAssemblyReferences Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -58,6 +56,7 @@ HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-interface.md)
 - [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
 - [COR_PRF_ASSEMBLY_REFERENCE_INFO Structure](../../../../docs/framework/unmanaged-api/profiling/cor-prf-assembly-reference-info-structure.md)

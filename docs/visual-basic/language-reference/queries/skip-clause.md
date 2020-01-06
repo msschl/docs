@@ -1,5 +1,5 @@
 ---
-title: "Skip Clause (Visual Basic)"
+title: "Skip Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySkip"
@@ -14,7 +14,7 @@ Bypasses a specified number of elements in a collection and then returns the rem
   
 ## Syntax  
   
-```  
+```vb  
 Skip count  
 ```  
   
@@ -37,6 +37,7 @@ Skip count
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 01de7ac6-0aad-42ef-bf93-50737667b0a4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionSearchFunctionLeave Method
 Notifies the profiler that the search phase of exception handling has finished searching a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFunctionLeave();  
 ```  
   
@@ -37,5 +35,6 @@ HRESULT ExceptionSearchFunctionLeave();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ExceptionSearchFunctionEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionsearchfunctionenter-method.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: de830a8b-6ee1-4900-ace3-4237108f6b12
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeThreadSuspended Method
 Notifies the profiler that the specified thread has been suspended or is about to be suspended.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeThreadSuspended(  
     [in] ThreadID threadId);  
 ```  
@@ -47,5 +45,6 @@ HRESULT RuntimeThreadSuspended(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [RuntimeThreadResumed Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimethreadresumed-method.md)

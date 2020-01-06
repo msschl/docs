@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyGenEx Method
 Generates a new public/private key pair with the specified key size, for strong name use.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyGenEx (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  
@@ -40,9 +38,9 @@ HRESULT StrongNameKeyGenEx (
  `dwFlags`  
  [in] A value that specifies whether to leave the key registered. The following values are supported:  
   
--   0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
+- 0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
   
--   0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
+- 0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
   
  `dwKeySize`  
  [in] The requested size of the key, in bits.  
@@ -71,5 +69,6 @@ HRESULT StrongNameKeyGenEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

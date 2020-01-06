@@ -1,5 +1,5 @@
 ---
-title: "Extension Indexer Property (Visual Basic)"
+title: "Extension Indexer Property"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlPropertyExtensionIndexer"
@@ -15,7 +15,7 @@ Provides access to individual elements in a collection.
   
 ## Syntax  
   
-```  
+```vb  
 object(index)  
 ```  
   
@@ -50,6 +50,7 @@ object(index)
  `Second phone number: 425-555-0145`  
   
 ## See also
+
 - <xref:System.Xml.Linq.XElement>
 - [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
 - [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)

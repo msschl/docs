@@ -2,15 +2,13 @@
 title: "ICorDebugSymbolProvider::GetMethodParameterSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 58b7c0b9-f6ad-4b49-b92d-0e421cfd0ec6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMethodParameterSymbols Method
 Gets a method's parameter symbols given the relative virtual address (RVA) of that method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodParameterSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  
@@ -35,7 +33,7 @@ HRESULT GetMethodParameterSymbols(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -47,6 +45,7 @@ HRESULT GetMethodParameterSymbols(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [GetMethodLocalSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getmethodlocalsymbols-method.md)
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

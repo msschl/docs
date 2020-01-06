@@ -30,7 +30,7 @@ If you prefer to follow along with the [final sample](https://github.com/dotnet/
 ## Prerequisites
 
 You’ll need to set up your machine to run .NET core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
 application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor. The descriptions below
@@ -43,21 +43,17 @@ comfortable with.
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Type the command `dotnet new console` at the command prompt. This
-creates the starter files for a basic "Hello World" application.
-
-Before you start making modifications, let’s go through the steps to run
-the simple Hello World application. After creating the application, type
-`dotnet restore` ([see note](#dotnet-restore-note)) at the command prompt. This command runs the NuGet
-package restore process. NuGet is a .NET package manager. This command
-downloads any of the missing dependencies for your project. As this is a
+creates the starter files for a basic "Hello World" application. As this is a
 new project, none of the dependencies are in place, so the first run will
-download the .NET Core framework. After this initial step, you will only
-need to run `dotnet restore` ([see note](#dotnet-restore-note)) when you add new dependent packages, or update
-the versions of any of your dependencies.
+download the .NET Core framework, install a development certificate and run
+the NuGet package manager to restore missing dependencies.
 
-After restoring packages, you run `dotnet build`. This executes the build
-engine and creates your application. Finally, you execute `dotnet run` to
-run your application.
+Before you start making modifications, type
+`dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
+run your application. `dotnet run` automatically performs `dotnet restore`
+if your environment is missing dependencies. It also performs `dotnet build` if your application needs to be rebuilt.
+After your initial setup, you will only need to run `dotnet restore` or `dotnet build`
+when it makes sense for your project.
 
 ## Adding New Dependencies
 
@@ -87,7 +83,7 @@ that you add. However, it is important to make sure that the versions
 of all packages match, and that they also match the version of the .NET
 Core Application framework.
 
-After you've made these changes, you should run `dotnet restore` ([see note](#dotnet-restore-note)) again so
+After you've made these changes, execute `dotnet restore` ([see note](#dotnet-restore-note)) so
 that the package is installed on your system.
 
 ## Making Web Requests
@@ -98,7 +94,7 @@ application, you'll read information from the
 about the projects under the
 [.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
-on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
+on the projects. The endpoint you'll use is: <https://api.github.com/orgs/dotnet/repos>. You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.
 Your browser also uses HTTP GET requests, so you can paste that URL into
 your browser to see what information you'll be receiving and processing.
@@ -290,11 +286,11 @@ Compile and run the application. It will print out the names of the repositories
 Before you add more features, let's address the `repo` type and make it follow more standard
 C# conventions. You'll do this by annotating the `repo` type with *attributes* that control how
 the JSON Serializer works. In your case, you'll use these attributes to define a mapping between
-the JSON key names and the C# class and member names. The two attributes used are the `DataContract`
-attribute and the `DataMember` attribute. By convention, all Attribute classes end in the suffix
+the JSON key names and the C# class and member names. The two attributes used are the <xref:System.Runtime.Serialization.DataContractAttribute>
+and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
 `Attribute`. However, you do not need to use that suffix when you apply an attribute.
 
-The `DataContract` and `DataMember` attributes are in a different library, so you'll need to add
+The <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes are in a different library, so you'll need to add
 that library to your C# project file as a dependency. Add the following line to the `<ItemGroup>` section of your project file:
 
 ```xml
@@ -305,7 +301,7 @@ After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note))
 
 Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the
-`DataContract` attribute to the class declaration. You'll set the `Name` property of the attribute
+<xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:
 
 ```csharp
@@ -465,7 +461,7 @@ string representation of the date time in your `Repository` class:
 private string JsonDate { get; set; }
 ```
 
-The `DataMember` attribute informs the serializer that this should be processed, even though it is not
+The <xref:System.Runtime.Serialization.DataMemberAttribute> attribute informs the serializer that this should be processed, even though it is not
 a public member. Next, you need to write a public read-only property that converts the string to a
 valid <xref:System.DateTime> object, and returns that <xref:System.DateTime>:
 

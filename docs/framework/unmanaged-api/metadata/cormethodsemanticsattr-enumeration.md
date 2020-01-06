@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodSemanticsAttr Enumeration
 Contains values that describe the relationship between a method and an associated property or event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodSemanticsAttr {  
   
     msSetter    =   0x0001,  
@@ -54,4 +52,5 @@ typedef enum CorMethodSemanticsAttr {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

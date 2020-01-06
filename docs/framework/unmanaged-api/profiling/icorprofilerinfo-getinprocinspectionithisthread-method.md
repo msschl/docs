@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: badddccd-f85c-416e-9f0f-419eab2c9d42
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetInprocInspectionIThisThread Method
 Gets an object that can be queried for the ICorDebugThread interface. This method is obsolete in the .NET Framework version 2.0.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInprocInspectionIThisThread(  
     [out] IUnknown **ppicd);  
 ```  
@@ -45,4 +43,5 @@ HRESULT GetInprocInspectionIThisThread(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

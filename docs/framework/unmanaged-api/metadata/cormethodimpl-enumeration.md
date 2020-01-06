@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ffbb3caf-20da-4a4b-8983-77376e72b990
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodImpl Enumeration
 Contains values that describe method implementation features.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodImpl {  
   
     miCodeTypeMask      =   0x0003,  
@@ -77,4 +75,5 @@ typedef enum CorMethodImpl {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

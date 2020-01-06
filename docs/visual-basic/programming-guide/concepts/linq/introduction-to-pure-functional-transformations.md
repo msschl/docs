@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Pure Functional Transformations (Visual Basic)"
+title: "Introduction to Pure Functional Transformations"
 ms.date: 07/20/2015
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
 ---
@@ -17,4 +17,5 @@ This section introduces functional transformations, including the underlying con
 |[Functional Transformation of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)|Describes functional transformations in the context of transforming XML trees.|  
   
 ## See also
+
 - [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

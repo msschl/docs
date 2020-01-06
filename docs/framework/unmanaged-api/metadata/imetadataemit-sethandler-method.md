@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetHandler Method
 Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetHandler (   
     [in]  IUnknown    *pUnk  
 );  
@@ -48,5 +46,6 @@ HRESULT SetHandler (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

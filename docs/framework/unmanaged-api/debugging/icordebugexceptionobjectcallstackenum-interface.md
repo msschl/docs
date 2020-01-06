@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 39dffa18-c71b-48c4-b11d-e814631ab1e9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionObjectCallStackEnum Interface
 Provides an enumerator for call stack information that is embedded in an exception object. This interface is a subclass of the ICorDebugEnum interface.  
@@ -41,5 +39,6 @@ Provides an enumerator for call stack information that is embedded in an excepti
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

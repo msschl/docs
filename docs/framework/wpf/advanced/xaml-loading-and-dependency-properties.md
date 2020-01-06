@@ -12,11 +12,10 @@ ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
 ---
 # XAML Loading and Dependency Properties
 The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] implementation of its [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor is inherently dependency property aware. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor uses property system methods for dependency properties when loading binary [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and processing attributes that are dependency properties. This effectively bypasses the property wrappers. When you implement custom dependency properties, you must account for this behavior and should avoid placing any other code in your property wrapper other than the property system methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>.  
-  
-  
+
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](dependency-properties-overview.md) and [Custom Dependency Properties](custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](xaml-overview-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
+ This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](dependency-properties-overview.md) and [Custom Dependency Properties](custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
   
 <a name="implementation"></a>   
 ## The WPF XAML Loader Implementation, and Performance  
@@ -36,8 +35,9 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
  [!code-vb[WPFAquariumSln#AGWithWrapper](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
 ## See also
+
 - [Dependency Properties Overview](dependency-properties-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Dependency Property Metadata](dependency-property-metadata.md)
 - [Collection-Type Dependency Properties](collection-type-dependency-properties.md)
 - [Dependency Property Security](dependency-property-security.md)

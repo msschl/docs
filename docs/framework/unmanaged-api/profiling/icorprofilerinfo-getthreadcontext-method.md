@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 79446216-4b8b-484c-8fe3-e87dbf9df2fd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetThreadContext Method
 Gets the context identity currently associated with the specified thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in]  ThreadID  threadId,  
     [out] ContextID *pContextId);  
@@ -46,4 +44,5 @@ HRESULT GetThreadContext(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

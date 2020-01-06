@@ -1,5 +1,5 @@
 ---
-title: "Interfaces (Visual Basic)"
+title: "Interfaces"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, interfaces"
@@ -13,13 +13,13 @@ ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
   
  There are several other reasons why you might want to use interfaces instead of class inheritance:  
   
--   Interfaces are better suited to situations in which your applications require many possibly unrelated object types to provide certain functionality.  
+- Interfaces are better suited to situations in which your applications require many possibly unrelated object types to provide certain functionality.  
   
--   Interfaces are more flexible than base classes because you can define a single implementation that can implement multiple interfaces.  
+- Interfaces are more flexible than base classes because you can define a single implementation that can implement multiple interfaces.  
   
--   Interfaces are better in situations in which you do not have to inherit implementation from a base class.  
+- Interfaces are better in situations in which you do not have to inherit implementation from a base class.  
   
--   Interfaces are useful when you cannot use class inheritance. For example, structures cannot inherit from classes, but they can implement interfaces.  
+- Interfaces are useful when you cannot use class inheritance. For example, structures cannot inherit from classes, but they can implement interfaces.  
   
 ## Declaring Interfaces  
  Interface definitions are enclosed within the `Interface` and `End Interface` statements. Following the `Interface` statement, you can add an optional `Inherits` statement that lists one or more inherited interfaces. The `Inherits` statements must precede all other statements in the declaration except comments. The remaining statements in the interface definition should be `Event`, `Sub`, `Function`, `Property`, `Interface`, `Class`, `Structure`, and `Enum` statements. Interfaces cannot contain any implementation code or statements associated with implementation code, such as `End Sub` or `End Property`.  
@@ -27,7 +27,7 @@ ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
  In a namespace, interface statements are `Friend` by default, but they can also be explicitly declared as `Public` or `Friend`. Interfaces defined within classes, modules, interfaces, and structures are `Public` by default, but they can also be explicitly declared as `Public`, `Friend`, `Protected`, or `Private`.  
   
 > [!NOTE]
->  The `Shadows` keyword can be applied to all interface members. The `Overloads` keyword can be applied to `Sub`, `Function`, and `Property` statements declared in an interface definition. In addition, `Property` statements can have the `Default`, `ReadOnly`, or `WriteOnly` modifiers. None of the other modifiers—`Public`, `Private`, `Friend`, `Protected`, `Shared`, `Overrides`, `MustOverride`, or `Overridable`—are allowed. For more information, see [Declaration Contexts and Default Access Levels](../../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
+> The `Shadows` keyword can be applied to all interface members. The `Overloads` keyword can be applied to `Sub`, `Function`, and `Property` statements declared in an interface definition. In addition, `Property` statements can have the `Default`, `ReadOnly`, or `WriteOnly` modifiers. None of the other modifiers—`Public`, `Private`, `Friend`, `Protected`, `Shared`, `Overrides`, `MustOverride`, or `Overridable`—are allowed. For more information, see [Declaration Contexts and Default Access Levels](../../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).  
   
  For example, the following code defines an interface with one function, one property, and one event.  
   

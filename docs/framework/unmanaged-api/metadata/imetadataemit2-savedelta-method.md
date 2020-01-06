@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SaveDelta Method
 Saves changes from the current edit-and-continue session to the specified file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDelta (  
     [in] LPCWSTR     szFile,   
     [in] DWORD       dwSaveFlags  
@@ -47,5 +45,6 @@ HRESULT SaveDelta (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

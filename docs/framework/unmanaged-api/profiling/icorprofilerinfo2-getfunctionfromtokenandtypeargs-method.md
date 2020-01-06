@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ce8f6aa6-4ebf-4a86-b429-4bbc8af41a8f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs Method
 Gets the `FunctionID` of a function by using the specified metadata token, containing class, and `ClassID` values of any type arguments.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromTokenAndTypeArgs(  
     [in] ModuleID moduleID,  
     [in] mdMethodDef funcDef,  
@@ -69,5 +67,6 @@ HRESULT GetFunctionFromTokenAndTypeArgs(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

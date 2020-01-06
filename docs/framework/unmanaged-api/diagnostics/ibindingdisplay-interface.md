@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3367166f-31fe-43d0-8107-2e786f984e50
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IBindingDisplay Interface
 Provides methods that display current binding information about the running application.  
@@ -37,4 +35,5 @@ Provides methods that display current binding information about the running appl
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

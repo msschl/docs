@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostBindingPolicyManager::ModifyApplicationPolicy Method
 Modifies the binding policy for the specified assembly, and creates a new version of the policy.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT  ModifyApplicationPolicy (  
     [in] LPCWSTR     pwzSourceAssemblyIdentity,   
     [in] LPCWSTR     pwzTargetAssemblyIdentity,  
@@ -83,4 +81,5 @@ HRESULT  ModifyApplicationPolicy (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)

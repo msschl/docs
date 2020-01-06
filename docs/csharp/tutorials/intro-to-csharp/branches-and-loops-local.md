@@ -9,13 +9,19 @@ ms.custom: mvc
 
 This tutorial teaches you how to write code that examines variables and changes the execution path based on those variables. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that explore branching and looping constructs in C#. These lessons teach you the fundamentals of the C# language.
 
-This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Make decisions using the `if` statement
 
-Create a directory named **branches-tutorial**. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
+Create a directory named *branches-tutorial*. Make that the current directory and run the following command:
 
-Open **Program.cs** in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
+```dotnetcli
+dotnet new console -n BranchesAndLoops -o .
+```
+
+This command creates a new .NET Core console application in the current directory.
+
+Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 
 ```csharp
 int a = 5;
@@ -96,17 +102,19 @@ You can test more complicated conditions. Add the following code in your `Main` 
 
 ```csharp
 int c = 4;
-if ((a + b + c > 10) && (a > b))
+if ((a + b + c > 10) && (a == b))
 {
     Console.WriteLine("The answer is greater than 10");
-    Console.WriteLine("And the first number is greater than the second");
+    Console.WriteLine("And the first number is equal to the second");
 }
 else
 {
     Console.WriteLine("The answer is not greater than 10");
-    Console.WriteLine("Or the first number is not greater than the second");
+    Console.WriteLine("Or the first number is not equal to the second");
 }
 ```
+
+The `==` symbol tests for *equality*. Using `==` distinguishes the test for equality from assignment, which you saw in `a = 5`.
 
 The `&&` represents "and". It means both conditions must be true to execute
 the statement in the true branch.  These examples also show that you can have multiple
@@ -115,17 +123,19 @@ statements in each conditional branch, provided you enclose them in `{` and `}`.
 You can also use  `||` to represent "or". Add the following code after what you've written so far:
 
 ```csharp
-if ((a + b + c > 10) || (a > b))
+if ((a + b + c > 10) || (a == b))
 {
     Console.WriteLine("The answer is greater than 10");
-    Console.WriteLine("Or the first number is greater than the second");
+    Console.WriteLine("Or the first number is equal to the second");
 }
 else
 {
     Console.WriteLine("The answer is not greater than 10");
-    Console.WriteLine("And the first number is not greater than the second");
+    Console.WriteLine("And the first number is not equal to the second");
 }
 ```
+
+Modify the values of `a`, `b`, and `c` and switch between `&&` and `||` to explore. You'll gain more understanding of how the `&&` and `||` operators work.
 
 You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `ExploreIf` and write a new `Main` method that calls `ExploreIf`. When you have finished, your code should look like this:
 
@@ -149,6 +159,7 @@ namespace BranchesAndLoops
                 Console.WriteLine("The answer is not greater than 10");
             }
 
+            int c = 4;
             if ((a + b + c > 10) && (a > b))
             {
                 Console.WriteLine("The answer is greater than 10");
@@ -222,7 +233,7 @@ following the `while`. The `do` ... `while` loop executes the
 code first, and then checks the condition. The do while loop is shown in the following code:
 
 ```csharp
-counter = 0;
+int counter = 0;
 do
 {
     Console.WriteLine($"Hello World! The counter is {counter}");
@@ -237,7 +248,7 @@ This `do` loop and the earlier `while` loop produce the same output.
 The **for** loop is commonly used in C#. Try this code in your Main() method:
 
 ```csharp
-for(int index = 0; index < 10; index++)
+for (int index = 0; index < 10; index++)
 {
     Console.WriteLine($"Hello World! The index is {index}");
 }
@@ -282,7 +293,7 @@ Try it yourself. Then check how you did. You should get 63 for an answer. You ca
 You've completed the "branches and loops" tutorial.
 
 You can continue with
-the [String interpolation](interpolated-strings-local.md) tutorial in
+the [Arrays and collections](arrays-and-collections.md) tutorial in
 your own development environment.
 
 You can learn more about these concepts in these topics:

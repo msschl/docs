@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method
 Gets a value that indicates whether the supplied name matches the name of an assembly in the list.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsStringAssemblyReferenceInList (  
     [in] LPCWSTR pwzAssemblyName  
 );  
@@ -51,6 +49,7 @@ HRESULT IsStringAssemblyReferenceInList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "*= Operator (Visual Basic)"
+title: "*= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.*="
@@ -16,7 +16,7 @@ Multiplies the value of a variable or property by the value of an expression and
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty *= expression  
 ```  
   
@@ -41,6 +41,7 @@ variableorproperty *= expression
  [!code-vb[VbVbalrOperators#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#5)]  
   
 ## See also
+
 - [* Operator](../../../visual-basic/language-reference/operators/multiplication-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

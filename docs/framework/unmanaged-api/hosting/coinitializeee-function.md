@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7e42a928-5068-4ba6-b8c3-806551a01fa8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoInitializeEE Function
-Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Use the [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method instead.  
+Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the .NET Framework 4. Use the [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CoInitializeEE (  
    [in] DWORD fFlags  
 );  
@@ -55,4 +53,5 @@ HRESULT CoInitializeEE (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

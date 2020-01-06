@@ -1,5 +1,5 @@
 ---
-title: "Operators Summary (Visual Basic)"
+title: "Operators Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], about operators [Visual Basic]"
@@ -20,5 +20,6 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Miscellaneous operations|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md), [Await](../../../visual-basic/language-reference/operators/await-operator.md), [GetType](../../../visual-basic/language-reference/operators/gettype-operator.md)|  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

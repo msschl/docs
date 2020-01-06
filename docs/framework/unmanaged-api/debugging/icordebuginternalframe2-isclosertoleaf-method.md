@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2::IsCloserToLeaf Method
 Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,  
                        [out] BOOL * pIsCloser);  
 ```  
@@ -57,6 +55,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugInternalFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

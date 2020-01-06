@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2868dfec-c992-4606-88bb-a8e0b6b18271
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataInfo::GetFileMapping Method
 Gets the memory region of the mapped file, and the type of mapping.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileMapping (  
     [out] const void           **ppvData,   
     [out] ULONGLONG            *pcbData,   
@@ -68,5 +66,6 @@ HRESULT GetFileMapping (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [IMetaDataInfo Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-interface.md)
 - [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)

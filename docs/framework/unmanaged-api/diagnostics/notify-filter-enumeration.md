@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # NOTIFY_FILTER Enumeration
 Identifies callbacks for debugger functions. For more information, see the [INotifySource2::SetNotifyFilter](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-setnotifyfilter-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 enum tagNOTIFY_FILTER  
 {  
     NOTIFY_FILTER_ONSYNCCALLOUT    = 0x1,  
@@ -51,4 +49,5 @@ enum tagNOTIFY_FILTER
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

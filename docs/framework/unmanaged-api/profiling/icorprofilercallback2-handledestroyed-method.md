@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::HandleDestroyed Method
 Notifies the code profiler that a garbage collection handle has been destroyed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HandleDestroyed(  
     [in] GCHandleID handleId);  
 ```  
@@ -42,5 +40,6 @@ HRESULT HandleDestroyed(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 74847c35-7ca1-466a-b750-b25e7b03d100
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorDeleteTimer Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorDeleteTimer (  
     [in]  HANDLE Timer,  
     [in]  HANDLE CompletionEvent,  
@@ -41,4 +39,5 @@ HRESULT CorDeleteTimer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)

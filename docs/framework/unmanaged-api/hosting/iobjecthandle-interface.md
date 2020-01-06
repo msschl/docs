@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 436683ef-9849-4b24-89a9-28c06d148dce
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IObjectHandle Interface
 Provides a method for unwrapping marshal-by-value objects from indirection.  
@@ -36,4 +34,5 @@ Provides a method for unwrapping marshal-by-value objects from indirection.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

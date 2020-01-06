@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 476feeac-e8e9-46cf-9f8d-be103181d0ab
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameBuilder::OpenGenericArgument Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenGenericArgument ( );  
 ```  
   
@@ -37,4 +35,5 @@ HRESULT OpenGenericArgument ( );
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

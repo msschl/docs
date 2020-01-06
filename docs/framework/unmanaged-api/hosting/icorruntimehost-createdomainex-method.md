@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1bdde382-f8ba-4cc8-94b2-d1ac919c585e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CreateDomainEx Method
 Creates an application domain. The caller receives an interface pointer, of type <xref:System._AppDomain>, to an instance of type <xref:System.AppDomain?displayProperty=nameWithType>. This method allows the caller to pass an IAppDomainSetup instance to configure additional features of the returned <xref:System._AppDomain> instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainEx (  
     [in] LPCWSTR     pwzFriendlyName,  
     [in] IUnknown*   pSetup,  
@@ -67,6 +65,7 @@ HRESULT CreateDomainEx (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - <xref:System.IAppDomainSetup?displayProperty=nameWithType>

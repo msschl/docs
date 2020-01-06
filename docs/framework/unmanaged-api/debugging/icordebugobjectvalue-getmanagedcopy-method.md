@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 300af43f-b3eb-4ce5-9ead-30dbfc5fbcc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::GetManagedCopy Method
 `GetManagedCopy` is obsolete. Do not call this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManagedCopy (  
     [out] IUnknown           **ppObject  
 );  
@@ -33,5 +31,3 @@ HRESULT GetManagedCopy (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

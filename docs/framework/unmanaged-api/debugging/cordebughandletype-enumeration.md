@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 84296b55-c2c5-424c-ac9c-8e28e2895945
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugHandleType Enumeration
 Indicates the handle type.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugHandleType {  
     HANDLE_STRONG                  = 1,  
     HANDLE_WEAK_TRACK_RESURRECTION = 2  
@@ -46,4 +44,5 @@ typedef enum CorDebugHandleType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

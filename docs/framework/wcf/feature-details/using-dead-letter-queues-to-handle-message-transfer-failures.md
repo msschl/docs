@@ -13,29 +13,29 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
  Generally, applications write compensation logic to read messages from the dead-letter queue and failure reasons. The compensation logic depends on the cause of the failure. For example, in the case of authentication failure, you can correct the certificate attached with the message and resend the message. If delivery failed because the target queue quota was reached, you can reattempt delivery in the hope that the quota problem was resolved.  
   
- Most queuing systems have a system-wide dead-letter queue where all failed messages from that system are stored. Message Queuing (MSMQ) provides two system-wide dead-letter queues: a transactional system-wide dead-letter queue that stores messages that failed delivery to the transactional queue and a non-transactional system-wide dead-letter queue that stores messages that failed delivery to the non-transactional queue. If two clients are sending messages to two different services, and therefore different queues in WCF are sharing the same MSMQ service to send, then it is possible to have a mix of messages in the system dead-letter queue. This is not always optimal. In several cases (security, for example), you may not want one client to read another client's messages from a dead-letter queue. A shared dead-letter queue also requires clients to browse through the queue to find a message that they sent, which can be prohibitively expensive based on the number of messages in the dead-letter queue. Therefore, in WCF`NetMsmqBinding`, `MsmqIntegrationBinding,` and MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] provide a custom dead-letter queue (sometimes referred to as an application-specific dead-letter queue).  
+ Most queuing systems have a system-wide dead-letter queue where all failed messages from that system are stored. Message Queuing (MSMQ) provides two system-wide dead-letter queues: a transactional system-wide dead-letter queue that stores messages that failed delivery to the transactional queue and a non-transactional system-wide dead-letter queue that stores messages that failed delivery to the non-transactional queue. If two clients are sending messages to two different services, and therefore different queues in WCF are sharing the same MSMQ service to send, then it is possible to have a mix of messages in the system dead-letter queue. This is not always optimal. In several cases (security, for example), you may not want one client to read another client's messages from a dead-letter queue. A shared dead-letter queue also requires clients to browse through the queue to find a message that they sent, which can be prohibitively expensive based on the number of messages in the dead-letter queue. Therefore, in WCF`NetMsmqBinding`, `MsmqIntegrationBinding,` and MSMQ on Windows Vista provide a custom dead-letter queue (sometimes referred to as an application-specific dead-letter queue).  
   
  The custom dead-letter queue provides isolation between clients that share the same MSMQ service to send messages.  
   
- On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], Windows Communication Foundation (WCF) provides a system-wide dead-letter queue for all queued client applications. On [!INCLUDE[wv](../../../../includes/wv-md.md)], WCF provides a dead-letter queue for each queued client application.  
+ On Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], Windows Communication Foundation (WCF) provides a system-wide dead-letter queue for all queued client applications. On Windows Vista, WCF provides a dead-letter queue for each queued client application.  
   
 ## Specifying Use of the Dead-Letter Queue  
  A dead-letter queue is in the queue manager of the sending application. It stores messages that have expired or that have failed transfer or delivery.  
   
  The binding has the following dead-letter queue properties:  
   
--   <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A>  
+- <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A>  
   
--   <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>  
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A>  
   
 ## Reading Messages from the Dead-Letter Queue  
  An application that reads messages out of a dead-letter queue is similar to a WCF service that reads from an application queue, except for the following minor differences:  
   
--   To read messages from a system transactional dead-letter queue, the Uniform Resource Identifier (URI) must be of the form: net.msmq://localhost/system$;DeadXact.  
+- To read messages from a system transactional dead-letter queue, the Uniform Resource Identifier (URI) must be of the form: net.msmq://localhost/system$;DeadXact.  
   
--   To read messages from a system non-transactional dead-letter queue, the URI must be of the form: net.msmq://localhost/system$;DeadLetter.  
+- To read messages from a system non-transactional dead-letter queue, the URI must be of the form: net.msmq://localhost/system$;DeadLetter.  
   
--   To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
+- To read messages from a custom dead-letter queue, the URI must be of the form:net.msmq://localhost/private/\<*custom-dlq-name*> where *custom-dlq-name* is the name of the custom dead-letter queue.  
   
  For more information about how to address queues, see [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md).  
   
@@ -55,19 +55,16 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
  [!code-vb[S_DeadLetter#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/client.vb#1)]  
   
  The following is code for the client configuration file.  
-  
-  
-  
+
  The following is code for a service processing messages from a dead-letter queue.  
   
  [!code-csharp[S_DeadLetter#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_deadletter/cs/dlservice.cs#3)]
  [!code-vb[S_DeadLetter#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_deadletter/vb/dlservice.vb#3)]  
   
  The following is code for the dead-letter queue service configuration file.  
-  
-  
-  
+
 ## See also
+
 - [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
 - [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)
 - [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 0b69f945-263a-4e11-8512-89d27f6ea296
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule3 Interface
 Creates a symbol reader for a dynamic module.  
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugModule3 : IUnknown  
 {  
     HRESULT CreateReaderForInMemorySymbols  
@@ -43,7 +41,7 @@ interface ICorDebugModule3 : IUnknown
  This interface logically extends the "ICorDebugModule" and "ICorDebugModule2" interfaces.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,6 +53,7 @@ interface ICorDebugModule3 : IUnknown
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

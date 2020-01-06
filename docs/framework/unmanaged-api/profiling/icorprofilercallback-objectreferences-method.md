@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dd5e9b64-b4a3-4ba6-9be6-ddb540f4ffcf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectReferences Method
 Notifies the profiler about objects in memory that are being referenced by the specified object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectReferences(  
     [in]  ObjectID objectId,  
     [in]  ClassID  classId,  
@@ -63,4 +61,5 @@ HRESULT ObjectReferences(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

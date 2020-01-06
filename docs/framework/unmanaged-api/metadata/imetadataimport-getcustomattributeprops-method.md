@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6eefb243-a281-41c1-bcdc-7e17513bc446
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetCustomAttributeProps Method
 Gets the value of the custom attribute, given its metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomAttributeProps (  
    [in]            mdCustomAttribute   cv,  
    [out, optional] mdToken             *ptkObj,  
@@ -62,5 +60,6 @@ HRESULT GetCustomAttributeProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

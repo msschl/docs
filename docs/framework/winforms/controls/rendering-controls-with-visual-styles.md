@@ -12,36 +12,36 @@ helpviewer_keywords:
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
 ---
 # Rendering Controls with Visual Styles
-The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides support for rendering controls and other Windows user interface (UI) elements using visual styles in operating systems that support them. This topic discusses the several levels of support in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] for rendering controls and other UI elements with the current visual style of the operating system.  
+The .NET Framework provides support for rendering controls and other Windows user interface (UI) elements using visual styles in operating systems that support them. This topic discusses the several levels of support in the .NET Framework for rendering controls and other UI elements with the current visual style of the operating system.  
   
 ## Rendering Classes for Common Controls  
  Rendering a control refers to drawing the user interface of a control. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace provides the <xref:System.Windows.Forms.ControlPaint> class for rendering some common Windows Forms controls. However, this class draws controls in the classic Windows style, which can make it difficult to maintain a consistent UI experience when drawing custom controls in applications with visual styles enabled.  
   
- The [!INCLUDE[dnprdnlong](../../../../includes/dnprdnlong-md.md)] includes classes in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace that render the parts and states of common controls with visual styles. Each of these classes includes `static` methods for drawing the control or parts of the control in a particular state with the current visual style of the operating system.  
+ The .NET Framework 2.0 includes classes in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace that render the parts and states of common controls with visual styles. Each of these classes includes `static` methods for drawing the control or parts of the control in a particular state with the current visual style of the operating system.  
   
  Some of these classes are designed to draw the related control regardless of whether visual styles are available. If visual styles are enabled, then the class members will draw the related control with visual styles; if visual styles are disabled, then the class members will draw the control in the classic Windows style. These classes include:  
   
--   <xref:System.Windows.Forms.ButtonRenderer>  
+- <xref:System.Windows.Forms.ButtonRenderer>  
   
--   <xref:System.Windows.Forms.CheckBoxRenderer>  
+- <xref:System.Windows.Forms.CheckBoxRenderer>  
   
--   <xref:System.Windows.Forms.GroupBoxRenderer>  
+- <xref:System.Windows.Forms.GroupBoxRenderer>  
   
--   <xref:System.Windows.Forms.RadioButtonRenderer>  
+- <xref:System.Windows.Forms.RadioButtonRenderer>  
   
  Other classes can only draw the related control when visual styles are available, and their members will throw an exception if visual styles are disabled. These classes include:  
   
--   <xref:System.Windows.Forms.ComboBoxRenderer>  
+- <xref:System.Windows.Forms.ComboBoxRenderer>  
   
--   <xref:System.Windows.Forms.ProgressBarRenderer>  
+- <xref:System.Windows.Forms.ProgressBarRenderer>  
   
--   <xref:System.Windows.Forms.ScrollBarRenderer>  
+- <xref:System.Windows.Forms.ScrollBarRenderer>  
   
--   <xref:System.Windows.Forms.TabRenderer>  
+- <xref:System.Windows.Forms.TabRenderer>  
   
--   <xref:System.Windows.Forms.TextBoxRenderer>  
+- <xref:System.Windows.Forms.TextBoxRenderer>  
   
--   <xref:System.Windows.Forms.TrackBarRenderer>  
+- <xref:System.Windows.Forms.TrackBarRenderer>  
   
  For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](how-to-use-a-control-rendering-class.md).  
   
@@ -55,7 +55,7 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
  For more information about using <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>, see [How to: Render a Visual Style Element](how-to-render-a-visual-style-element.md).  
   
 ## Enabling Visual Styles  
- To enable visual styles for an application written for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, programmers must include an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls. Applications built with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.1 or later can use the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Application> class.  
+ To enable visual styles for an application written for the .NET Framework version 1.0, programmers must include an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls. Applications built with the .NET Framework version 1.1 or later can use the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Application> class.  
   
 ## Checking for Visual Styles Support  
  The <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> property of the <xref:System.Windows.Forms.Application> class indicates whether the current application is drawing controls with visual styles. When painting a custom control, you can check the value of <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to determine whether you should render your control with or without visual styles. The following table lists the four conditions that must exist for <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to return `true`.  
@@ -70,7 +70,8 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
  To determine when a user enables or disables visual styles, or switches from one visual style to another, check for the <xref:Microsoft.Win32.UserPreferenceCategory.VisualStyle?displayProperty=nameWithType> value in the handlers for the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging?displayProperty=nameWithType> or <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> events.  
   
 > [!IMPORTANT]
->  If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
+> If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
   
 ## See also
+
 - [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md)

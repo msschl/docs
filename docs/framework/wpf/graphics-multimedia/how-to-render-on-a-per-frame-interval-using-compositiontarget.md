@@ -15,7 +15,7 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  <xref:System.Windows.Media.CompositionTarget> is a static class which represents the display surface on which your application is being drawn. The <xref:System.Windows.Media.CompositionTarget.Rendering> event is raised each time the application's scene is drawn. The rendering frame rate is the number of times the scene is drawn per second.  
   
 > [!NOTE]
->  For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://go.microsoft.com/fwlink/?LinkID=160045).  
+> For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://go.microsoft.com/fwlink/?LinkID=160045).  
   
 ## Example  
  The <xref:System.Windows.Media.CompositionTarget.Rendering> event fires during the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering process. The following example shows how you register an <xref:System.EventHandler> delegate to the static <xref:System.Windows.Media.CompositionTarget.Rendering> method on <xref:System.Windows.Media.CompositionTarget>.  
@@ -35,5 +35,6 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
  Adding or removing a rendering <xref:System.EventHandler> delegate while the event is firing will be delayed until after the event is finished firing. This is consistent with how <xref:System.MulticastDelegate>-based events are handled in the Common Language Runtime (CLR). Also note that rendering events are not guaranteed to be called in any particular order. If you have multiple <xref:System.EventHandler> delegates that rely on a particular order, you should register a single <xref:System.Windows.Media.CompositionTarget.Rendering> event and multiplex the delegates in the correct order yourself.  
   
 ## See also
+
 - <xref:System.Windows.Media.CompositionTarget>
 - [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

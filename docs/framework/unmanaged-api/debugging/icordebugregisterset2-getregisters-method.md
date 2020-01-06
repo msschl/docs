@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dbc498a8-ba3f-42f2-bdd9-b623c77a1019
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet2::GetRegisters Method
 Gets the value of each register (for the platform on which code is currently executing) that is specified by the given bit mask.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
     [in] ULONG32 maskCount,  
     [in, size_is(maskCount)] BYTE mask[],  
@@ -64,5 +62,6 @@ HRESULT GetRegisters (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)

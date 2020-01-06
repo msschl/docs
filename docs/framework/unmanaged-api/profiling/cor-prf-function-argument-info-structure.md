@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_INFO Structure
 Represents a function's arguments, in left-to-right order.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {  
     ULONG numRanges;  
     ULONG totalArgumentSize;  
@@ -55,4 +53,5 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)

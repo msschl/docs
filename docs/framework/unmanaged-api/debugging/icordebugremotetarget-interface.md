@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: bd9936a6-cc24-4869-8761-0988664464e6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemoteTarget Interface
 Provides methods that enable developers to debug Silverlight-based applications in the common language runtime (CLR) environment.  
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemoteTarget  : IUnknown  
 {  
     HRESULT GetHostName (  
@@ -54,6 +52,7 @@ interface ICorDebugRemoteTarget  : IUnknown
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

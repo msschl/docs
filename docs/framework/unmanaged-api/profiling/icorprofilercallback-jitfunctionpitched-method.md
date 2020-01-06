@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 116085df-7a77-404a-afac-d0557a12b986
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITFunctionPitched Method
 Notifies the profiler that a function that has been just-in-time (JIT)-compiled has been removed from memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITFunctionPitched(  
     [in] FunctionID functionId);  
 ```  
@@ -47,4 +45,5 @@ HRESULT JITFunctionPitched(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

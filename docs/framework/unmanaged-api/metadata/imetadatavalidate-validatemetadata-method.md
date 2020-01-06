@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e5ceed11-0f54-4097-8302-883284dddbc1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataValidate::ValidateMetaData Method
 Validates the metadata signatures of the objects in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ValidateMetaData ();  
 ```  
   
@@ -37,4 +35,5 @@ HRESULT ValidateMetaData ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataValidate Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-interface.md)

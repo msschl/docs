@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ffd5d9ec-4564-4200-b625-b306eec0ebd7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModuleBreakpoint::GetModule Method
 Gets an interface pointer to an "ICorDebugModule" that references the module in which this breakpoint is set.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule   **ppModule  
 );  
@@ -43,4 +41,3 @@ HRESULT GetModule (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

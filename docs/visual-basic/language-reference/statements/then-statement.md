@@ -1,5 +1,5 @@
 ---
-title: "Then Statement (Visual Basic)"
+title: "Then Statement"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Then keyword [Visual Basic]"
@@ -16,4 +16,5 @@ Introduces a statement block to be compiled or executed if a tested condition is
  [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

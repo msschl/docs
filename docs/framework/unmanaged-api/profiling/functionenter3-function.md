@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ef782c53-dae7-4990-b4ad-fddb1e690d4e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionEnter3 Function
 Notifies the profiler that control is being passed to a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
@@ -37,9 +35,9 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
   
  The execution engine does not save any registers before calling this function.  
   
--   On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
+- On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
   
--   On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
+- On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -51,6 +49,7 @@ void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [FunctionLeave3](../../../../docs/framework/unmanaged-api/profiling/functionleave3-function.md)
 - [FunctionTailcall3](../../../../docs/framework/unmanaged-api/profiling/functiontailcall3-function.md)
 - [FunctionEnter3WithInfo](../../../../docs/framework/unmanaged-api/profiling/functionenter3withinfo-function.md)

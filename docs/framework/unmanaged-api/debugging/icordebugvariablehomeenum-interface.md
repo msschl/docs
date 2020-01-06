@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c312ae6d-c8dc-48d6-9f1e-ead515c88fdf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHomeEnum Interface
 Provides an enumerator to the local variables and arguments in a function.  
@@ -41,5 +39,6 @@ Provides an enumerator to the local variables and arguments in a function.
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

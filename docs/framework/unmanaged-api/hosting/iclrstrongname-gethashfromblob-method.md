@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f91d0f89-f356-49ac-aafb-50fad963c13d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromBlob Method
 Gets a hash of the assembly at the specified memory address, using the specified hash algorithm.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromBlob (  
     [in]  BYTE    *pbBlob,  
     [in]  DWORD   cchBlob,  
@@ -66,4 +64,5 @@ HRESULT GetHashFromBlob (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

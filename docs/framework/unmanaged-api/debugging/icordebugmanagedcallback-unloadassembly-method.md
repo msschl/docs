@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6734321c-c8a9-401f-a558-cad715ec4a77
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::UnloadAssembly Method
 Notifies the debugger that a common language runtime assembly has been unloaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadAssembly (  
     [in] IcorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugAssembly   *pAssembly  
@@ -50,5 +48,6 @@ HRESULT UnloadAssembly (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [LoadAssembly Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadassembly-method.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

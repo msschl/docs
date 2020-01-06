@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 091c5f32-c160-49e3-a75f-4692e084c8e4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetImageBase Method
 Gets the base memory address of the specified image.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageBase (  
     [in, string] LPCWSTR    imagePath,  
     [out] CLRDATA_ADDRESS   *baseAddress  
@@ -50,4 +48,5 @@ HRESULT GetImageBase (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8a570813-21be-407e-92a6-7ae8de3bc728
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyReferenceList::IsAssemblyReferenceInList Method
 Gets a value that indicates whether the supplied pointer refers to an assembly in the list.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAssemblyReferenceInList (  
     [in] IUnknown *pName  
 );  
@@ -51,6 +49,7 @@ HRESULT IsAssemblyReferenceInList (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)

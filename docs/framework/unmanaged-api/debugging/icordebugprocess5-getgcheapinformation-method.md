@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b9538ceb-230a-4079-9cb2-903dbf5c1848
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetGCHeapInformation Method
 Provides general information about the garbage collection heap, including whether it is currently enumerable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGCHeapInformation(  
     [out] COR_HEAPINFO *pHeapInfo  
 );  
@@ -46,5 +44,6 @@ HRESULT GetGCHeapInformation(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 77cfd347-95c2-4425-b807-4ecc2a8d4578
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::SetMaxThreads Method
 Sets the maximum number of threads that the host can maintain in the thread pool.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMaxThreads (  
     [in] DWORD MaxThreads  
 );  
@@ -58,6 +56,7 @@ HRESULT SetMaxThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool.SetMaxThreads%2A>
 - <xref:System.Threading.ThreadPool>
 - [GetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getmaxthreads-method.md)

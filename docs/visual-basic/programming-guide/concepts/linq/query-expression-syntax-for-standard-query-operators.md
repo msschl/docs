@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax for Standard Query Operators (Visual Basic)"
+title: "Query Expression Syntax for Standard Query Operators"
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
 ---
@@ -37,6 +37,7 @@ Some of the more frequently used standard query operators have dedicated Visual 
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (For more information, see [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md).)|  
   
 ## See also
+
 - <xref:System.Linq.Enumerable>
 - <xref:System.Linq.Queryable>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

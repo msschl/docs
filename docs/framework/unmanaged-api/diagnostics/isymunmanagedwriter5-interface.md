@@ -2,8 +2,6 @@
 title: "ISymUnmanagedWriter5 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 15b8526e-4f5d-475c-a1e3-d8b2d145c879
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedWriter5 Interface
 ISymUnmanagedWriter5 interface.  
@@ -27,5 +25,6 @@ ISymUnmanagedWriter5 interface.
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
 - [ISymUnmanagedWriter4 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0d25f76-0bd5-4aa6-96cf-bfec0e1de28b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetObjectGeneration Method
 Gets the segment of the heap that contains the specified object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectGeneration(  
     [in] ObjectID objectId,  
     [out] COR_PRF_GC_GENERATION_RANGE *range);  
@@ -49,5 +47,6 @@ HRESULT GetObjectGeneration(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

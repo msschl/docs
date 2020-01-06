@@ -16,11 +16,11 @@ ms.assetid: 22cc9da6-b913-4e04-9554-dee443ac5c3a
 On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> control to be the accept button, also known as the default button. Whenever the user presses the ENTER key, the default button is clicked regardless of which other control on the form has the focus.  
   
 > [!NOTE]
->  The exceptions to this are when the control with focus is another button — in that case, the button with the focus will be clicked — or a multiline text box, or a custom control that traps the ENTER key.  
+> The exceptions to this are when the control with focus is another button — in that case, the button with the focus will be clicked — or a multiline text box, or a custom control that traps the ENTER key.  
   
 ### To designate the accept button  
   
-1.  Set the form's <xref:System.Windows.Forms.Form.AcceptButton%2A> property to the appropriate <xref:System.Windows.Forms.Button> control.  
+1. Set the form's <xref:System.Windows.Forms.Form.AcceptButton%2A> property to the appropriate <xref:System.Windows.Forms.Button> control.  
   
     ```vb  
     Private Sub SetDefault(ByVal myDefaultBtn As Button)  
@@ -44,6 +44,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.Form.AcceptButton%2A>
 - [Button Control Overview](button-control-overview-windows-forms.md)
 - [Ways to Select a Windows Forms Button Control](ways-to-select-a-windows-forms-button-control.md)

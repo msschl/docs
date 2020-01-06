@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 429d8fce-b1b1-49d7-895c-28c1c1aa2dbd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugging Interface
 Provides methods that handle loading and unloading modules for debugging.  
@@ -40,5 +38,6 @@ Provides methods that handle loading and unloading modules for debugging.
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

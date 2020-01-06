@@ -1,5 +1,5 @@
 ---
-title: "ByRef (Visual Basic)"
+title: "ByRef"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ByRef"
@@ -22,5 +22,6 @@ Specifies that an argument is passed in such a way that the called procedure can
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Passing Arguments by Value and by Reference](../../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: e709acce-6a17-4346-b38a-467dba567358
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugCreateProcessFlags Enumeration
 Provides additional debugging options that can be used in a call to the [ICorDebug::CreateProcess](../../../../docs/framework/unmanaged-api/debugging/icordebug-createprocess-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugCreateProcessFlags {  
     DEBUG_NO_SPECIAL_OPTIONS    = 0x0000  
 } CorDebugCreateProcessFlags;  
@@ -44,4 +42,5 @@ typedef enum CorDebugCreateProcessFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

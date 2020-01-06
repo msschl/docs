@@ -1,5 +1,5 @@
 ---
-title: "Basic Query Operations (Visual Basic)"
+title: "Basic Query Operations"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data sources [LINQ in Visual Basic]"
@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 ---
 # Basic Query Operations (Visual Basic)
-This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  
+This topic provides a brief introduction to Language-Integrated Query (LINQ) expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  
   
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
@@ -26,7 +26,7 @@ This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/v
  [Walkthrough: Writing Queries in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
   
 ## Specifying the Data Source (From)  
- In a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, the first step is to specify the data source that you want to query. Therefore, the `From` clause in a query always comes first. Query operators select and shape the result based on the type of the source.  
+ In a LINQ query, the first step is to specify the data source that you want to query. Therefore, the `From` clause in a query always comes first. Query operators select and shape the result based on the type of the source.  
   
  [!code-vb[VbLINQBasicOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#1)]  
   
@@ -75,7 +75,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  To select multiple fields from the data source, you have two choices:  
   
--   In the `Select` clause, specify the fields you want to include in the result. The compiler will define an anonymous type that has those fields as its properties. For more information, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
+- In the `Select` clause, specify the fields you want to include in the result. The compiler will define an anonymous type that has those fields as its properties. For more information, see [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).  
   
      Because the returned elements in the following example are instances of an anonymous type, you cannot refer to the type by name elsewhere in your code. The compiler-designated name for the type contains characters that are not valid in normal Visual Basic code. In the following example, the elements in the collection that is returned by the query in `londonCusts4` are instances of an anonymous type  
   
@@ -83,7 +83,7 @@ Where cust.City = "London" Or cust.City = "Paris"
   
      -or-  
   
--   Define a named type that contains the particular fields that you want to include in the result, and create and initialize instances of the type in the `Select` clause. Use this option only if you have to use individual results outside the collection in which they are returned, or if you have to pass them as parameters in method calls. The type of `londonCusts5` in the following example is IEnumerable(Of NamePhone).  
+- Define a named type that contains the particular fields that you want to include in the result, and create and initialize instances of the type in the `Select` clause. Use this option only if you have to use individual results outside the collection in which they are returned, or if you have to pass them as parameters in method calls. The type of `londonCusts5` in the following example is IEnumerable(Of NamePhone).  
   
      [!code-vb[VbLINQBasicOps#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#7)]  
   
@@ -97,7 +97,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  [!code-vb[VbLINQBasicOps#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#9)]  
   
 > [!NOTE]
->  You can run this code with the list of students created in [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md).  
+> You can run this code with the list of students created in [How to: Create a List of Items](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-list-of-items.md).  
   
  The `Join` keyword is equivalent to an `INNER JOIN` in SQL. It combines two collections based on matching key values between elements in the two collections. The query returns all or part of the collection elements that have matching key values. For example, the following code duplicates the action of the previous implicit join.  
   
@@ -147,6 +147,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  For more information about `Group By`, see [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).  
   
 ## See also
+
 - <xref:System.Collections.Generic.IEnumerable%601>
 - [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Queries](../../../../visual-basic/language-reference/queries/index.md)

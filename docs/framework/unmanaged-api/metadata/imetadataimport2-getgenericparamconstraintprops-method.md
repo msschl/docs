@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c5fee4a0-b132-4e5e-8730-e586ce314b9a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::GetGenericParamConstraintProps Method
 Gets the metadata associated with the generic parameter constraint represented by the specified constraint token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGenericParamConstraintProps (  
    [in]  mdGenericParamConstraint  gpc,  
    [out] mdGenericParam            *ptGenericParam,  
@@ -51,5 +49,6 @@ HRESULT GetGenericParamConstraintProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)

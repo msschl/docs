@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c17105bb-b49f-434e-8f9b-77f8c85b9220
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject::GetSerializedBuffer Method
 Gets the string representation of this managed object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSerializedBuffer (  
     [out] BSTR *pBSTR  
 );  
@@ -46,4 +44,5 @@ HRESULT GetSerializedBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IManagedObject Interface](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-interface.md)

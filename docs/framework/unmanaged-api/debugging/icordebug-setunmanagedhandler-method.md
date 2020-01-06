@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6b546be4-f86d-4536-8cfc-1d08e5066eb6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::SetUnmanagedHandler Method
 Specifies the event handler object for unmanaged events.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmanagedHandler (  
     [in] ICorDebugUnmanagedCallback  *pCallback  
 );  
@@ -46,4 +44,5 @@ HRESULT SetUnmanagedHandler (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

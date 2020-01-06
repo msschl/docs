@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Keyboard Object (Visual Basic)"
+title: "My.Computer.Keyboard Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Keyboard object"
@@ -21,4 +21,5 @@ Provides properties for accessing the current state of the keyboard, such as wha
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

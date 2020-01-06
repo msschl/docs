@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 40594774-5105-4187-a06b-4e7f50bada3c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::GetContext Method
 `GetContext` is not implemented in this version of the .NET Framework.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext (  
     [out] ICorDebugContext   **ppContext  
 );  
@@ -33,5 +31,3 @@ HRESULT GetContext (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

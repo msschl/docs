@@ -37,30 +37,24 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  [How to: Group Items in a Windows Forms ListView Control](how-to-group-items-in-a-windows-forms-listview-control.md)  
  Describes how to create groups for categorized display and how to assign items to each group.  
   
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
-  
  [How to: Enable Tile View in a Windows Forms ListView Control](how-to-enable-tile-view-in-a-windows-forms-listview-control.md)  
  Describes how to display items as tiles, each of which is comprised of a large icon and multiple lines of text.  
-  
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
   
  [How to: Display an Insertion Mark in a Windows Forms ListView Control](how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)  
  Describes how to implement user-feedback for drag-and-drop operations in which an insertion mark indicates the drop location for each mouse-pointer position.  
   
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
-  
  [How to: Add Search Capabilities to a ListView Control](how-to-add-search-capabilities-to-a-listview-control.md)  
  Describes how to programmatically find an item using either text search or screen coordinates.  
   
--   [How to: Enable Tile View in a Windows Forms ListView Control Using the Designer](enable-tile-view-in-a-wf-listview-control-using-the-designer.md)  
+- [How to: Enable Tile View in a Windows Forms ListView Control Using the Designer](enable-tile-view-in-a-wf-listview-control-using-the-designer.md)  
   
--   [How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer](add-and-remove-items-with-wf-listview-control-using-the-designer.md)  
+- [How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer](add-and-remove-items-with-wf-listview-control-using-the-designer.md)  
   
--   [How to: Add Columns to the Windows Forms ListView Control Using the Designer](how-to-add-columns-to-the-windows-forms-listview-control-using-the-designer.md)  
+- [How to: Add Columns to the Windows Forms ListView Control Using the Designer](how-to-add-columns-to-the-windows-forms-listview-control-using-the-designer.md)  
   
--   [How to: Group Items in a Windows Forms ListView Control Using the Designer](how-to-group-items-in-a-windows-forms-listview-control-using-the-designer.md)  
+- [How to: Group Items in a Windows Forms ListView Control Using the Designer](how-to-group-items-in-a-windows-forms-listview-control-using-the-designer.md)  
   
--   [Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer](creating-an-explorer-style-interface-with-the-listview-and-treeview.md)  
+- [Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer](creating-an-explorer-style-interface-with-the-listview-and-treeview.md)  
   
 ## Reference  
  <xref:System.Windows.Forms.ListView> class  
@@ -77,4 +71,5 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  Gives instructions for laying out a Windows Form with multiple panes.  
   
 ## See also
+
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

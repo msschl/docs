@@ -15,12 +15,9 @@ ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
 # How to: Display an Insertion Mark in a Windows Forms ListView Control
 The insertion mark in the <xref:System.Windows.Forms.ListView> control shows users the point where dragged items will be inserted. When a user drags an item to a point between two other items, the insertion mark shows the item's expected new location.  
   
-> [!NOTE]
->  The insertion mark feature is available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to the insertion mark has no effect and the insertion mark will not appear. For more information, see <xref:System.Windows.Forms.ListViewInsertionMark>.  
-  
  The following image shows an insertion mark:  
   
- ![A ListView Insertion Mark](./media/listviewinsertion.gif "ListViewInsertion")  
+ ![Screenshot that shows a ListView insertion mark.](./media/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control/listview-insertion-mark.gif "ListViewInsertion")  
   
  The following code example demonstrates how to use this feature.  
   
@@ -32,11 +29,10 @@ The insertion mark in the <xref:System.Windows.Forms.ListView> control shows use
 ## Compiling the Code  
  This example requires:  
   
--   References to the System and System.Windows.Forms assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System and System.Windows.Forms assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ListView>
 - <xref:System.Windows.Forms.ListView.InsertionMark%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ListViewInsertionMark>

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote Interface
 Provides the ability to launch or attach a managed debugger to a remote target process.  
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemote : IUnknown  
 {  
     HRESULT CreateProcessEx  
@@ -72,6 +70,7 @@ interface ICorDebugRemote : IUnknown
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

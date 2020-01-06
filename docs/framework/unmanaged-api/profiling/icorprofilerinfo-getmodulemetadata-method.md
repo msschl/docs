@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetModuleMetaData Method
 Gets a metadata interface instance that maps to the specified module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleMetaData(  
     [in]  ModuleID moduleId,  
     [in]  DWORD    dwOpenFlags,  
@@ -59,4 +57,5 @@ HRESULT GetModuleMetaData(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

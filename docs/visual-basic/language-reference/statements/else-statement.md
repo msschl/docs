@@ -1,5 +1,5 @@
 ---
-title: "Else Statement (Visual Basic)"
+title: "Else Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.else"
@@ -20,4 +20,5 @@ Introduces a group of statements to be run or compiled if no other conditional g
  [#If...Then...#Else Directive](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

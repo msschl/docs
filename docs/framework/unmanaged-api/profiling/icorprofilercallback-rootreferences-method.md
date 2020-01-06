@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dbdf853b-d1a4-4828-8ef7-53d121d8e6ae
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RootReferences Method
 Notifies the profiler with information about root references after garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RootReferences(  
     [in] ULONG    cRootRefs,  
     [in, size_is(cRootRefs)] ObjectID rootRefIds[] );  
@@ -53,4 +51,5 @@ HRESULT RootReferences(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

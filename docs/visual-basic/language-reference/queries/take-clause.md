@@ -1,5 +1,5 @@
 ---
-title: "Take Clause (Visual Basic)"
+title: "Take Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryTake"
@@ -14,7 +14,7 @@ Returns a specified number of contiguous elements from the start of a collection
   
 ## Syntax  
   
-```  
+```vb  
 Take count  
 ```  
   
@@ -37,6 +37,7 @@ Take count
  [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter3::Commit Method
 Commits the changes written so far to the stream.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Commit();  
 ```  
   
@@ -34,4 +32,5 @@ HRESULT Commit();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)

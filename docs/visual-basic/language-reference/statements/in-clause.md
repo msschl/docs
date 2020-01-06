@@ -1,5 +1,5 @@
 ---
-title: "In Clause (Visual Basic)"
+title: "In Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.In"
@@ -22,4 +22,5 @@ Specifies the group that the loop variable is to traverse in a `For Each` loop, 
  [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

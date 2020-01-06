@@ -1,5 +1,5 @@
 ---
-title: "Module <keyword> (Visual Basic)"
+title: "Module <keyword>"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ModuleAttribute"
@@ -20,7 +20,7 @@ Specifies that an attribute at the beginning of a source file applies to the cur
  The `Module` modifier is not the same as the [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md).  
   
 ## See also
+
 - [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)
 - [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
 - [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
-

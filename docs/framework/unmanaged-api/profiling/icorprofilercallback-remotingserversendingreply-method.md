@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dfe84a19-2e03-4be2-8b25-f02bad38e4a9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingServerSendingReply Method
 Notifies the profiler that the process has finished processing a remote method invocation request and is about to transmit the reply through a channel.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingServerSendingReply(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);  
@@ -33,11 +31,11 @@ HRESULT RemotingServerSendingReply(
  `pCookie`  
  [in] A pointer to a GUID that will correspond with the value provided in [ICorProfilerCallback::RemotingClientReceivingReply](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingclientreceivingreply-method.md) under these conditions:  
   
--   Remoting GUID cookies are active.  
+- Remoting GUID cookies are active.  
   
--   The channel succeeds in transmitting the message.  
+- The channel succeeds in transmitting the message.  
   
--   GUID cookies are active on the client-side process.  
+- GUID cookies are active on the client-side process.  
   
  This allows easy pairing of remoting calls and the creation of a logical call stack.  
   
@@ -54,4 +52,5 @@ HRESULT RemotingServerSendingReply(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

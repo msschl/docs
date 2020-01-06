@@ -1,5 +1,5 @@
 ---
-title: "Advanced Query Techniques (LINQ to XML) (Visual Basic)"
+title: "Advanced Query Techniques (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 79be877c-fadc-4dfb-9f03-426082b13656
 ---
@@ -20,4 +20,5 @@ This section provides examples of more advanced [!INCLUDE[sqltecxlinq](~/include
 |[How to: Populate an XML Tree from the File System (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md)|Presents code that creates an XML tree from the file system.|  
   
 ## See also
+
 - [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugJITCompilerFlagsDeprecated Enumeration
 This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugJITCompilerFlagsDeprecated {  
     CORDEBUG_JIT_TRACK_DEBUG_INFO  = 0x1  
 } CorDebugJITCompilerFlagsDeprecated;  
@@ -44,4 +42,5 @@ typedef enum CorDebugJITCompilerFlagsDeprecated {
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

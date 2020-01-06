@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b8205b60-1893-4303-8cff-7ac5a00892aa
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionIDMapper Function
 Notifies the profiler that the given identifier of a function may be remapped to an alternative ID to be used in the [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md), [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md), and [FunctionTailcall2](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md) callbacks for that function. `FunctionIDMapper` also enables the profiler to indicate whether it wants to receive callbacks for that function.  
   
 ## Syntax  
   
-```  
+```cpp  
 UINT_PTR __stdcall FunctionIDMapper (  
     [in]  FunctionID  funcId,   
     [out] BOOL       *pbHookFunction  
@@ -58,6 +56,7 @@ UINT_PTR __stdcall FunctionIDMapper (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [SetFunctionIDMapper Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setfunctionidmapper-method.md)
 - [FunctionIDMapper2 Function](../../../../docs/framework/unmanaged-api/profiling/functionidmapper2-function.md)
 - [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)

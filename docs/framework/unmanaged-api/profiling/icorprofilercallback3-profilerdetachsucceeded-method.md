@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback3::ProfilerDetachSucceeded Method
 Notifies the profiler that the common language runtime (CLR) is about to unload the profiler DLL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProfilerDetachSucceeded();  
 ```  
   
@@ -47,6 +45,7 @@ HRESULT ProfilerDetachSucceeded();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

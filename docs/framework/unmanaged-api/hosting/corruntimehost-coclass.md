@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5833740b-7d67-44b4-865c-b5bf45e291e3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorRuntimeHost Coclass
 Provides interfaces for managing applications that are being executed by the common language runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CorRuntimeHost {  
     [default] interface ICorRuntimeHost;  
     interface IGCHost;  
@@ -52,4 +50,5 @@ coclass CorRuntimeHost {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)

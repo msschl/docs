@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a343d197-979a-4ac6-ab8c-cb8a05f3120e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSemaphore::ReleaseSemaphore Method
 Increases the count of the current [IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md) instance by the specified amount.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseSemaphore (  
     [in]  LONG  lReleaseCount,  
     [out] LONG  *lpPreviousCount  
@@ -61,6 +59,7 @@ HRESULT ReleaseSemaphore (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

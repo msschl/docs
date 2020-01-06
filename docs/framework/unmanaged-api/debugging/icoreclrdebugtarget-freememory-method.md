@@ -17,15 +17,13 @@ helpviewer_keywords:
 ms.assetid: 98f2a0db-a6ec-4f9b-861d-f82485237d08
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget::FreeMemory Method
 Frees the memory allocated by the [ICoreClrDebugTarget::EnumProcesses](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumprocesses-method.md) and [ICoreClrDebugTarget::EnumRuntimes](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumruntimes-method.md) methods.  
   
 ## Syntax  
   
-```  
+```cpp  
 void FreeMemory (  
      [in] void*pMemory);  
 ```  
@@ -44,4 +42,5 @@ void FreeMemory (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
+
 - [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

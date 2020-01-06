@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 30d906f2-cf35-4fa9-9d4c-0c31b58c9f3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetMetaDataInterface Method
 Gets a metadata interface object that can be used to examine the metadata for the module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataInterface (  
     [in] REFIID      riid,  
     [out] IUnknown **ppObj  
@@ -50,4 +48,5 @@ HRESULT GetMetaDataInterface (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata](../../../../docs/framework/unmanaged-api/metadata/index.md)

@@ -25,7 +25,7 @@ class TestAccess
 {
     void Access()
     {
-        BaseClass baseObject = new BaseClass();
+        var baseObject = new BaseClass();
         baseObject.myValue = 5;
     }
 }
@@ -38,8 +38,8 @@ class DerivedClass : BaseClass
 {
     static void Main()
     {
-        BaseClass baseObject = new BaseClass();
-        DerivedClass derivedObject = new DerivedClass();
+        var baseObject = new BaseClass();
+        var derivedObject = new DerivedClass();
 
         // Error CS1540, because myValue can only be accessed by
         // classes derived from BaseClass.
@@ -50,6 +50,7 @@ class DerivedClass : BaseClass
     }
 }
 ```
+
 This example contains two files, `Assembly1.cs` and `Assembly2.cs`.
 The first file contains a public base class, `BaseClass`, and another class, `TestAccess`. `BaseClass` owns a protected internal member, `myValue`, which is accessed by the `TestAccess` type.
 In the second file, an attempt to access `myValue` through an instance of `BaseClass` will produce an error, while an access to this member through an instance of a derived class, `DerivedClass` will succeed.
@@ -67,7 +68,7 @@ Struct members cannot be `protected internal` because the struct cannot be inher
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)

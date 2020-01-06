@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetTableIndex Method
 Gets the index for the table referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTableIndex (  
     [in]  ULONG   token,  
     [out] ULONG   *pixTbl  
@@ -50,5 +48,6 @@ HRESULT GetTableIndex (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

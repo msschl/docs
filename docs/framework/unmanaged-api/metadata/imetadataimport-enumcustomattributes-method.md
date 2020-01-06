@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 798513a0-68b1-4d04-bc5b-782a4445ea68
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumCustomAttributes Method
 Enumerates custom attribute-definition tokens associated with the specified type or member.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumCustomAttributes (   
    [in, out] HCORENUM      *phEnum,  
    [in]  mdToken            tk,   
@@ -70,5 +68,6 @@ HRESULT EnumCustomAttributes (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

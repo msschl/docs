@@ -125,9 +125,9 @@ A Rectangle painted using a VisualBrush
 ## Paint using Predefined and System Brushes  
  For convenience, Windows Presentation Foundation (WPF) provides a set of predefined and system brushes that you can use to paint objects.  
   
--   For a list of available predefined brushes, see the <xref:System.Windows.Media.Brushes> class. For an example showing how to use a predefined brush, see [Paint an Area with a Solid Color](how-to-paint-an-area-with-a-solid-color.md).  
+- For a list of available predefined brushes, see the <xref:System.Windows.Media.Brushes> class. For an example showing how to use a predefined brush, see [Paint an Area with a Solid Color](how-to-paint-an-area-with-a-solid-color.md).  
   
--   For a list of available system brushes, see the <xref:System.Windows.SystemColors> class. For an example, see [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md).  
+- For a list of available system brushes, see the <xref:System.Windows.SystemColors> class. For an example, see [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md).  
   
 <a name="commonbrushfeatures"></a>   
 ## Common Brush Features  
@@ -140,7 +140,7 @@ A Rectangle painted using a VisualBrush
  If the brush contains colors that are partially transparent, the opacity value of the color is combined through multiplication with the opacity value of the brush. For example, if a brush has an opacity value of 0.5 and a color used in the brush also has an opacity value of 0.5, the output color has an opacity value of 0.25.  
   
 > [!NOTE]
->  It's more efficient to change the opacity value of a brush than it is to change the opacity of an entire element using its <xref:System.Windows.UIElement.Opacity%2A?displayProperty=nameWithType> property.  
+> It's more efficient to change the opacity value of a brush than it is to change the opacity of an entire element using its <xref:System.Windows.UIElement.Opacity%2A?displayProperty=nameWithType> property.  
   
  You can rotate, scale, skew, and translate a brush's content by using its <xref:System.Windows.Media.Brush.Transform%2A> or <xref:System.Windows.Media.Brush.RelativeTransform%2A> properties. For more information, see [Brush Transformation Overview](brush-transformation-overview.md).  
   
@@ -148,13 +148,14 @@ A Rectangle painted using a VisualBrush
   
 <a name="freezable_features"></a>   
 ### Freezable Features  
- Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Brush> class provides several special features: <xref:System.Windows.Media.Brush> objects can be declared as [resources](../advanced/xaml-resources.md), shared among multiple objects, and cloned. In addition, all the <xref:System.Windows.Media.Brush> types except <xref:System.Windows.Media.VisualBrush> can be made read-only to improve performance and made thread-safe.  
+ Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Brush> class provides several special features: <xref:System.Windows.Media.Brush> objects can be declared as [resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md), shared among multiple objects, and cloned. In addition, all the <xref:System.Windows.Media.Brush> types except <xref:System.Windows.Media.VisualBrush> can be made read-only to improve performance and made thread-safe.  
   
  For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
  For more information on why <xref:System.Windows.Media.VisualBrush> objects cannot be frozen, see the <xref:System.Windows.Media.VisualBrush> type page.  
   
 ## See also
+
 - <xref:System.Windows.Media.Brush>
 - <xref:System.Windows.Media.Brushes>
 - [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md)

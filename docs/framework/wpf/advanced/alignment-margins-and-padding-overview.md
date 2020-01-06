@@ -13,8 +13,7 @@ ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 ---
 # Alignment, Margins, and Padding Overview
 The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications.  
-  
-  
+
 <a name="wcpsdk_layout_amp_introduction"></a>   
 ## Introduction to Element Positioning  
  There are numerous ways to position elements using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
@@ -39,7 +38,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  The <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties describe how a child element should be positioned within a parent element's allocated layout space. By using these properties together, you can position child elements precisely. For example, child elements of a <xref:System.Windows.Controls.DockPanel> can specify four different horizontal alignments: <xref:System.Windows.HorizontalAlignment.Left>, <xref:System.Windows.HorizontalAlignment.Right>, or <xref:System.Windows.HorizontalAlignment.Center>, or to <xref:System.Windows.HorizontalAlignment.Stretch> to fill available space. Similar values are available for vertical positioning.  
   
 > [!NOTE]
->  Explicitly-set <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties on an element take precedence over the <xref:System.Windows.HorizontalAlignment.Stretch> property value. Attempting to set <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of `Stretch` results in the `Stretch` request being ignored.  
+> Explicitly-set <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties on an element take precedence over the <xref:System.Windows.HorizontalAlignment.Stretch> property value. Attempting to set <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> value of `Stretch` results in the `Stretch` request being ignored.  
   
 <a name="wcpsdk_layout_amp_horizontalalignment_properties"></a>   
 ### HorizontalAlignment Property  
@@ -87,7 +86,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  The <xref:System.Windows.FrameworkElement.Margin%2A> property describes the distance between an element and its child or peers. <xref:System.Windows.FrameworkElement.Margin%2A> values can be uniform, by using syntax like `Margin="20"`. With this syntax, a uniform <xref:System.Windows.FrameworkElement.Margin%2A> of 20 device independent pixels would be applied to the element. <xref:System.Windows.FrameworkElement.Margin%2A> values can also take the form of four distinct values, each value describing a distinct margin to apply to the left, top, right, and bottom (in that order), like `Margin="0,10,5,25"`. Proper use of the <xref:System.Windows.FrameworkElement.Margin%2A> property enables very fine control of an element's rendering position and the rendering position of its neighbor elements and children.  
   
 > [!NOTE]
->  A non-zero margin applies space outside the element's <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A>.  
+> A non-zero margin applies space outside the element's <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A>.  
   
  The following example shows how to apply uniform margins around a group of <xref:System.Windows.Controls.Button> elements. The <xref:System.Windows.Controls.Button> elements are spaced evenly with a ten-pixel margin buffer in each direction.  
   
@@ -136,6 +135,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement>
 - <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
 - <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>

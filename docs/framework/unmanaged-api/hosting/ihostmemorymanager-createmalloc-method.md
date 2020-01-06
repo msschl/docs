@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9ee6e052-bef7-4350-9e4f-edfffd99ad6f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::CreateMAlloc Method
 Gets an interface pointer to an [IHostMAlloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md) instance that is used to make allocation requests from a heap created by the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateMalloc (  
     [in]  DWORD         dwMallocType,  
     [out] IHostMalloc **ppMalloc  
@@ -62,5 +60,6 @@ HRESULT CreateMalloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

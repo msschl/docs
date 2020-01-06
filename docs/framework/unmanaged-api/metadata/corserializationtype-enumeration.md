@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 6b1fcd11-c7fb-4be2-8910-abc862d4caf4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSerializationType Enumeration
 Specifies how an object is serialized by the common language runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSerializationType {  
   
     SERIALIZATION_TYPE_UNDEFINED     = 0,  
@@ -82,4 +80,5 @@ typedef enum CorSerializationType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: db98608a-e85c-4f50-9d7b-5f57a426ddb6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataValidate Interface
 Provides methods to validate metadata signatures.  
@@ -37,4 +35,5 @@ Provides methods to validate metadata signatures.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

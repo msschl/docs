@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionControl::SetILFunctionBody Method
 Replaces the Common Intermediate Language (CIL) body of the method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetILFunctionBody(  
     [in]  ULONG   cbNewILMethodHeader,  
     [in, size_is(cbNewILMethodHeader)] LPCBYTE pbNewILMethodHeader);  
@@ -56,4 +54,5 @@ HRESULT SetILFunctionBody(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)

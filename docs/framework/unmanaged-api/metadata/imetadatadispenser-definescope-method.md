@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: af28db02-29af-45ac-aec6-8d6c6123c2ff
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenser::DefineScope Method
 Creates a new area in memory in which you can create new metadata.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineScope (  
     [in]  REFCLSID    rclsid,  
     [in]  DWORD       dwCreateFlags,  
@@ -62,6 +60,7 @@ HRESULT DefineScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

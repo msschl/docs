@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7c9e9120-3104-42f0-86ce-19a025f20dcc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumMembersWithName Method
 Enumerates MemberDef tokens representing members of the specified type with the specified name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMembersWithName (  
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   cl,   
@@ -73,5 +71,6 @@ HRESULT EnumMembersWithName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e06fc19d-2cf4-4cad-81a3-137a68af8969
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue3::GetThreadOwningMonitorLock Method
 Returns the managed thread that owns the monitor lock on this object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadOwningMonitorLock (  
     [out] ICorDebugThread   **ppThread,  
     [out] DWORD              *pAcquisitionCount  
@@ -50,9 +48,9 @@ HRESULT GetThreadOwningMonitorLock (
 ## Remarks  
  If a managed thread owns the monitor lock on this object:  
   
--   The method returns S_OK.  
+- The method returns S_OK.  
   
--   The thread object is valid until the thread exits.  
+- The thread object is valid until the thread exits.  
   
  If no managed thread owns the monitor lock on this object, `ppThread` and `pAcquisitionCount` are unchanged, and the method returns S_FALSE.  
   
@@ -70,5 +68,6 @@ HRESULT GetThreadOwningMonitorLock (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

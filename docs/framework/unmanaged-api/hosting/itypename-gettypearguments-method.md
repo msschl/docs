@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 638d77df-ff9c-40d9-88ee-930f5f87ada1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName::GetTypeArguments Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeArguments (  
     [in] DWORD           count,  
     [out] ITypeName**    rgpArguments,  
@@ -41,4 +39,5 @@ HRESULT GetTypeArguments (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

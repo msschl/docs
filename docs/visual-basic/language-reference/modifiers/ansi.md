@@ -1,5 +1,5 @@
 ---
-title: "Ansi (Visual Basic)"
+title: "Ansi"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Ansi"
@@ -27,6 +27,7 @@ Specifies that Visual Basic should marshal all strings to American National Stan
  This keyword is not supported.  
   
 ## See also
+
 - [Auto](../../../visual-basic/language-reference/modifiers/auto.md)
 - [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

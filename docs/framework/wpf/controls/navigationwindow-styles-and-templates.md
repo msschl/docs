@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
 ---
 # NavigationWindow Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## NavigationWindow Parts  
  The following table lists the named parts for the <xref:System.Windows.Navigation.NavigationWindow> control.  
@@ -42,9 +42,10 @@ This topic describes the styles and templates for the <xref:System.Windows.Navig
  For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

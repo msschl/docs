@@ -15,9 +15,9 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 ## Audit Level and Behavior  
  Two levels of security audits exist:  
   
--   Service authorization level, in which a caller is authorized.  
+- Service authorization level, in which a caller is authorized.  
   
--   Message level, in which WCF checks for message validity and authenticates the caller.  
+- Message level, in which WCF checks for message validity and authenticates the caller.  
   
  You can check both audit levels for success or failure, which is known as the *audit behavior*.  
   
@@ -67,7 +67,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 </configuration>  
 ```  
   
- If auditing is enabled and an `auditLogLocation` is not specified, the default log name is "Security" log for the platform supporting writing to the Security log; otherwise, it is "Application" log. Only the [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wv](../../../../includes/wv-md.md)] operating systems support writing to the Security log. For more information, see the "Operating System" section later in this topic.  
+ If auditing is enabled and an `auditLogLocation` is not specified, the default log name is "Security" log for the platform supporting writing to the Security log; otherwise, it is "Application" log. Only the Windows Server 2003 and Windows Vista operating systems support writing to the Security log. For more information, see the "Operating System" section later in this topic.  
   
 ## Security Considerations  
  If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information, see the Microsoft Support article on viewing and managing event logs by using the Event Viewer in Windows XP available at [How to view and manage event logs in Event Viewer in Windows XP](https://go.microsoft.com/fwlink/?LinkId=89150).  
@@ -82,7 +82,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |System|Application log|Security log|  
 |------------|---------------------|------------------|  
 |[!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] or later|Supported|Not supported|  
-|[!INCLUDE[ws2003sp1](../../../../includes/ws2003sp1-md.md)] and [!INCLUDE[wv](../../../../includes/wv-md.md)]|Supported|Thread context must possess `SeAuditPrivilege`|  
+|Windows Server 2003 SP1 and Windows Vista|Supported|Thread context must possess `SeAuditPrivilege`|  
   
 #### Other Factors  
  In addition to the operating system, the following table describes other settings that control the enablement of logging.  
@@ -93,6 +93,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |Default user experience|All authenticated users can write to the Application log, so no additional permission step is needed for application processes.|The application process (context) must have `SeAuditPrivilege`.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)

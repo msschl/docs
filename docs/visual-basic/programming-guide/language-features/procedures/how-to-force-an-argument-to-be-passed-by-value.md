@@ -1,5 +1,5 @@
 ---
-title: "How to: Force an Argument to Be Passed by Value (Visual Basic)"
+title: "How to: Force an Argument to Be Passed by Value"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"
@@ -22,9 +22,9 @@ The procedure declaration determines the passing mechanism. If a parameter is de
   
 ### To force an argument to be passed by value  
   
--   If the corresponding parameter is declared `ByVal` in the procedure, you do not need to take any additional steps. Visual Basic already expects to pass the argument by value.  
+- If the corresponding parameter is declared `ByVal` in the procedure, you do not need to take any additional steps. Visual Basic already expects to pass the argument by value.  
   
--   If the corresponding parameter is declared `ByRef` in the procedure, enclose the argument in parentheses in the procedure call.  
+- If the corresponding parameter is declared `ByRef` in the procedure, enclose the argument in parentheses in the procedure call.  
   
 ## Example  
  The following example overrides a `ByRef` parameter declaration. In the call that forces `ByVal`, note the two levels of parentheses.  
@@ -35,7 +35,7 @@ The procedure declaration determines the passing mechanism. If a parameter is de
   
  When `str` is enclosed in extra parentheses within the argument list, the `setNewString` procedure cannot change its value in the calling code, and `MsgBox` displays "Cannot be replaced if passed ByVal". When `str` is not enclosed in extra parentheses, the procedure can change it, and `MsgBox` displays "This is a new value for the inString argument."  
   
-## Compiling the Code  
+## Compile the code  
  When you pass a variable by reference, you must use the `ByRef` keyword to specify this mechanism.  
   
  The default in Visual Basic is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  
@@ -47,6 +47,7 @@ The procedure declaration determines the passing mechanism. If a parameter is de
  There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code. Make sure you expect this value to be changed, and be prepared to check it for validity before using it.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)

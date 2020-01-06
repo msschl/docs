@@ -1,5 +1,5 @@
 ---
-title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (Visual Basic)"
+title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: d91c4ebf-6549-43cc-9961-26d4a82f722b
 ---
@@ -69,4 +69,5 @@ Console.WriteLine(newTree)
  This is a very simple example, but it serves to show the difference in philosophy between the two approaches. The functional approach yields greater productivity gains for transforming larger XML documents.  
   
 ## See also
+
 - [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

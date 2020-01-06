@@ -1,5 +1,5 @@
 ---
-title: "Mixed Declarative Code-Imperative Code Bugs (LINQ to XML) (Visual Basic)"
+title: "Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: f12b1ab4-bb92-4b92-a648-0525e45b3ce7
 ---
@@ -171,4 +171,5 @@ Console.WriteLine(newRoot)
 ```  
   
 ## See also
+
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

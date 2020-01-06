@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetUnhandledExceptionPolicy Method
 Specifies the behavior of the common language runtime (CLR) when an unhandled exception occurs.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnhandledExceptionPolicy (  
     [in] EClrUnhandledExceptionPolicy policy  
 );  
@@ -57,6 +55,7 @@ HRESULT SetUnhandledExceptionPolicy (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrUnhandledException Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)

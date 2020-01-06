@@ -1,5 +1,5 @@
 ---
-title: "Generation Operations (Visual Basic)"
+title: "Generation Operations"
 ms.date: 07/20/2015
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
 ---
@@ -18,5 +18,6 @@ Generation refers to creating a new sequence of values.
 |Repeat|Generates a collection that contains one repeated value.|Not applicable.|<xref:System.Linq.Enumerable.Repeat%2A?displayProperty=nameWithType>|  
   
 ## See also
+
 - <xref:System.Linq>
 - [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)

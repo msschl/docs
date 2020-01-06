@@ -1,5 +1,5 @@
 ---
-title: "LINQ to Objects (Visual Basic)"
+title: "LINQ to Objects"
 ms.date: 07/20/2015
 ms.assetid: dd4c30bc-1c9b-4781-a482-b5eada38deb2
 ---
@@ -10,11 +10,11 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
   
  In addition, LINQ queries offer three main advantages over traditional `For Each` loops:  
   
-1.  They are more concise and readable, especially when filtering multiple conditions.  
+1. They are more concise and readable, especially when filtering multiple conditions.  
   
-2.  They provide powerful filtering, ordering, and grouping capabilities with a minimum of application code.  
+2. They provide powerful filtering, ordering, and grouping capabilities with a minimum of application code.  
   
-3.  They can be ported to other data sources with little or no modification.  
+3. They can be ported to other data sources with little or no modification.  
   
  In general, the more complex the operation you want to perform on the data, the more benefit you will realize by using LINQ instead of traditional iteration techniques.  
   

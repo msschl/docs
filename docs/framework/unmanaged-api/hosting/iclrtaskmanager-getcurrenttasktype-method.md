@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6b0d9259-dbe2-45bb-b34d-990f60c73424
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTaskManager::GetCurrentTaskType Method
 Gets the type of the task that is currently executing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTaskType(  
     [out] ETaskType *pTaskType  
 );  
@@ -43,4 +41,5 @@ HRESULT GetCurrentTaskType(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)

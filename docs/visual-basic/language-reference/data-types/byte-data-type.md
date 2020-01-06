@@ -1,5 +1,5 @@
 ---
-title: "Byte Data Type (Visual Basic)"
+title: "Byte Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Byte"
@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: eed44dff-eaee-4937-a89f-444e418e74f6
 ---
 # Byte data type (Visual Basic)
+
 Holds unsigned 8-bit (1-byte) integers that range in value from 0 through 255.
 
 ## Remarks
@@ -42,15 +43,15 @@ Dim number As Byte = &H_6A
 
 ## Programming tips
 
--   **Negative Numbers.** Because `Byte` is an unsigned type, it cannot represent a negative number. If you use the unary minus (`-`) operator on an expression that evaluates to type `Byte`, Visual Basic converts the expression to `Short` first.
+- **Negative Numbers.** Because `Byte` is an unsigned type, it cannot represent a negative number. If you use the unary minus (`-`) operator on an expression that evaluates to type `Byte`, Visual Basic converts the expression to `Short` first.
   
--   **Format Conversions.** When Visual Basic reads or writes files, or when it calls DLLs, methods, and properties, it can automatically convert between data formats. Binary data stored in `Byte` variables and arrays is preserved during such format conversions. You should not use a `String` variable for binary data, because its contents can be corrupted during conversion between ANSI and Unicode formats.
+- **Format Conversions.** When Visual Basic reads or writes files, or when it calls DLLs, methods, and properties, it can automatically convert between data formats. Binary data stored in `Byte` variables and arrays is preserved during such format conversions. You should not use a `String` variable for binary data, because its contents can be corrupted during conversion between ANSI and Unicode formats.
 
--   **Widening.** The `Byte` data type widens to `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, or `Double`. This means you can convert `Byte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
+- **Widening.** The `Byte` data type widens to `Short`, `UShort`, `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, or `Double`. This means you can convert `Byte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
   
--   **Type Characters.** `Byte` has no literal type character or identifier type character.
+- **Type Characters.** `Byte` has no literal type character or identifier type character.
 
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Byte?displayProperty=nameWithType> structure.
+- **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Byte?displayProperty=nameWithType> structure.
 
 ## Example
 

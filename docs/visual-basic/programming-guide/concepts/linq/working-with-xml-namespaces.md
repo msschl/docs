@@ -1,5 +1,5 @@
 ---
-title: "Working with XML Namespaces (Visual Basic)"
+title: "Working with XML Namespaces"
 ms.date: 07/20/2015
 ms.assetid: 428bf4b0-e348-4ffd-986b-d905d5a0e7fa
 ---
@@ -18,4 +18,5 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Write Queries on XML in Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in Visual Basic LINQ to XML queries.|  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -1,5 +1,5 @@
 ---
-title: "Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)"
+title: "Removing Elements, Attributes, and Nodes from an XML Tree"
 ms.date: 07/20/2015
 ms.assetid: 5cf21919-4360-4b49-b29d-58ea3164ac72
 ---
@@ -74,4 +74,5 @@ Console.WriteLine(root)
  Notice that the first grandchild element has been removed from `Child1`. All grandchildren elements have been removed from `Child2` and from `Child3`.  
   
 ## See also
+
 - [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

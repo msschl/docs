@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e1efedcb-3dd7-42ae-a399-21c24728aec5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumEvents Method
 Enumerates event definition tokens for the specified TypeDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumEvents (   
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   td,   
@@ -66,5 +64,6 @@ HRESULT EnumEvents (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

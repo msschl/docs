@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5eefe716-5025-4a4c-970c-c823cdc7bb87
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::IsDynamic Method
 Gets a value that indicates whether this module is dynamic.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsDynamic(  
     [out] BOOL *pDynamic  
 );  

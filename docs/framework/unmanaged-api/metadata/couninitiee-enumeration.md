@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: c42baa79-f469-4330-95a2-baf7f021c2fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COUNINITIEE Enumeration
 Specifies constants used by [CoUninitializeEE](../../../../docs/framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOUNINITEE  
 {  
     COUNINITEE_DEFAULT  = 0x0,   
@@ -47,4 +45,5 @@ typedef enum tagCOUNINITEE
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

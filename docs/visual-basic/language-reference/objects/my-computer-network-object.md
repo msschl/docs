@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Network Object (Visual Basic)"
+title: "My.Computer.Network Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Network object"
@@ -21,4 +21,5 @@ Provides a property, event, and methods for interacting with the network to whic
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

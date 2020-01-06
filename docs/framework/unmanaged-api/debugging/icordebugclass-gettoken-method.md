@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ee5c848a-eac4-4462-b07a-07ccd76a75df
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass::GetToken Method
 Gets the `TypeDef` metadata token that references the definition of this class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdTypeDef          *pTypeDef  
 );  
@@ -43,4 +41,5 @@ HRESULT GetToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)

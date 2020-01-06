@@ -11,8 +11,6 @@ api_type:
 ms.assetid: edc420b7-96d1-4dec-ace0-36d907f644bc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback6 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -35,4 +33,5 @@ ms.author: "ronpet"
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

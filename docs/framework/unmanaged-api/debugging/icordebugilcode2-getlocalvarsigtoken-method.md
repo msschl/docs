@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 17665b77-1342-4115-94fd-9f45b0ecfb0f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILCode2::GetLocalVarSigToken Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -44,5 +42,6 @@ HRESULT GetLocalVarSigToken(
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
 ## See also
+
 - [ICorDebugILCode2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

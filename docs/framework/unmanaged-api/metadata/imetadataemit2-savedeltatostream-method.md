@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ecd786e8-f9a4-4190-a6ef-af18e8c6d654
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SaveDeltaToStream Method
 Saves changes from the current edit-and-continue session to the specified stream.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDeltaToStream (  
     [in] IStream     *pIStream,   
     [in] DWORD       dwSaveFlags  
@@ -47,5 +45,6 @@ HRESULT SaveDeltaToStream (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

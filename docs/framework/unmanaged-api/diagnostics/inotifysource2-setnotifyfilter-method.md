@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6351fc92-b126-4af6-9bf3-0a8ce92845fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifySource2::SetNotifyFilter Method
 Assigns a notification filter for use with this source.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetNotifyFilter  
 (  
     [in]  NOTIFY_FILTER   in_NotifyFilter,  
@@ -45,6 +43,7 @@ HRESULT SetNotifyFilter
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
 - [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
 - [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)

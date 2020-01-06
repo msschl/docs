@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dd2afb38-675b-4c3c-a9f3-8ab3b133eb02
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CurrentDomain Method
 Gets an interface pointer of type <xref:System.AppDomain?displayProperty=nameWithType> that represents the domain loaded on the current thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CurrentDomain (  
     [out] IUnknown** pAppDomain  
 );  
@@ -52,6 +50,7 @@ HRESULT CurrentDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

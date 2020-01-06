@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dd9e9204-a80d-44f3-8192-779224b35056
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::UnloadDomain Method
 Unloads the specified application domain from the current process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadDomain (  
     [in] IUnknown* pAppDomain  
 );  
@@ -52,6 +50,7 @@ HRESULT UnloadDomain (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

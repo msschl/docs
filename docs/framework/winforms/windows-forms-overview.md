@@ -16,7 +16,7 @@ The following overview discusses the advantages of smart client applications, th
 
 ### Build rich, interactive user interfaces
 
- Windows Forms is a smart client technology for the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], a set of managed libraries that simplify common application tasks such as reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network.
+ Windows Forms is a smart client technology for the .NET Framework, a set of managed libraries that simplify common application tasks such as reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network.
 
  In Windows Forms, a *form* is a visual surface on which you display information to the user. You ordinarily build Windows Forms applications by adding controls to forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.
 
@@ -26,7 +26,7 @@ The following overview discusses the advantages of smart client applications, th
 
  Windows Forms has rich UI controls that emulate features in high-end applications like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> control, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
 
- With the Visual Studio drag-and-drop **Windows Forms Designer**, you can easily create Windows Forms applications. Just select the controls with your cursor and add them where you want on the form. The designer provides tools such as gridlines and snap lines to take the hassle out of aligning controls. And whether you use Visual Studio or compile at the command line, you can use the <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel> and <xref:System.Windows.Forms.SplitContainer> controls to create advanced form layouts in less time.
+ With the drag-and-drop **Windows Forms Designer** in Visual Studio, you can easily create Windows Forms applications. Just select the controls with your cursor and add them where you want on the form. The designer provides tools such as gridlines and snap lines to take the hassle out of aligning controls. And whether you use Visual Studio or compile at the command line, you can use the <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel> and <xref:System.Windows.Forms.SplitContainer> controls to create advanced form layouts in less time.
 
  Finally, if you must create your own custom UI elements, the <xref:System.Drawing> namespace contains a large selection of classes to render lines, circles, and other shapes directly on a form.
 
@@ -60,31 +60,31 @@ For step-by-step information about how to use these features, see the following 
 |Description|Help topic|
 |-----------------|----------------|
 |Using the <xref:System.Windows.Forms.BindingSource> component|[How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](./controls/bind-wf-controls-with-the-bindingsource.md)|
-|Working with [!INCLUDE[vstecado](../../../includes/vstecado-md.md)] data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](./controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
+|Working with ADO.NET data sources|[How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](./controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)|
 |Using the Data Sources window|[Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)|
 |Using application settings|[How to: Create Application Settings](./advanced/how-to-create-application-settings.md)|
 
 ### Deploy apps to client computers
 
-After you have written your application, you must send the application to your users so that they can install and run it on their own client computers. When you use the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] technology, you can deploy your applications from within Visual Studio by using just a few clicks, and provide your users with a URL pointing to your application on the Web. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] manages all the elements and dependencies in your application, and ensures that the application is correctly installed on the client computer.
+After you have written your application, you must send the application to your users so that they can install and run it on their own client computers. When you use the ClickOnce technology, you can deploy your applications from within Visual Studio by using just a few clicks, and provide your users with a URL pointing to your application on the Web. ClickOnce manages all the elements and dependencies in your application, and ensures that the application is correctly installed on the client computer.
 
-[!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] applications can be configured to run only when the user is connected to the network, or to run both online and offline. When you specify that an application should support offline operation, [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] adds a link to your application in the user's **Start** menu. The user can then open the application without using the URL.
+ClickOnce applications can be configured to run only when the user is connected to the network, or to run both online and offline. When you specify that an application should support offline operation, ClickOnce adds a link to your application in the user's **Start** menu. The user can then open the application without using the URL.
 
-When you update your application, you publish a new deployment manifest and a new copy of your application to your Web server. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] will detect that there is an update available and upgrade the user's installation; no custom programming is required to update old assemblies.
+When you update your application, you publish a new deployment manifest and a new copy of your application to your Web server. ClickOnce will detect that there is an update available and upgrade the user's installation; no custom programming is required to update old assemblies.
 
 #### Deploy ClickOnce apps
 
-For a full introduction to [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)], see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about how to use these features, see the following Help topics,
+For a full introduction to ClickOnce, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about how to use these features, see the following Help topics,
 
 |Description|Help topic|
 |-----------------|----------------|
-|Deploying an application by using [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|
-|Updating a [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|
-|Managing security with [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|
+|Deploying an application by using ClickOnce|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|
+|Updating a ClickOnce deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|
+|Managing security with ClickOnce|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|
 
 ### Other controls and features
 
-There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. Additionally, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. With this system, you can release more secure applications to your customers.
+There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. Additionally, Windows Forms relies on the robust security system of the .NET Framework. With this system, you can release more secure applications to your customers.
 
 #### Implement other controls and features
 

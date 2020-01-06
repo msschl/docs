@@ -15,32 +15,31 @@ ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
 ---
 # Drag and Drop Overview
 This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. Drag-and-drop commonly refers to a method of data transfer that involves using a mouse (or some other pointing device) to select one or more objects, dragging these objects over some desired drop target in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], and dropping them.  
-  
-  
+
 <a name="Drag_and_Drop_Support"></a>   
 ## Drag-and-Drop Support in WPF  
  Drag-and-drop operations typically involve two parties: a drag source from which the dragged object originates and a drop target which receives the dropped object.  The drag source and drop target may be UI elements in the same application or a different application.  
   
  The type and number of objects that can be manipulated with drag-and-drop is completely arbitrary. For example, files, folders, and selections of content are some of the more common objects manipulated through drag-and-drop operations.  
   
- The particular actions performed during a drag-and-drop operation are application specific, and often determined by context.  For example, dragging a selection of files from one folder to another on the same storage device moves the files by default, whereas dragging files from a [!INCLUDE[TLA#tla_unc](../../../../includes/tlasharptla-unc-md.md)] share to a local folder copies the files by default.  
+ The particular actions performed during a drag-and-drop operation are application specific, and often determined by context.  For example, dragging a selection of files from one folder to another on the same storage device moves the files by default, whereas dragging files from a Universal Naming Convention (UNC) share to a local folder copies the files by default.  
   
  The drag-and-drop facilities provided by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] are designed to be highly flexible and customizable to support a wide variety of drag-and-drop scenarios.  Drag-and-drop supports manipulating objects within a single application, or between different applications. Dragging-and-dropping between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications and other Windows applications is also fully supported.  
   
  In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> can participate in drag-and-drop. The events and methods required for drag-and-drop operations are defined in the <xref:System.Windows.DragDrop> class. The <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> classes contain aliases for the <xref:System.Windows.DragDrop> attached events so that the events appear in the class members list when a <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> is inherited as a base element. Event handlers that are attached to these events are attached to the underlying <xref:System.Windows.DragDrop> attached event and receive the same event data instance. For more information, see the <xref:System.Windows.UIElement.Drop?displayProperty=nameWithType> event.  
   
 > [!IMPORTANT]
->  OLE drag-and-drop does not work while in the Internet zone.  
+> OLE drag-and-drop does not work while in the Internet zone.  
   
 <a name="Data_Transfer"></a>   
 ## Data Transfer  
  Drag-and-drop is part of the more general area of data transfer. Data transfer includes drag-and-drop and copy-and-paste operations. A drag-and-drop operation is analogous to a copy-and-paste or cut-and-paste operation that is used to transfer data from one object or application to another by using the system clipboard. Both types of operations require:  
   
--   A source object that provides the data.  
+- A source object that provides the data.  
   
--   A way to temporarily store the transferred data.  
+- A way to temporarily store the transferred data.  
   
--   A target object that receives the data.  
+- A target object that receives the data.  
   
  In a copy-and-paste operation, the system clipboard is used to temporarily store the transferred data; in a drag-and-drop operation, a <xref:System.Windows.DataObject> is used to store the data. Conceptually, a data object consists of one or more pairs of an <xref:System.Object> that contains the actual data, and a corresponding data format identifier.  
   
@@ -89,31 +88,31 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  To implement basic drag-and-drop, you will complete the following tasks:  
   
--   Identify the element that will be a drag source. A drag source can be a <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>.  
+- Identify the element that will be a drag source. A drag source can be a <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>.  
   
--   Create an event handler on the drag source that will initiate the drag-and-drop operation. The event is typically the <xref:System.Windows.UIElement.MouseMove> event.  
+- Create an event handler on the drag source that will initiate the drag-and-drop operation. The event is typically the <xref:System.Windows.UIElement.MouseMove> event.  
   
--   In the drag source event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method to initiate the drag-and-drop operation. In the <xref:System.Windows.DragDrop.DoDragDrop%2A> call, specify the drag source, the data to be transferred, and the allowed effects.  
+- In the drag source event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method to initiate the drag-and-drop operation. In the <xref:System.Windows.DragDrop.DoDragDrop%2A> call, specify the drag source, the data to be transferred, and the allowed effects.  
   
--   Identify the element that will be a drop target. A drop target can be <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>.  
+- Identify the element that will be a drop target. A drop target can be <xref:System.Windows.UIElement> or a <xref:System.Windows.ContentElement>.  
   
--   On the drop target, set the <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`.  
+- On the drop target, set the <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`.  
   
--   In the drop target, create a <xref:System.Windows.DragDrop.Drop> event handler to process the dropped data.  
+- In the drop target, create a <xref:System.Windows.DragDrop.Drop> event handler to process the dropped data.  
   
--   In the <xref:System.Windows.DragDrop.Drop> event handler, extract the data from the <xref:System.Windows.DragEventArgs> by using the <xref:System.Windows.DataObject.GetDataPresent%2A> and <xref:System.Windows.DataObject.GetData%2A> methods.  
+- In the <xref:System.Windows.DragDrop.Drop> event handler, extract the data from the <xref:System.Windows.DragEventArgs> by using the <xref:System.Windows.DataObject.GetDataPresent%2A> and <xref:System.Windows.DataObject.GetData%2A> methods.  
   
--   In the <xref:System.Windows.DragDrop.Drop> event handler, use the data to perform the desired drag-and-drop operation.  
+- In the <xref:System.Windows.DragDrop.Drop> event handler, use the data to perform the desired drag-and-drop operation.  
   
  You can enhance your drag-and-drop implementation by creating a custom <xref:System.Windows.DataObject> and by handling optional drag source and drop target events, as shown in the following tasks:  
   
--   To transfer custom data or multiple data items, create a <xref:System.Windows.DataObject> to pass to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method.  
+- To transfer custom data or multiple data items, create a <xref:System.Windows.DataObject> to pass to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method.  
   
--   To perform additional actions during a drag, handle the <xref:System.Windows.DragDrop.DragEnter>, <xref:System.Windows.DragDrop.DragOver>, and <xref:System.Windows.DragDrop.DragLeave> events on the drop target.  
+- To perform additional actions during a drag, handle the <xref:System.Windows.DragDrop.DragEnter>, <xref:System.Windows.DragDrop.DragOver>, and <xref:System.Windows.DragDrop.DragLeave> events on the drop target.  
   
--   To change the appearance of the mouse pointer, handle the <xref:System.Windows.DragDrop.GiveFeedback> event on the drag source.  
+- To change the appearance of the mouse pointer, handle the <xref:System.Windows.DragDrop.GiveFeedback> event on the drag source.  
   
--   To change how the drag-and-drop operation is canceled, handle the <xref:System.Windows.DragDrop.QueryContinueDrag> event on the drag source.  
+- To change how the drag-and-drop operation is canceled, handle the <xref:System.Windows.DragDrop.QueryContinueDrag> event on the drag source.  
   
 <a name="Drag_And_Drop_Example"></a>   
 ## Drag-and-Drop Example  
@@ -124,13 +123,13 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
 ### Enabling an Element to be a Drag Source  
  An object that is a drag source is responsible for:  
   
--   Identifying when a drag occurs.  
+- Identifying when a drag occurs.  
   
--   Initiating the drag-and-drop operation.  
+- Initiating the drag-and-drop operation.  
   
--   Identifying the data to be transferred.  
+- Identifying the data to be transferred.  
   
--   Specifying the effects that the drag-and-drop operation is allowed to have on the transferred data.  
+- Specifying the effects that the drag-and-drop operation is allowed to have on the transferred data.  
   
  The drag source may also give feedback to the user regarding the allowed actions (move, copy, none), and can cancel the drag-and-drop operation based on additional user input, such as pressing the ESC key during the drag.  
   
@@ -141,18 +140,18 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
   
  Inside of the <xref:System.Windows.UIElement.MouseMove> event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method to initiate the drag-and-drop operation. The <xref:System.Windows.DragDrop.DoDragDrop%2A> method takes three parameters:  
   
--   `dragSource` – A reference to the dependency object that is the source of the transferred data; this is typically the source of the <xref:System.Windows.UIElement.MouseMove> event.  
+- `dragSource` – A reference to the dependency object that is the source of the transferred data; this is typically the source of the <xref:System.Windows.UIElement.MouseMove> event.  
   
--   `data` - An object that contains the transferred data, wrapped in a <xref:System.Windows.DataObject>.  
+- `data` - An object that contains the transferred data, wrapped in a <xref:System.Windows.DataObject>.  
   
--   `allowedEffects` - One of the <xref:System.Windows.DragDropEffects> enumeration values that specifies the permitted effects of the drag-and-drop operation.  
+- `allowedEffects` - One of the <xref:System.Windows.DragDropEffects> enumeration values that specifies the permitted effects of the drag-and-drop operation.  
   
  Any serializable object can be passed in the `data` parameter. If the data is not already wrapped in a <xref:System.Windows.DataObject>, it will automatically be wrapped in a new <xref:System.Windows.DataObject>. To pass multiple data items, you must create the <xref:System.Windows.DataObject> yourself, and pass it to the <xref:System.Windows.DragDrop.DoDragDrop%2A> method. For more information, see [Data and Data Objects](data-and-data-objects.md).  
   
  The `allowedEffects` parameter is used to specify what the drag source will allow the drop target to do with the transferred data. The common values for a drag source are <xref:System.Windows.DragDropEffects.Copy>, <xref:System.Windows.DragDropEffects.Move>, and <xref:System.Windows.DragDropEffects.All>.  
   
 > [!NOTE]
->  The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
+> The drop target is also able to specify what effects it intends in response to the dropped data. For example, if the drop target does not recognize the data type to be dropped, it can refuse the data by setting its allowed effects to <xref:System.Windows.DragDropEffects.None>. It typically does this in its <xref:System.Windows.DragDrop.DragOver> event handler.  
   
  A drag source can optionally handle the <xref:System.Windows.DragDrop.GiveFeedback> and <xref:System.Windows.DragDrop.QueryContinueDrag> events. These events have default handlers that are used unless you mark the events as handled. You will typically ignore these events unless you have a specific need to change their default behavior.  
   
@@ -161,26 +160,26 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  The <xref:System.Windows.DragDrop.QueryContinueDrag> event is raised continuously while the drag source is being dragged. You can handle this event to determine what action ends the drag-and-drop operation based on the state of the ESC, SHIFT, CTRL, and ALT keys, as well as the state of the mouse buttons. The default handler for this event cancels the drag-and-drop operation if the ESC key is pressed, and drops the data if the mouse button is released.  
   
 > [!CAUTION]
->  These events are raised continuously during the drag-and-drop operation. Therefore, you should avoid resource-intensive tasks in the event handlers.  For example, use a cached cursor instead of creating a new cursor each time the <xref:System.Windows.DragDrop.GiveFeedback> event is raised.  
+> These events are raised continuously during the drag-and-drop operation. Therefore, you should avoid resource-intensive tasks in the event handlers.  For example, use a cached cursor instead of creating a new cursor each time the <xref:System.Windows.DragDrop.GiveFeedback> event is raised.  
   
 ### Enabling an Element to be a Drop Target  
  An object that is a drop target is responsible for:  
   
--   Specifying that it is a valid drop target.  
+- Specifying that it is a valid drop target.  
   
--   Responding to the drag source when it drags over the target.  
+- Responding to the drag source when it drags over the target.  
   
--   Checking that the transferred data is in a format that it can receive.  
+- Checking that the transferred data is in a format that it can receive.  
   
--   Processing the dropped data.  
+- Processing the dropped data.  
   
  To specify that an element is a drop target, you set its <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`. The drop target events will then be raised on the element so that you can handle them. During a drag-and-drop operation, the following sequence of events occurs on the drop target:  
   
-1.  <xref:System.Windows.DragDrop.DragEnter>  
+1. <xref:System.Windows.DragDrop.DragEnter>  
   
-2.  <xref:System.Windows.DragDrop.DragOver>  
+2. <xref:System.Windows.DragDrop.DragOver>  
   
-3.  <xref:System.Windows.DragDrop.DragLeave> or <xref:System.Windows.DragDrop.Drop>  
+3. <xref:System.Windows.DragDrop.DragLeave> or <xref:System.Windows.DragDrop.Drop>  
   
  The <xref:System.Windows.DragDrop.DragEnter> event occurs when the data is dragged into the drop target's boundary. You typically handle this event to provide a preview of the effects of the drag-and-drop operation, if appropriate for your application. Do not set the <xref:System.Windows.DragEventArgs.Effects%2A?displayProperty=nameWithType> property in the <xref:System.Windows.DragDrop.DragEnter> event, as it will be overwritten in the <xref:System.Windows.DragDrop.DragOver> event.  
   
@@ -211,6 +210,7 @@ This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_wi
  [!code-vb[DragDropSnippets#Drop](~/samples/snippets/visualbasic/VS_Snippets_Wpf/dragdropsnippets/vb/mainwindow.xaml.vb#drop)]  
   
 ## See also
+
 - <xref:System.Windows.Clipboard>
 - [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)
 - [How-to Topics](drag-and-drop-how-to-topics.md)

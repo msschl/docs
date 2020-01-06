@@ -1,5 +1,5 @@
 ---
-title: "Pre-Atomization of XName Objects (LINQ to XML) (Visual Basic)"
+title: "Pre-Atomization of XName Objects (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 06ea104b-f44c-4bb2-9c34-889ae025c80d
 ---
@@ -81,5 +81,6 @@ Console.WriteLine("Time to construct:{0}", t2 - t1)
 ```  
   
 ## See also
+
 - [Performance (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
 - [Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md)

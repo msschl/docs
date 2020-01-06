@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifySink2::OnSyncCallReturn Method
 Gets invoked when a call returns.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnSyncCallReturn  
 (  
     [in]  CALL_ID   in_CallID,  
@@ -49,6 +47,7 @@ HRESULT OnSyncCallReturn
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
 - [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
 - [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)

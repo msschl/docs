@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b6b95c04-0f2c-4fcc-a8bc-3b1dcbdba731
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::ComputePointer Method
 Determines the buffer for the specified code section.  
@@ -25,7 +23,7 @@ Determines the buffer for the specified code section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ComputePointer (  
     [in]  HCEESECTION  section,  
     [in]  ULONG        RVA,   
@@ -53,4 +51,5 @@ HRESULT ComputePointer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

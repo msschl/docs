@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8f35414d-f40b-4b99-8768-9adb675c622a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetClassLayout Method
 Gets layout information for the class referenced by the specified TypeDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassLayout  (   
    [in]  mdTypeDef          td,   
    [out] DWORD              *pdwPackSize,  
@@ -63,5 +61,6 @@ HRESULT GetClassLayout  (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

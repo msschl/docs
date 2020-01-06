@@ -28,7 +28,7 @@ public class DerivedClass1 : BaseClass
 {
     void Access()
     {
-        BaseClass baseObject = new BaseClass();
+        var baseObject = new BaseClass();
 
         // Error CS1540, because myValue can only be accessed by
         // classes derived from BaseClass.
@@ -71,7 +71,7 @@ Struct members cannot be `private protected` because the struct cannot be inheri
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)

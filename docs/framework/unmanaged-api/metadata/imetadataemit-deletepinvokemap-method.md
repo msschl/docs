@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f6b54-5ce7-4a2a-83e1-6dec16441f50
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeletePinvokeMap Method
 Destroys the PInvoke mapping metadata for the object referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeletePinvokeMap (   
     [in]  mdToken     tk   
 );  
@@ -43,5 +41,6 @@ HRESULT DeletePinvokeMap (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

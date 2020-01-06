@@ -5,8 +5,6 @@ ms.date: 03/10/2017
 helpviewer_keywords: 
   - "using static directive [C#]"
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # using static directive (C# Reference)
 
@@ -52,5 +50,4 @@ In the example, the `using static` directive could also have been applied to the
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
-- [Namespace Keywords](namespace-keywords.md)
 - [Namespaces](../../programming-guide/namespaces/index.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c431617a-b055-44a0-8730-48b7a86d9610
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::GetConfiguration Method
 Gets an object that allows the host to specify the callback configuration of the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConfiguration(  
     [out] ICorConfiguration** pConfiguration  
 );  
@@ -46,4 +44,5 @@ HRESULT GetConfiguration(
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

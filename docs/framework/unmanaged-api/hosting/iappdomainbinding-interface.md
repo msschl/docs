@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 368881ab-c4ea-4731-bf22-c596aac7c66c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAppDomainBinding Interface
 Provides a method that is called by the common language runtime (CLR) to notify the host application that an application domain has been created.  
@@ -36,4 +34,5 @@ Provides a method that is called by the common language runtime (CLR) to notify 
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

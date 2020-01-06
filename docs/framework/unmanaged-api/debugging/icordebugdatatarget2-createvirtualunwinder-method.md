@@ -2,15 +2,13 @@
 title: "ICorDebugDataTarget2::CreateVirtualUnwinder Method"
 ms.date: "03/30/2017"
 ms.assetid: 354c8b4c-7d23-45c6-a7d7-3be4c2a5b772
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::CreateVirtualUnwinder Method
 Creates a new stack unwinder that starts unwinding from an initial context (which isn't necessarily the leaf of a thread).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  
@@ -42,7 +40,7 @@ HRESULT CreateVirtualUnwinder(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -54,5 +52,6 @@ HRESULT CreateVirtualUnwinder(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

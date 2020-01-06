@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 441d7809-5b65-41a5-ba64-2910a8008315
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_STATIC_TYPE Enumeration
 Indicates whether a field is static and, if so, the static quality that applies to the field. These values can be combined using the bitwise OR operation to indicate that the field has multiple, different static qualities.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_FIELD_NOT_A_STATIC = 0x0,  
     COR_PRF_FIELD_APP_DOMAIN_STATIC = 0x1,  
@@ -52,4 +50,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

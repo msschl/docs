@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 571912bc-3429-4ff8-8eb2-ea993ffbd901
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::UnloadAppDomain Method
 Unloads the managed <xref:System.AppDomain> that corresponds to the specified numeric identifier.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadAppDomain(  
     [in] DWORD dwAppDomainId  
     [in] BOOL  fWaitUntilDone  
@@ -61,4 +59,5 @@ HRESULT UnloadAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e1968f0b-2675-4dc2-8507-46164e1df154
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::SwitchOutLogicalThreadState Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchOutLogicalThreadState(  
     [out] DWORD **pFiberCookie  
 );  
@@ -43,4 +41,5 @@ HRESULT SwitchOutLogicalThreadState(
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

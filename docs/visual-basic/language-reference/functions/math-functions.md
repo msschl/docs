@@ -1,5 +1,5 @@
 ---
-title: "Math Functions (Visual Basic)"
+title: "Math Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "math functions, Visual Basic"
@@ -161,6 +161,7 @@ End Function
  **Assembly:** mscorlib (in mscorlib.dll)  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
 - <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>
 - <xref:System.Double.NaN>

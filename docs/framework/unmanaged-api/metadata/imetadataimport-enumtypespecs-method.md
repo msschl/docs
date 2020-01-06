@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 75331c7b-988b-436c-9eb9-a270d37b4f06
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumTypeSpecs Method
 Enumerates TypeSpec tokens defined in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeSpecs (  
    [in, out] HCORENUM    *phEnum,  
    [out] mdTypeSpec      rTypeSpecs[],  
@@ -65,5 +63,6 @@ HRESULT EnumTypeSpecs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

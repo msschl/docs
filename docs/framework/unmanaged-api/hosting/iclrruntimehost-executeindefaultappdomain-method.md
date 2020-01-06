@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 30b5cf9a-a762-4bd4-be12-d6c1442b78b1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::ExecuteInDefaultAppDomain Method
 Calls the specified method of the specified type in the specified managed assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteInDefaultAppDomain (  
     [in] LPCWSTR pwzAssemblyPath,  
     [in] LPCWSTR pwzTypeName,   
@@ -63,7 +61,7 @@ HRESULT ExecuteInDefaultAppDomain (
 ## Remarks  
  The invoked method must have the following signature:  
   
-```  
+```cpp  
 static int pwzMethodName (String pwzArgument)  
 ```  
   
@@ -79,4 +77,5 @@ static int pwzMethodName (String pwzArgument)
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

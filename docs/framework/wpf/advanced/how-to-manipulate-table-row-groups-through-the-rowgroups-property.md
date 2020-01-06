@@ -24,7 +24,7 @@ This example demonstrates some of the more common operations that can be perform
  The following example inserts a new <xref:System.Windows.Documents.TableRowGroup>.  The new column is inserted at index position 0, making it the new first row group in the table.  
   
 > [!NOTE]
->  The <xref:System.Windows.Documents.TableRowGroupCollection> collection uses standard zero-based indexing.  
+> The <xref:System.Windows.Documents.TableRowGroupCollection> collection uses standard zero-based indexing.  
   
  [!code-csharp[TableSnippets2#_Table_RowGroups_Insert](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_rowgroups_insert)]
  [!code-vb[TableSnippets2#_Table_RowGroups_Insert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_rowgroups_insert)]  
@@ -78,6 +78,7 @@ This example demonstrates some of the more common operations that can be perform
  [!code-vb[TableSnippets2#_Table_RowGroups_Clear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_rowgroups_clear)]  
   
 ## See also
+
 - [How-to: Manipulate Flow Content Elements through the Inlines Property](how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
 - [Manipulate a FlowDocument through the Blocks Property](how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
 - [Manipulate a Table's Columns through the Columns Property](how-to-manipulate-table-columns-through-the-columns-property.md)

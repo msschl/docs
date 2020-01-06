@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorFileMapping Enumeration
 Contains values that describe the type of file mapping that is returned from a call to the [IMetaDataInfo::GetFileMapping](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFileMapping {  
   
     fmFlat                  =   0x0000,  
@@ -46,5 +44,6 @@ typedef enum CorFileMapping {
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
 - [GetFileMapping Method](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5e5422ac-afa1-403d-a894-2d7348673e38
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback3::CustomNotification Method
 Indicates that a custom debugger notification has been raised.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CustomNotification(ICorDebugThread *    pThread,  
                            ICorDebugAppDomain * pAppDomain);  
 ```  
@@ -59,6 +57,7 @@ HRESULT CustomNotification(ICorDebugThread *    pThread,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "TPL dataflow library, creating custom dataflow blocks"
   - "dataflow blocks, creating custom in TPL"
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Walkthrough: Creating a Custom Dataflow Block Type
 Although the TPL Dataflow Library provides several dataflow block types that enable a variety of functionality, you can also create custom block types. This document describes how to create a dataflow block type that implements custom behavior.  
@@ -46,17 +44,6 @@ Although the TPL Dataflow Library provides several dataflow block types that ena
  [!code-csharp[TPLDataflow_SlidingWindowBlock#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_slidingwindowblock/cs/slidingwindowblock.cs#100)]
  [!code-vb[TPLDataflow_SlidingWindowBlock#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_slidingwindowblock/vb/slidingwindowblock.vb#100)]  
   
-## Compiling the Code  
- Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `SlidingWindowBlock.cs` (`SlidingWindowBlock.vb` for Visual Basic) and then run the following command in a Developer Command Prompt for Visual Studio window.  
-  
- Visual C#  
-  
- **csc.exe /r:System.Threading.Tasks.Dataflow.dll SlidingWindowBlock.cs**  
-  
- Visual Basic  
-  
- **vbc.exe /r:System.Threading.Tasks.Dataflow.dll SlidingWindowBlock.vb**  
-
 ## See also
 
 - [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

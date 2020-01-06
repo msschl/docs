@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.FileSystem.SpecialDirectories Object (Visual Basic)"
+title: "My.Computer.FileSystem.SpecialDirectories Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.FileSystem.SpecialDirectories object"
@@ -19,8 +19,9 @@ Provides properties for accessing commonly referenced directories.
   
  **Class:** <xref:Microsoft.VisualBasic.MyServices.SpecialDirectoriesProxy> (provides access to <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>)  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - [My.Computer.FileSystem Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-object.md)
 - [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

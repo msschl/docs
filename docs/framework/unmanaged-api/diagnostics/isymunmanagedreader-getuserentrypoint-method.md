@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3fd3a34c-d176-46e9-9996-fb1646cff9b0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetUserEntryPoint Method
 Returns the method that was specified as the user entry point for the module, if any. For example, this method could be the user's main method rather than compiler-generated stubs before the main method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserEntryPoint (  
     [out, retval]  mdMethodDef  *pToken);  
 ```  
@@ -39,4 +37,5 @@ HRESULT GetUserEntryPoint (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

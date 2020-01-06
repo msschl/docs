@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 45ae0502-0a31-4342-b7e3-f36e1cf738f3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::MapFile Method
 Maps the specified file into memory. This method is obsolete.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MapFile(  
     [in]  HANDLE    hFile,  
     [out] HMODULE*  hMapAddress  
@@ -47,4 +45,5 @@ HRESULT MapFile(
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

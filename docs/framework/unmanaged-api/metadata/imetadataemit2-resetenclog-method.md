@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 44b9fd76-a022-4e9a-aea3-dec5411a9c22
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::ResetENCLog Method
 Resets the edit-and-continue log and starts a new session.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetENCLog ();  
 ```  
   
@@ -40,5 +38,6 @@ HRESULT ResetENCLog ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

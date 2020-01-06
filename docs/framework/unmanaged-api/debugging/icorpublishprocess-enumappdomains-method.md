@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::EnumAppDomains Method
 Gets an enumerator for the application domains in the process that is referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAppDomains (  
     [out] ICorPublishAppDomainEnum   **ppEnum  
 );  
@@ -48,4 +46,5 @@ HRESULT EnumAppDomains (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorPropertyAttr Enumeration
 Contains values that describe the metadata of a property.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorPropertyAttr {  
   
     prSpecialName           =   0x0200,   
@@ -52,4 +50,5 @@ typedef enum CorPropertyAttr {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

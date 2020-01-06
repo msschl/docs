@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 83058790-160b-4703-a5eb-74b66acbdfa9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorUnmanagedCallingConvention Enumeration
 Specifies the calling conventions for unmanaged code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorUnmanagedCallingConvention {  
   
     IMAGE_CEE_UNMANAGED_CALLCONV_C         = 0x1,  
@@ -62,4 +60,5 @@ typedef enum CorUnmanagedCallingConvention {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

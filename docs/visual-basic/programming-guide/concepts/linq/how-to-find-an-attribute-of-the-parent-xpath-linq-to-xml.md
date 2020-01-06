@@ -1,5 +1,5 @@
 ---
-title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find an Attribute of the Parent (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 9d2572fd-27d4-426c-b079-16854cb9ec7d
 ---
@@ -36,10 +36,11 @@ Console.WriteLine(att1)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 id="bk101"  
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

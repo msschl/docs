@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3c24e552-fc69-4971-b65a-a3e4b5f7f1e8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::DefineMethodSpec Method
 Creates a generic instance of a method, and gets a token to the definition.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineMethodSpec (  
     [in]  mdToken           tkParent,   
     [in]  PCCOR_SIGNATURE   pvSigBlob,   
@@ -55,5 +53,6 @@ HRESULT DefineMethodSpec (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

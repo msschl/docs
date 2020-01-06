@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a71563c0-62f2-4eb4-970c-825d61827613
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable::GetAddressKind Method
 Gets the kind of address of this variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressKind(  
     [out, retval] ULONG32* pRetVal);  
 ```  
@@ -39,4 +37,5 @@ HRESULT GetAddressKind(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)

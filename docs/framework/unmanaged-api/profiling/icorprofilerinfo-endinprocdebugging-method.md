@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 35bc1188-9767-4141-8038-60ea015b99ac
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::EndInprocDebugging Method
 Shuts down an in-process debugging session. This method is obsolete in the .NET Framework version 2.0.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndInprocDebugging(  
     [in]  DWORD dwProfilerContext);  
 ```  
@@ -47,4 +45,5 @@ HRESULT EndInprocDebugging(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

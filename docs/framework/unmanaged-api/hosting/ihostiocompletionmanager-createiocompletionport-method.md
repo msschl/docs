@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 907a2b43-68db-44a7-acac-89e792e7bb3c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::CreateIoCompletionPort Method
 Requests that the host create a new I/O completion port.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateIoCompletionPort (  
     [out] HANDLE *phPort  
 );  
@@ -58,5 +56,6 @@ HRESULT CreateIoCompletionPort (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

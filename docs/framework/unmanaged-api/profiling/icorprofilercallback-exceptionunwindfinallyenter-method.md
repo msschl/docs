@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7fab986-b69f-4ec8-b7b7-91dcfc239cd0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFinallyEnter Method
 Notifies the profiler that the unwind phase of exception handling is entering a `finally` clause contained in the specified function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFinallyEnter(  
     [in] FunctionID functionId);  
 ```  
@@ -47,6 +45,7 @@ HRESULT ExceptionUnwindFinallyEnter(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [GetNotifiedExceptionClauseInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)
 - [ExceptionUnwindFinallyLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyleave-method.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fe07a05b-f6d6-44b5-ab01-b9a6eb15c350
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::NextDomain Method
 Gets an interface pointer to the next domain in the enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextDomain (  
     [in] HCORENUM hEnum,  
     [out] void** pAppDomain  
@@ -56,6 +54,7 @@ HRESULT NextDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

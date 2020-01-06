@@ -1,5 +1,5 @@
 ---
-title: "Into Clause (Visual Basic)"
+title: "Into Clause"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Into keyword [Visual Basic]"
@@ -18,4 +18,5 @@ Identifies aggregate functions or groupings to apply to a collection.
  [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

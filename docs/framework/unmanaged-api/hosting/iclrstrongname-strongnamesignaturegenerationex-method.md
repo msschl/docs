@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c3f34584-c6e2-41fd-bb44-e44da8546309
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameSignatureGenerationEx Method
 Generates a strong name signature for the specified assembly, according to the specified flags.  
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT StrongNameSignatureGenerationEx (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
@@ -63,9 +61,9 @@ HRESULT StrongNameSignatureGenerationEx (
  `dwFlags`  
  [in] One or more of the following values:  
   
--   `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
+- `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
   
--   `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
+- `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
@@ -89,5 +87,6 @@ HRESULT StrongNameSignatureGenerationEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameSignatureGeneration Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegeneration-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

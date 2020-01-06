@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 124656f6-0dad-4ceb-9043-d3869ab65cde
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CeeSectionRelocType Enumeration
 Provides values to influence the type of `reloc` instruction emitted in a call to [ICeeGen::AddSectionReloc](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  {  
     srRelocAbsolute,  
     srRelocHighLow          = 3,  
@@ -74,6 +72,7 @@ typedef enum  {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
 - [AddSectionReloc Method](../../../../docs/framework/unmanaged-api/metadata/iceegen-addsectionreloc-method.md)

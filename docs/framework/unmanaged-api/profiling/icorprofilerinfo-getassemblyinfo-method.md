@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7a3c97c3-1e31-47b1-bf23-386785c509c4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetAssemblyInfo Method
 Accepts an assembly ID, and returns the assembly's name and the ID of its manifest module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyInfo(  
     [in]  AssemblyID  assemblyId,  
     [in]  ULONG       cchName,  
@@ -68,6 +66,7 @@ HRESULT GetAssemblyInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetRVA Method
 Sets the relative virtual address of the specified method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRVA (  
     [in]  mdMethodDef  md,   
     [in]  ULONG        ulRVA   
@@ -47,5 +45,6 @@ HRESULT SetRVA (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

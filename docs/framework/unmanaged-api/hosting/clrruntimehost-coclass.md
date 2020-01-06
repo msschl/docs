@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 2ac9cbf5-8a2d-4e4f-8831-0dad8ef0a897
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRRuntimeHost Coclass
 Provides interfaces for managing code execution by the runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CLRRuntimeHost {  
     [default] interface  ICLRRuntimeHost;  
     interface            ICLRValidator;  
@@ -46,4 +44,5 @@ coclass CLRRuntimeHost {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)

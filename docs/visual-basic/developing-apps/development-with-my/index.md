@@ -1,5 +1,5 @@
 ---
-title: "Development with My (Visual Basic)"
+title: "Development with My"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.MyWpfExtension.Windows"
@@ -11,15 +11,17 @@ helpviewer_keywords:
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
 ---
 # Development with My (Visual Basic)
+
 Visual Basic provides new features for rapid application development that improve productivity and ease of use while delivering power. One of these features, called `My`, provides access to information and default object instances that are related to the application and its run-time environment. This information is organized in a format that is discoverable through IntelliSense and logically delineated according to use.  
   
  Top-level members of `My` are exposed as objects. Each object behaves similarly to a namespace or a class with `Shared` members, and it exposes a set of related members.  
   
  This table shows the top-level `My` objects and their relationship to each other.  
   
- ![Object Model for My](../../../visual-basic/developing-apps/development-with-my/media/myobjmodel.gif "MyObjModel")  
+ ![Diagram shows the object model for My.](./media/index/my-object-model-relationships.gif)  
   
 ## In This Section  
+
  [Performing Tasks with My.Application, My.Computer, and My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  
  Describes the three central `My` objects, `My.Application`, `My.Computer`, and `My.User`, which provide access to information and functionality  
   
@@ -36,6 +38,7 @@ Visual Basic provides new features for rapid application development that improv
  Gives details on which `My` features are available in different project types.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>

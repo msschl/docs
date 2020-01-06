@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c28d1983-83f7-46e2-990f-dbb9dc07c818
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager Interface
 Provides methods that allow the common language runtime (CLR) to interact with I/O completion ports provided by the host.  
@@ -49,4 +47,5 @@ Provides methods that allow the common language runtime (CLR) to interact with I
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

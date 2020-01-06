@@ -1,5 +1,5 @@
 ---
-title: "Performance (LINQ to XML) (Visual Basic)"
+title: "Performance (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 155557f6-5d7e-4784-9d00-f42092a28857
 ---
@@ -20,4 +20,5 @@ This section provides information about performance in [!INCLUDE[sqltecxlinq](~/
  Provides performance information about statically compiled queries, in contrast to the parsing and processing that must be done by an XPath expression evaluator.  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote::CreateProcessEx Method
 Launches a process on a remote machine under the debugger.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcessEx (  
     [in]  ICorDebugRemoteTarget*      pRemoteTarget,  
     [in]  LPCWSTR                     lpApplicationName,  
@@ -101,6 +99,7 @@ HRESULT CreateProcessEx (
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

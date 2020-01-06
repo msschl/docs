@@ -1,5 +1,5 @@
 ---
-title: "Types of String Manipulation Methods in Visual Basic"
+title: "Types of String Manipulation Methods"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], manipulating [Visual Basic]"
@@ -38,4 +38,5 @@ There are several different ways to analyze and manipulate your strings. Some of
  For more information, see the documentation for the <xref:System.String> class.  
   
 ## See also
+
 - [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 003f6974-9727-4322-bed5-e330d1224d0b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRIoCompletionManager::OnComplete Method
 Notifies the common language runtime (CLR) of the status of an I/O request that was made by using a call to the [IHostIoCompletionManager::Bind](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-bind-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnComplete (  
     [in] DWORD dwErrorCode,  
     [in] DWORD NumberOfBytesTransferred,  
@@ -35,11 +33,11 @@ HRESULT OnComplete (
  `dwErrorCode`  
  [in] An HRESULT value that indicates the status of the bind operation.  
   
--   S_OK indicates that the operation completed successfully.  
+- S_OK indicates that the operation completed successfully.  
   
--   HOST_E_INTERRUPTED indicates that the call terminated before completion.  
+- HOST_E_INTERRUPTED indicates that the call terminated before completion.  
   
--   E_FAIL indicates that an unknown, unrecoverable, catastrophic failure occurred.  
+- E_FAIL indicates that an unknown, unrecoverable, catastrophic failure occurred.  
   
  `NumberOfBytesTransferred`  
  [in] The number of bytes transferred during the processing of the I/O request.  
@@ -71,6 +69,7 @@ HRESULT OnComplete (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
 - [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

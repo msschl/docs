@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 78dad5e4-8e2e-400f-bec3-92ff0205cd82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::EnableClassLoadCallbacks Method
 Controls whether the [ICorDebugManagedCallback::LoadClass](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md) and [ICorDebugManagedCallback::UnloadClass](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadclass-method.md) callbacks are called for this module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableClassLoadCallbacks(  
     [in] BOOL bClassLoadCallbacks  
 );  
@@ -48,5 +46,3 @@ HRESULT EnableClassLoadCallbacks(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-
-

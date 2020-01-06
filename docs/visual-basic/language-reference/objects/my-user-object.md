@@ -1,5 +1,5 @@
 ---
-title: "My.User Object (Visual Basic)"
+title: "My.User Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.User property"
@@ -18,6 +18,7 @@ Provides access to information about the current user.
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - <xref:System.Security.Principal.IPrincipal>
 - <xref:System.Threading.Thread.CurrentPrincipal%2A>
 - <xref:System.Web.HttpContext.User%2A>

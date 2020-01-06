@@ -1,7 +1,7 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 09/02/2018
+ms.date: 11/04/2019
 ---
 # Byrefs
 
@@ -51,8 +51,9 @@ open System
 let f (dt: inref<DateTime>) =
     printfn "Now: %s" (dt.ToString())
 
-let dt = DateTime.Now
-f &dt // Pass a pointer to 'dt'
+let usage =
+    let dt = DateTime.Now
+    f &dt // Pass a pointer to 'dt'
 ```
 
 To write to the pointer by using an `outref<'T>` or `byref<'T>`, you must also make the value you grab a pointer to `mutable`.
@@ -78,7 +79,7 @@ If you are only writing the pointer instead of reading it, consider using `outre
 Consider the following code:
 
 ```fsharp
-let f (x: inref<SomeStruct>) = s.SomeField
+let f (x: inref<SomeStruct>) = x.SomeField
 ```
 
 Semantically, this means the following:
@@ -97,7 +98,7 @@ All of these rules together mean that the holder of an `inref` pointer may not m
 
 ### Outref semantics
 
-The purpose of `outref<'T>` is to indicate that the pointer should only be read from. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
+The purpose of `outref<'T>` is to indicate that the pointer should only be written to. Unexpectedly, `outref<'T>` permits reading the underlying value despite its name. This is for compatibility purposes. Semantically, `outref<'T>` is no different than `byref<'T>`.
 
 ### Interop with C\#
 
@@ -193,9 +194,9 @@ You can also directly assign to a return `byref`. Consider the following (highly
 type C() =
     let mutable nums = [| 1; 3; 7; 15; 31; 63; 127; 255; 511; 1023 |]
 
-    override __.ToString() = String.Join(' ', nums)
+    override _.ToString() = String.Join(' ', nums)
 
-    member __.FindLargestSmallerThan(target: int) =
+    member _.FindLargestSmallerThan(target: int) =
         let mutable ctr = nums.Length - 1
 
         while ctr > 0 && nums.[ctr] >= target do ctr <- ctr - 1

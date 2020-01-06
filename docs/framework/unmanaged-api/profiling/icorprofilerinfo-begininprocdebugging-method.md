@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c5c82c69-99f8-4447-aee0-42cca0a5eb5c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::BeginInprocDebugging Method
 Initializes in-process debugging support. This method is obsolete in the .NET Framework version 2.0.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginInprocDebugging(  
     [in]  BOOL   fThisThreadOnly,  
     [out] DWORD *pdwProfilerContext);  
@@ -49,4 +47,5 @@ HRESULT BeginInprocDebugging(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

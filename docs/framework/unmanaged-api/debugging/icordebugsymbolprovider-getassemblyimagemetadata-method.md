@@ -2,15 +2,13 @@
 title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 ms.date: "03/30/2017"
 ms.assetid: c3c9de67-b865-4ecf-b887-1f1d0719a0c0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetAssemblyImageMetadata Method
 Returns the metadata from a merged assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyImageMetadata(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
@@ -23,7 +21,7 @@ HRESULT GetAssemblyImageMetadata(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -35,5 +33,6 @@ HRESULT GetAssemblyImageMetadata(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

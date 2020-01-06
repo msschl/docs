@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorpubPublish Coclass
 Provides interfaces for publishing information about application domains and processes.  
   
 ## Syntax  
   
-```  
+```cpp  
 coclass CorpubPublish {  
     [default] interface ICorPublish;  
     interface           ICorPublishProcess;  
@@ -55,4 +53,5 @@ coclass CorpubPublish {
  **.NET Framework Versions:**  [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

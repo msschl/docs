@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4a05ee56-08e4-4f3a-86a9-9b52083d5c0f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameHashSize Method
 Gets the buffer size required for a hash, using the specified hash algorithm.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameHashSize (  
     [in]  ULONG   ulHashAlg,  
     [out] DWORD   *pcbSize  
@@ -50,4 +48,5 @@ HRESULT StrongNameHashSize (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

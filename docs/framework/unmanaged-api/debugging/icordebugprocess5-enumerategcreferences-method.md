@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateGCReferences Method
 Gets an enumerator for all objects that are to be garbage-collected in a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateGCReferences(  
     [in] Bool enumerateWeakReferences,   
     [out] ICorDebugGCReferenceEnum **ppEnum  
@@ -50,5 +48,6 @@ HRESULT EnumerateGCReferences(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

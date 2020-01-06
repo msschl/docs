@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 88027c55-8ec6-4f1e-a55b-7eefdbbc3515
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome::GetLocationType Method
 Gets the type of the variable's native location.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocationType(  
     [out] VariableLocationType *pLocationType  
 );  
@@ -43,5 +41,6 @@ HRESULT GetLocationType(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
 - [VariableLocationType Enumeration](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)

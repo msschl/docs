@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 68f6ea4d-9112-4d6b-93d9-e34f1e2f2496
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetNextGuid Method
 Gets the index of the next GUID value in the current table column.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextGuid (  
     [in]  ULONG   ixGuid,  
     [out] ULONG   *pNext  
@@ -50,5 +48,6 @@ HRESULT GetNextGuid (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

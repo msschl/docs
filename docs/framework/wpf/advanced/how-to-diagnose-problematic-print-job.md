@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 ---
 # How to: Diagnose Problematic Print Job
-Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the [!INCLUDE[TLA#tla_api#plural](../../../../includes/tlasharptla-apisharpplural-md.md)] of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
+Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
   
 ## Example  
  The major steps for creating this kind of utility are as follows.  
   
-1.  Identify the print job that the user is complaining about. Users often cannot do this precisely. They may not know the names of the print servers or printers. They may describe the location of the printer in different terminology than was used in setting its <xref:System.Printing.PrintQueue.Location%2A> property. Accordingly, it is a good idea to generate a list of the user's currently submitted jobs. If there is more than one, then communication between the user and the print system administrator can be used to pinpoint the job that is having problems. The substeps are as follows.  
+1. Identify the print job that the user is complaining about. Users often cannot do this precisely. They may not know the names of the print servers or printers. They may describe the location of the printer in different terminology than was used in setting its <xref:System.Printing.PrintQueue.Location%2A> property. Accordingly, it is a good idea to generate a list of the user's currently submitted jobs. If there is more than one, then communication between the user and the print system administrator can be used to pinpoint the job that is having problems. The substeps are as follows.  
   
-    1.  Obtain a list of all print servers.  
+    1. Obtain a list of all print servers.  
   
-    2.  Loop through the servers to query their print queues.  
+    2. Loop through the servers to query their print queues.  
   
-    3.  Within each pass of the server loop, loop through all the server's queues to query their jobs  
+    3. Within each pass of the server loop, loop through all the server's queues to query their jobs  
   
-    4.  Within each pass of the queue loop, loop through its jobs and gather identifying information about those that were submitted by the complaining user.  
+    4. Within each pass of the queue loop, loop through its jobs and gather identifying information about those that were submitted by the complaining user.  
   
-2.  When the problematic print job has been identified, examine relevant properties to see what might be the problem. For example, is job in an error state or did the printer servicing the queue go offline before the job could print?  
+2. When the problematic print job has been identified, examine relevant properties to see what might be the problem. For example, is job in an error state or did the printer servicing the queue go offline before the job could print?  
   
  The code below is series of code examples. The first code example contains the loop through the print queues. (Step 1c above.) The variable `myPrintQueues` is the <xref:System.Printing.PrintQueueCollection> object for the current print server.  
   
@@ -43,9 +43,9 @@ Network administrators often field complaints from users about print jobs that d
   
  At this point the application contains a branching structure corresponding to the two ways of checking a print job's status:  
   
--   You can read the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property which is of type <xref:System.Printing.PrintJobStatus>.  
+- You can read the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property which is of type <xref:System.Printing.PrintJobStatus>.  
   
--   You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
+- You can read each relevant property such as <xref:System.Printing.PrintSystemJobInfo.IsBlocked%2A> and <xref:System.Printing.PrintSystemJobInfo.IsInError%2A>.  
   
  This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "Y" if he or she wanted to use the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property. See below for the details of the two methods. Finally, the application uses a method called **ReportQueueAndJobAvailability** to report on whether the job can be printed at this time of day. This method is discussed in [Discover Whether a Print Job Can Be Printed At This Time of Day](how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md).  
   
@@ -53,7 +53,7 @@ Network administrators often field complaints from users about print jobs that d
  [!code-csharp[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#identifyanddiagnoseproblematicjob)]
  [!code-vb[DiagnoseProblematicPrintJob#IdentifyAndDiagnoseProblematicJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#identifyanddiagnoseproblematicjob)]  
   
- To check print job status using the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintJobStatus>, the [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md), and <xref:System.FlagsAttribute>.  
+ To check print job status using the flags of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property, you check each relevant flag to see if it is set. The standard way to see if one bit is set in a set of bit flags is to perform a logical AND operation with the set of flags as one operand and the flag itself as the other. Since the flag itself has only one bit set, the result of the logical AND is that, at most, that same bit is set. To find out whether it is or not, just compare the result of the logical AND with the flag itself. For more information, see <xref:System.Printing.PrintJobStatus>, the [& Operator (C# Reference)](../../../csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-), and <xref:System.FlagsAttribute>.  
   
  For each attribute whose bit is set, the code reports this to the console screen and sometimes suggests a way to respond. (The **HandlePausedJob** method that is called if the job or queue is paused is discussed below.)  
   
@@ -76,10 +76,11 @@ Network administrators often field complaints from users about print jobs that d
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
 ## See also
+
 - <xref:System.Printing.PrintJobStatus>
 - <xref:System.Printing.PrintSystemJobInfo>
 - <xref:System.FlagsAttribute>
 - <xref:System.Printing.PrintQueue>
-- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
+- [& Operator (C# Reference)](../../../csharp/language-reference/operators/bitwise-and-shift-operators.md#logical-and-operator-)
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)

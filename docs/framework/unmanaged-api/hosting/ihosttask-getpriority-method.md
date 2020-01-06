@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4b463cd6-77c1-4f9a-8518-346ad8fc4b70
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTask::GetPriority Method
 Gets the thread priority level of the task represented by the current [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPriority (  
     [out] int *pPriority  
 );  
@@ -57,6 +55,7 @@ HRESULT GetPriority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

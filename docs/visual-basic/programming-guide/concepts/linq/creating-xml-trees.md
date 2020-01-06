@@ -1,5 +1,5 @@
 ---
-title: "Creating XML Trees (Visual Basic)"
+title: "Creating XML Trees"
 ms.date: 07/20/2015
 ms.assetid: e86ba12b-17de-4579-81bb-66322b84cfbe
 ---
@@ -19,4 +19,5 @@ One of the most common XML tasks is constructing an XML tree. This section descr
 |[Valid Content of XElement and XDocument Objects](../../../../visual-basic/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects.md)|Describes the valid arguments that can be passed to the constructors and methods that are used to add content to elements and documents.|  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

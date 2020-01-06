@@ -13,15 +13,13 @@ helpviewer_keywords:
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
   - "SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
 ms.assetid: 43e61c4b-c435-45ec-9ef6-c68403aa4200
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDomainManager::SetPropertiesForDefaultAppDomain Method
 Sets properties that will be used to initialize the default application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPropertiesForDefaultAppDomain(  
     [in] DWORD nProperties,  
     [in] LPCWSTR *pwszPropertyNames,  
@@ -60,5 +58,6 @@ HRESULT SetPropertiesForDefaultAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
 - [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a13ec8a6-8e18-4acb-8054-77f5b1a0e0b9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRErrorReportingManager::GetBucketParametersForCurrentException Method
 Gets the Watson bucket for the current exception on the calling thread.  
@@ -25,7 +23,7 @@ Gets the Watson bucket for the current exception on the calling thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBucketParametersForCurrentException(  
     [out] BucketParameters *pParams  
 );  
@@ -45,4 +43,5 @@ HRESULT GetBucketParametersForCurrentException(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)

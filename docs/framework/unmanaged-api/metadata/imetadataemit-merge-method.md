@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7596220c-f699-4b6c-8ae7-c83220610650
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::Merge Method
 Adds the specified imported scope to the list of scopes to be merged.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Merge (   
     [in]  IMetaDataImport  *pImport,   
     [in]  IMapToken        *pHostMapToken,   
@@ -38,7 +36,7 @@ HRESULT Merge (
  `pIMap`  
  [in] A pointer to an [IMapToken](../../../../docs/framework/unmanaged-api/metadata/imaptoken-interface.md) object that specifies the token re-map.  
   
- `pHandleer`  
+ `pHandler`  
  [in] A pointer to an [IUnknown](/cpp/atl/iunknown) object that specifies the errors.  
   
 ## Remarks  
@@ -54,5 +52,6 @@ HRESULT Merge (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

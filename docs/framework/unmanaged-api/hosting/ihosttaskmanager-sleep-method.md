@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f67d25f3-9199-4c5f-b1e8-1c819243cfd5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::Sleep Method
 Notifies the host that the current task is going to sleep.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Sleep (  
     [in] DWORD dwMilliseconds,  
     [in] DWORD option  
@@ -61,6 +59,7 @@ HRESULT Sleep (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

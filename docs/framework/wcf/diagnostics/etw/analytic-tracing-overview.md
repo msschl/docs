@@ -10,7 +10,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
   
  For more information about ETW, see [Improve Debugging and Performance Tuning with ETW](https://go.microsoft.com/fwlink/?LinkId=164781).  
   
- In addition to using the Windows System, Security, and Application event logs to analyze application, [!INCLUDE[wv](../../../../../includes/wv-md.md)] and [!INCLUDE[lserver](../../../../../includes/lserver-md.md)] introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.  
+ In addition to using the Windows System, Security, and Application event logs to analyze application, Windows Vista and Windows Server 2008 introduced additional logs under the Applications and Services Logs top-level node. The purpose of these new logs is to store events for a particular application or specific component instead of global events that have a system-wide impact (such as the type of events that the Security event log might record). [!INCLUDE[netfx_current_short](../../../../../includes/netfx-current-short-md.md)] unifies and correlates the logging of WCF Trace Events, WCF Message Logs, and [!INCLUDE[wf1](../../../../../includes/wf1-md.md)] Tracking records to the Applications and Services Logs.  
   
 ## Concepts and Capabilities  
  The following concepts and capabilities apply to WCF Analytic Tracing.  
@@ -35,10 +35,10 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
  `ServiceModelReg.exe -i -c:etw`  
   
 ### Dynamic Configuration  
- The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. For more information, see [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).  
+ The ETW infrastructure allows tracing to be enabled and configured dynamically using standard Windows tools. For more information, see [Dynamically Enabling Analytic Tracing](dynamically-enabling-analytic-tracing.md).  
   
 ### Message Flow Tracing  
- For more information about how to enable message flow tracing, see [Configuring Message Flow Tracing](../../../../../docs/framework/wcf/diagnostics/etw/configuring-message-flow-tracing.md).  
+ For more information about how to enable message flow tracing, see [Configuring Message Flow Tracing](configuring-message-flow-tracing.md).  
   
 ### Keywords  
- Keywords are used to filter trace messages and define which component of the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] emitted the event. For more information, see [Dynamically Enabling Analytic Tracing](../../../../../docs/framework/wcf/diagnostics/etw/dynamically-enabling-analytic-tracing.md).
+ Keywords are used to filter trace messages and define which component of the .NET Framework emitted the event. For more information, see [Dynamically Enabling Analytic Tracing](dynamically-enabling-analytic-tracing.md).

@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 98a4762d-9ad2-45bd-9d03-39064a028b44
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # FLockClrVersionCallback Function Pointer
 Points to a function that the common language runtime (CLR) calls to indicate that initialization has either started or completed.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );  
 ```  
   
@@ -41,5 +39,6 @@ typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [LockClrVersion Function](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md)
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

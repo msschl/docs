@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0c3d4835-e111-4e82-af6d-53f140b8f2c9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::Clone Method
 Gets an interface pointer to a copy of this [ICorProfilerFunctionEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md) interface.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone([out] ICorProfilerFunctionEnum **ppEnum);  
 ```  
   
@@ -41,5 +39,6 @@ HRESULT Clone([out] ICorProfilerFunctionEnum **ppEnum);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

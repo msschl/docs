@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetUserString Method
 Gets the literal string represented by the specified metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserString (  
    [in]   mdString    stk,  
    [out]  LPWSTR      szString,  
@@ -55,5 +53,6 @@ HRESULT GetUserString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

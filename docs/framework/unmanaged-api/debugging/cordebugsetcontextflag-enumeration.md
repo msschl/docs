@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b30280bb-fe75-44ed-8589-bcff081fae44
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugSetContextFlag Enumeration
 Indicates whether the context is from the active (or leaf) frame on the stack or has been computed by unwinding from another frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugSetContextFlag  
 {  
    SET_CONTEXT_FLAG_ACTIVE_FRAME = 1  
@@ -50,5 +48,6 @@ typedef enum CorDebugSetContextFlag
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

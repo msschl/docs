@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a6bf5a04-e03e-44f0-917a-96f6a6d3cc96
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetAppDomainInfo Method
 Accepts an application domain ID. Returns an application domain name and the ID of the process that contains it.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomainInfo(  
     [in]  AppDomainID appDomainId,  
     [in]  ULONG       cchName,  
@@ -64,6 +62,7 @@ HRESULT GetAppDomainInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

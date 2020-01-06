@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 603b3881-ea94-4dca-95cd-91eebac873a0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::GetAppDomainsContainingModule Method
 Gets the identifiers of the application domains in which the given module has been loaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomainsContainingModule(  
             [in] ModuleID moduleId,  
             [in] ULONG32 cAppDomainIds,  
@@ -58,6 +56,7 @@ HRESULT GetAppDomainsContainingModule(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

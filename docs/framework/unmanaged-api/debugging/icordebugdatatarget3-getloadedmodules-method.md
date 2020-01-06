@@ -2,15 +2,13 @@
 title: "ICorDebugDataTarget3::GetLoadedModules Method"
 ms.date: "03/30/2017"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget3::GetLoadedModules Method
 Gets a list of the modules that have been loaded so far.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLoadedModules(  
    [in] ULONG32 cRequestedModules,  
    [out] ULONG32 *pcFetchedModules,  
@@ -31,7 +29,7 @@ HRESULT GetLoadedModules(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -43,5 +41,6 @@ HRESULT GetLoadedModules(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

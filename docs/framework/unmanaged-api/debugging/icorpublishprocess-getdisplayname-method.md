@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::GetDisplayName Method
 Gets the full path of the executable for the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDisplayName (  
     [in]  ULONG32                    cchName,   
     [out] ULONG32                    *pcchName,  
@@ -52,4 +50,5 @@ HRESULT GetDisplayName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

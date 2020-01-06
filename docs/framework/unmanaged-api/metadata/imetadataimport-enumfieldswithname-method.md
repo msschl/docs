@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 42145e8d-000f-4d0b-ae43-c08201190fa2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumFieldsWithName Method
 Enumerates FieldDef tokens of the specified type with the specified name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumFieldsWithName (  
    [in, out] HCORENUM    *phEnum,   
    [in]  mdTypeDef       cl,   
@@ -73,5 +71,6 @@ HRESULT EnumFieldsWithName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

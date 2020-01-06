@@ -1,5 +1,5 @@
 ---
-title: "Like Operator (Visual Basic)"
+title: "Like Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Like"
@@ -31,7 +31,7 @@ Compares a string against a pattern.
 
 ## Syntax  
   
-```  
+```vb  
 result = string Like pattern  
 ```  
   
@@ -100,6 +100,7 @@ result = string Like pattern
  [!code-vb[VbVbalrOperators#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#30)]  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Strings.InStr%2A>
 - <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
 - [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)

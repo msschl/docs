@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 65063ad5-e0d9-4c01-8f8b-9a5950109fa6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenser::OpenScope Method
 Opens an existing, on-disk file and maps its metadata into memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope (  
     [in]  LPCWSTR     szScope,   
     [in]  DWORD       dwOpenFlags,   
@@ -66,6 +64,7 @@ HRESULT OpenScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

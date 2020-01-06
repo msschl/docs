@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e359384-0d3d-451c-807e-5d7fcebf2be7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHost::EnumerateInstalledRuntimes Method
 Returns an enumeration that contains a valid [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface for each version of the common language runtime (CLR) that is installed on a computer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateInstalledRuntimes (  
     [out, retval] IEnumUnknown **ppEnumerator);  
 ```  
@@ -50,5 +48,6 @@ HRESULT EnumerateInstalledRuntimes (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

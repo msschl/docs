@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 704d19f1-bdef-4745-af8c-6476eb246fb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNestedClassProps Method
 Gets the TypeDef token for the parent <xref:System.Type> of the specified nested type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNestedClassProps (  
    [in]   mdTypeDef      tdNestedClass,  
    [out]  mdTypeDef      *ptdEnclosingClass  
@@ -47,5 +45,6 @@ HRESULT GetNestedClassProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

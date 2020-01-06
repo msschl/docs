@@ -3,10 +3,10 @@ title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: cartermp
 ms.date: 06/20/2016
+ms.technology: csharp-async
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ms.custom: seodec18
 ---
-
 # Asynchronous programming
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
@@ -59,7 +59,6 @@ private DamageResult CalculateDamageDone()
     // Does an expensive calculation and returns
     // the result of that calculation.
 }
-
 
 calculateButton.Clicked += async (o, e) =>
 {
@@ -151,7 +150,7 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
     NetworkProgressBar.Visibility = Visibility.Visible;
 
     // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
-    // This is what allows the app to be responsive and not hang on the UI thread.
+    // This is what allows the app to be responsive and not block the UI thread.
     var html = await getDotNetFoundationHtmlTask;
     int count = Regex.Matches(html, @"\.NET").Count;
 

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6bafd75a-e2d0-4aea-aed1-074374d5dff6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataValidate::ValidatorInit Method
 Sets a flag that specifies the type of the module in the current metadata scope, and registers the specified callback method for validation errors.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ValidatorInit (  
    [in] DWORD       dwModuleType,  
    [in] IUnknown    *pUnk  
@@ -47,4 +45,5 @@ HRESULT ValidatorInit (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataValidate Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatavalidate-interface.md)

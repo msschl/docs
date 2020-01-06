@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6a0ad3ee-dacb-47e9-abae-4536bcc4804b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetTypeFields Method
 Provides information about the fields that belong to a type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeFields(  
     [in] COR_TYPEID id,  
     [in] ULONG32 celt,  
@@ -58,5 +56,6 @@ HRESULT GetTypeFields(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 97e493f5-3a62-4ec7-b42f-4af57bf71f57
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain2::GetArrayOrPointerType Method
 Gets an array of the specified type, or a pointer or reference to the specified type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayOrPointerType (  
     [in]  CorElementType    elementType,  
     [in]  ULONG32           nRank,  
@@ -48,11 +46,11 @@ HRESULT GetArrayOrPointerType (
 ## Remarks  
  The value of *elementType* must be one of the following:  
   
--   ELEMENT_TYPE_PTR  
+- ELEMENT_TYPE_PTR  
   
--   ELEMENT_TYPE_BYREF  
+- ELEMENT_TYPE_BYREF  
   
--   ELEMENT_TYPE_ARRAY or ELEMENT_TYPE_SZARRAY  
+- ELEMENT_TYPE_ARRAY or ELEMENT_TYPE_SZARRAY  
   
  If the value of *elementType* is ELEMENT_TYPE_PTR or ELEMENT_TYPE_BYREF, *nRank* must be zero.  
   

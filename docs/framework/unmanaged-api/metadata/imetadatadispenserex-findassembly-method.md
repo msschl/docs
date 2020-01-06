@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenserEx::FindAssembly Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindAssembly(  
     [in]  LPCWSTR  szAppBase,  
     [in]  LPCWSTR  szPrivateBin,  
@@ -67,5 +65,6 @@ HRESULT FindAssembly(
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5f1f9c61-3e3b-48b2-b111-a4395f7623a7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetMachineType Method
 Gets the identifier for the kind of instruction set that the target process is using.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMachineType (  
     [out] ULONG32     *machineType  
 );  
@@ -43,4 +41,5 @@ HRESULT GetMachineType (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

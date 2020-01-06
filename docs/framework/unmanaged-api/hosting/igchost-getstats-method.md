@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c4ae022c-46ac-4f19-9ddd-09b955f19412
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::GetStats Method
 Gets the statistics for the current state of the garbage collection system.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStats (  
     [in, out] COR_GC_STATS *pStats  
 );  
@@ -46,4 +44,5 @@ HRESULT GetStats (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

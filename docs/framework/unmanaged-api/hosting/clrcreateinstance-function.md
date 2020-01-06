@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRCreateInstance Function
 Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CLRCreateInstance(  
     [in]  REFCLSID  clsid,  
     [in]  REFIID     riid,  
@@ -60,7 +58,7 @@ HRESULT CLRCreateInstance(
   
  The following code shows how to use `CLRCreateInstance` to get all three interfaces:  
   
-```  
+```cpp  
 #include <metahost.h>  
 #pragma comment(lib, "mscoree.lib")  
   
@@ -86,4 +84,5 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

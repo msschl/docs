@@ -1,12 +1,12 @@
 ---
-title: "How to: Use the My Namespace - C# Programming Guide"
+title: "How to use the My namespace - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, My namespace access"
 ms.assetid: e7152414-0ea5-4c8e-bf02-c8d5bbe45ff4
 ---
-# How to: Use the My Namespace (C# Programming Guide)
+# How to use the My namespace (C# Programming Guide)
 The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) provides easy and intuitive access to a number of .NET Framework classes, enabling you to write code that interacts with the computer, application, settings, resources, and so on. Although originally designed for use with Visual Basic, the `MyServices` namespace can be used in C# applications.  
   
  For more information about using the `MyServices` namespace from Visual Basic, see [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md).  
@@ -16,9 +16,9 @@ The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) pro
   
 #### To add a reference to the Visual Basic library  
   
-1.  In **Solution Explorer**, right-click the **References** node, and select **Add Reference**.  
+1. In **Solution Explorer**, right-click the **References** node, and select **Add Reference**.  
   
-2.  When the **References** dialog box appears, scroll down the list, and select Microsoft.VisualBasic.dll.  
+2. When the **References** dialog box appears, scroll down the list, and select Microsoft.VisualBasic.dll.  
   
      You might also want to include the following line in the `using` section at the start of your program.  
   
@@ -35,6 +35,6 @@ The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) pro
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
-- [Using Namespaces](../../../csharp/programming-guide/namespaces/using-namespaces.md)
+- [C# Programming Guide](../index.md)
+- [Namespaces](./index.md)
+- [Using Namespaces](./using-namespaces.md)

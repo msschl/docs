@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 72e38e61-3d56-4ae3-b8f6-0ab7922aaf11
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration::SetGCThreadControl Method
 Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCThreadControl (  
     [in] IGCThreadControl* pGCThreadControl  
 );  
@@ -46,4 +44,5 @@ HRESULT SetGCThreadControl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

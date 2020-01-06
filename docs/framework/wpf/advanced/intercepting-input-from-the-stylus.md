@@ -16,13 +16,13 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
   
  This topic contains the following subsections:  
   
--   [Architecture](#Architecture)  
+- [Architecture](#Architecture)  
   
--   [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
+- [Implementing Stylus Plug-ins](#ImplementingStylusPlugins)  
   
--   [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
+- [Adding Your Plug-in to an InkCanvas](#AddingYourPluginToAnInkCanvas)  
   
--   [Conclusion](#Conclusion)  
+- [Conclusion](#Conclusion)  
   
 <a name="Architecture"></a>   
 ## Architecture  
@@ -37,7 +37,7 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
  To implement a plug-in, derive a class from <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn>. This class is applied o the stream of data as it comes in from the <xref:System.Windows.Input.Stylus>. In this class you can modify the values of the <xref:System.Windows.Input.StylusPoint> data.  
   
 > [!CAUTION]
->  If a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> throws or causes an exception, the application will close. You should thoroughly test controls that consume a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> and only use a control if you are certain the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> will not throw an exception.  
+> If a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> throws or causes an exception, the application will close. You should thoroughly test controls that consume a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> and only use a control if you are certain the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> will not throw an exception.  
   
  The following example demonstrates a plug-in that restricts the stylus input by modifying the <xref:System.Windows.Input.StylusPoint.X%2A> and <xref:System.Windows.Input.StylusPoint.Y%2A> values in the <xref:System.Windows.Input.StylusPoint> data as it comes in from the <xref:System.Windows.Input.Stylus> device.  
   
@@ -65,5 +65,6 @@ The <xref:System.Windows.Input.StylusPlugIns> architecture provides a mechanism 
  By deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes and inserting them into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> collections, you can greatly enhance the behavior of your digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to customize the <xref:System.Windows.Input.Stylus> input. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and rendering with optimal performance for your application.  
   
 ## See also
+
 - [Advanced Ink Handling](advanced-ink-handling.md)
 - [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)

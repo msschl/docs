@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3be458bb-a519-4e22-b373-0b28f2c9cc3c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName Interface
 Provides methods for obtaining type name information.  
@@ -32,4 +30,5 @@ Provides methods for obtaining type name information.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

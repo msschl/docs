@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 843c904a-8176-4d8f-bd47-b4d4c29f4c5c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::DefineGlobalVariable Method
 Defines a single global variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGlobalVariable(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  
@@ -67,6 +65,7 @@ HRESULT DefineGlobalVariable(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
 - [DefineGlobalVariable2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineglobalvariable2-method.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dea34b81-8d2b-4cc3-8696-0ad4291d8a92
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::SetMinThreads Method
 Sets the minimum number of threads that the host should allot to I/O completion.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD dwMinIoCompletionThreads  
 );  
@@ -58,6 +56,7 @@ HRESULT SetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-setmaxthreads-method.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

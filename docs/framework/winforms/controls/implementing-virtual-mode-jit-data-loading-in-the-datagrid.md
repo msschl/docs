@@ -28,7 +28,7 @@ One reason to implement virtual mode in the <xref:System.Windows.Forms.DataGridV
  The `IDataPageRetriever`, `DataRetriever`, and `Cache` types are described later in this topic.  
   
 > [!NOTE]
->  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
+> Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.Virtual_lazyloading#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.Virtual_lazyloading/CS/lazyloading.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridView.Virtual_lazyloading#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.Virtual_lazyloading/VB/lazyloading.vb#100)]  
@@ -65,6 +65,7 @@ One reason to implement virtual mode in the <xref:System.Windows.Forms.DataGridV
  To improve the scrolling performance of your application, you can increase the amount of data stored locally. To improve startup time, however, you must avoid loading too much data initially. You may want to modify the `Cache` class to increase the number of data pages it can store. Using more data pages can improve scrolling efficiency, but you will need to determine the ideal number of rows in a data page, depending on the available bandwidth and the server latency. With smaller pages, the server will be accessed more frequently, but will take less time to return the requested data. If latency is more of an issue than bandwidth, you may want to use larger data pages.  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
 - [Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)

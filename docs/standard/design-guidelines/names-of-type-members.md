@@ -22,7 +22,7 @@ Types are made of members: methods, properties, events, constructors, and fields
   
  **✓ DO** give methods names that are verbs or verb phrases.  
   
-```  
+```csharp  
 public class String {  
     public int CompareTo(...);  
     public string[] Split(...);  
@@ -42,15 +42,15 @@ public class String {
   
  This pattern typically indicates that the property should really be a method.  
   
- **✓ DO** name collection properties with a plural phrase describing the items in the collection instead of using a singular phrase followed by "List" or "Collection."  
+ **✓ DO** name collection properties with a plural phrase describing the items in the collection instead of using a singular phrase followed by "List" or "Collection".  
   
- **✓ DO** name Boolean properties with an affirmative phrase (`CanSeek` instead of `CantSeek`). Optionally, you can also prefix Boolean properties with "Is," "Can," or "Has," but only where it adds value.  
+ **✓ DO** name Boolean properties with an affirmative phrase (`CanSeek` instead of `CantSeek`). Optionally, you can also prefix Boolean properties with "Is", "Can", or "Has", but only where it adds value.  
   
  **✓ CONSIDER** giving a property the same name as its type.  
   
  For example, the following property correctly gets and sets an enum value named `Color`, so the property is named `Color`:  
   
-```  
+```csharp  
 public enum Color {...}  
 public class Control {  
     public Color Color { get {...} set {...} }  

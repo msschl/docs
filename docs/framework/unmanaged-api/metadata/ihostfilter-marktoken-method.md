@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d7061343-d0a3-4fd5-b312-61974f98bd62
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IHostFilter::MarkToken Method
 Indicates that the specified metadata token will be processed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkToken (  
     [in]  mdToken         tk  
 );  
@@ -46,5 +44,6 @@ HRESULT MarkToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
 - [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)

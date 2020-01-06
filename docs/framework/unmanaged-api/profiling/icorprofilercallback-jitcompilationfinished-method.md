@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8dcd7537-d0c6-498c-8a56-2c060310ef65
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITCompilationFinished Method
 Notifies the profiler that the just-in-time (JIT) compiler has finished compiling a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCompilationFinished(  
     [in] FunctionID functionId,  
     [in] HRESULT    hrStatus,  
@@ -52,5 +50,6 @@ HRESULT JITCompilationFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [JITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md)

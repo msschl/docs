@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: acc239ce-3eef-418c-b1df-c5a6dd8e8a4c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionSearchFilterEnter Method
 Notifies the profiler that the search phase of exception handling has begun executing a user-defined exception filter.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFilterEnter(  
     [in] FunctionID functionId);  
 ```  
@@ -42,5 +40,6 @@ HRESULT ExceptionSearchFilterEnter(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ExceptionSearchFilterLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionsearchfilterleave-method.md)

@@ -2,8 +2,6 @@
 title: "ICorDebugMergedAssemblyRecord Interface"
 ms.date: "03/30/2017"
 ms.assetid: fe280b11-9479-4e34-a07c-0d1ea8088422
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMergedAssemblyRecord Interface
 Provides information about a merged assembly.  
@@ -22,7 +20,7 @@ Provides information about a merged assembly.
 ## Remarks  
   
 > [!NOTE]
->  This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
+> This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -34,5 +32,6 @@ Provides information about a merged assembly.
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

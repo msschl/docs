@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cd93a48d-1fed-4706-bec6-a05dc3b64fbd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SetGenericParamProps Method
 Sets property values for the generic parameter definition referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGenericParamProps (  
     [in] mdGenericParam   gp,   
     [in] DWORD            dwParamFlags,   
@@ -59,5 +57,6 @@ HRESULT SetGenericParamProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

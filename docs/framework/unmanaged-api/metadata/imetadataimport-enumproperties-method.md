@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 60573ad7-8821-4721-a068-3f7a6d25926a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumProperties Method
 Enumerates PropertyDef tokens representing the properties of the type referenced by the specified TypeDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProperties (  
    [in, out] HCORENUM    *phEnum,  
    [in]      mdTypeDef   td,  
@@ -66,5 +64,6 @@ HRESULT EnumProperties (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

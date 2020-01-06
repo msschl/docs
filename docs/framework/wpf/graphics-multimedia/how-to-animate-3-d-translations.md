@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: d4eece1f-0cd2-4a2c-8370-293354c380e4
 ---
 # How to: Animate 3-D Translations
-This topic demonstrates how to animate a translation transformation set on a [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] model.  
+This topic demonstrates how to animate a translation transformation set on a 3-D model.  
   
  The code below shows the application of a <xref:System.Windows.Media.Media3D.TranslateTransform3D> object to the <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property of a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
   
@@ -23,6 +23,7 @@ This topic demonstrates how to animate a translation transformation set on a [!I
  [!code-xaml[Animation3DGallery_snip#Translation3DAnimationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/Translation3DAnimationExample.xaml#translation3danimationexamplewholepage)]  
   
 ## See also
+
 - [Animation Overview](animation-overview.md)
 - [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
 - [3-D Graphics Overview](3-d-graphics-overview.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration::SetDebuggerThreadControl Method
 Sets the callback interface that the debugging services will call as common language runtime (CLR) threads are blocked and unblocked for debugging.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDebuggerThreadControl (  
     [in] IDebuggerThreadControl* pDebuggerThreadControl  
 );  
@@ -43,4 +41,5 @@ HRESULT SetDebuggerThreadControl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

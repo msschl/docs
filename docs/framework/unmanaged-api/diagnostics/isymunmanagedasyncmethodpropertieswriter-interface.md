@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethodPropertiesWriter Interface"
 ms.date: "03/30/2017"
 ms.assetid: caa71820-8058-4b6a-93a2-25ee757d92d3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethodPropertiesWriter Interface
 Allows you to define optional async method information for each method symbol. Always use with an opened method; that is, between calls to the [OpenMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-openmethod-method.md) and the [CloseMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-closemethod-method.md).  
@@ -27,4 +25,5 @@ Allows you to define optional async method information for each method symbol. A
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

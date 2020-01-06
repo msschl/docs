@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Conversion Operator (Visual Basic)"
+title: "How to: Define a Conversion Operator"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"
@@ -27,6 +27,7 @@ If you have defined a class or structure, you can define a type conversion opera
  [!code-vb[VbVbcnProcedures#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#28)]  
   
 ## See also
+
 - [Operator Procedures](./operator-procedures.md)
 - [How to: Define an Operator](./how-to-define-an-operator.md)
 - [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)

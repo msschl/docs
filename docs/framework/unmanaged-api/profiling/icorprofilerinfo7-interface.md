@@ -2,11 +2,9 @@
 title: "ICorProfilerInfo7 Interface"
 ms.date: "03/30/2017"
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7 Interface
-[Supported in the [!INCLUDE[net_v461](../../../../includes/net-v461-md.md)] and later versions]  
+[Supported in the .NET Framework 4.6.1 and later versions]  
   
  A subclass of [ICorProfilerInfo6](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo6-interface.md) that provides a method to apply newly defined metadata to a module and that provides access to an in-memory symbol stream.  
   
@@ -26,4 +24,5 @@ ms.author: "ronpet"
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
 ## See also
+
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

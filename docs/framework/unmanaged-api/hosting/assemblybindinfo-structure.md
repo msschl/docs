@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 6fc01e98-c2e7-49de-ab9f-95937cc89017
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # AssemblyBindInfo Structure
 Provides detailed information about the referenced assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _AssemblyBindInfo {  
     DWORD       dwAppDomainId;  
     LPCWSTR     lpReferencedIdentity;  
@@ -53,6 +51,7 @@ typedef struct _AssemblyBindInfo {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)

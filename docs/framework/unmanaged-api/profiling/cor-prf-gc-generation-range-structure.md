@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: e7e07273-8d10-4a68-807e-59634e3f8c5e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_GC_GENERATION_RANGE Structure
 Describes a range (that is, block) of memory that is undergoing garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_PRF_GC_GENERATION_RANGE {  
     COR_PRF_GC_GENERATION generation;  
     ObjectID rangeStart;  
@@ -53,4 +51,5 @@ typedef struct COR_PRF_GC_GENERATION_RANGE {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)

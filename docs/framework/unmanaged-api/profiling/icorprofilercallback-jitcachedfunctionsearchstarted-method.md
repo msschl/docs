@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5cba642c-0d80-48ee-889d-198c5044d821
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITCachedFunctionSearchStarted Method
 Notifies the profiler that a search has started for a function that was compiled previously using the Native Image Generator (NGen.exe).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCachedFunctionSearchStarted(  
     [in]  FunctionID functionId,  
     [out] BOOL *pbUseCachedFunction);  
@@ -55,4 +53,5 @@ HRESULT JITCachedFunctionSearchStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

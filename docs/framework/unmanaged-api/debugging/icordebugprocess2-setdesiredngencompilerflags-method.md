@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::SetDesiredNGENCompilerFlags Method
 Sets the flags that must be embedded in a precompiled image in order for the runtime to load that image into the current process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDesiredNGENCompilerFlags (  
     [in] DWORD    pdwFlags  
 );  
@@ -50,5 +48,6 @@ HRESULT SetDesiredNGENCompilerFlags (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

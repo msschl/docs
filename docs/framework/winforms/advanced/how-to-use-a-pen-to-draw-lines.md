@@ -19,9 +19,10 @@ To draw lines, you need a <xref:System.Drawing.Graphics> object and a <xref:Syst
  [!code-vb[System.Drawing.UsingAPen#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#11)]  
   
 ## Compiling the Code  
- The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
+ The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
+
 - <xref:System.Drawing.Pen>
 - [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)
 - [Pens, Lines, and Rectangles in GDI+](pens-lines-and-rectangles-in-gdi.md)

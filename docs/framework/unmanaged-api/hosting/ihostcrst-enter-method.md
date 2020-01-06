@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 100dd7eb-7053-4295-9bb3-32ba47f6ec79
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostCrst::Enter Method
 Enters the critical section that is represented by the current [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Enter (  
     [in] DWORD option  
 );  
@@ -48,7 +46,7 @@ HRESULT Enter (
  `Enter` mirrors the Win32 `EnterCriticalSection` function.  
   
 > [!NOTE]
->  This method does not return until the critical section is entered.  
+> This method does not return until the critical section is entered.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -60,6 +58,7 @@ HRESULT Enter (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

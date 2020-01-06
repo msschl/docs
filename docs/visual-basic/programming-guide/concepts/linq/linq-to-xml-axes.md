@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Axes (Visual Basic)"
+title: "LINQ to XML Axes"
 ms.date: 07/20/2015
 ms.assetid: ecd3bd00-28e5-4517-a59f-53bff39fd478
 ---
@@ -25,4 +25,5 @@ After you have created an XML tree or loaded an XML document into an XML tree, y
 |[Language-Integrated Axes in Visual Basic (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/language-integrated-axes.md)|Summarizes the Visual Basic integrated axes.|  
   
 ## See also
+
 - [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d6036345-18a3-45c1-a302-b1c6f2dced9b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::EvalException Method
 Notifies the debugger that an evaluation has terminated with an unhandled exception.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalException (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  
@@ -51,4 +49,5 @@ HRESULT EvalException (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

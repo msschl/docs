@@ -1,5 +1,5 @@
 ---
-title: "String Basics in Visual Basic"
+title: "String Basics"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], Like operator"
@@ -44,7 +44,7 @@ World]]></xml>.Value
 ```  
   
 ## Characters in Strings  
- A string can be thought of as a series of `Char` values, and the `String` type has built-in functions that allow you to perform many manipulations on a string that resemble the manipulations allowed by arrays. Like all array in [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], these are zero-based arrays. You may refer to a specific character in a string through the `Chars` property, which provides a way to access a character by the position in which it appears in the string. For example:  
+ A string can be thought of as a series of `Char` values, and the `String` type has built-in functions that allow you to perform many manipulations on a string that resemble the manipulations allowed by arrays. Like all array in .NET Framework, these are zero-based arrays. You may refer to a specific character in a string through the `Chars` property, which provides a way to access a character by the position in which it appears in the string. For example:  
   
  [!code-vb[VbVbalrStrings#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#67)]  
   
@@ -66,6 +66,7 @@ World]]></xml>.Value
  Unlike other intrinsic data types, `String` is a reference type. When a variable of reference type is passed as an argument to a function or subroutine, a reference to the memory address where the data is stored is passed instead of the actual value of the string. So in the previous example, the name of the variable remains the same, but it points to a new and different instance of the `String` class, which holds the new value.  
   
 ## See also
+
 - [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
 - [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
 - [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)

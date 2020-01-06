@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 65a4ad49-fa49-4b36-8ed1-76dd6a185ab4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteClassLayout Method
 Destroys the class layout metadata signature for the type represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteClassLayout (  
     [in]  mdTypeDef   td  
 );  
@@ -43,5 +41,6 @@ HRESULT DeleteClassLayout (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

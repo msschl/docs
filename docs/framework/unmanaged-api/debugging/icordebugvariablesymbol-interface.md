@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: 0e58b85e-69bd-41ff-bedb-8cdc8be6a7a2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol Interface
 Retrieves the debug symbol information for a variable.  
@@ -21,7 +19,7 @@ Retrieves the debug symbol information for a variable.
 ## Remarks  
   
 > [!NOTE]
->  This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
+> This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -33,5 +31,6 @@ Retrieves the debug symbol information for a variable.
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

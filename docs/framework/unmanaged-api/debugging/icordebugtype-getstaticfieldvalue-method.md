@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 62eb5d55-53ee-4fb3-8d47-7b6c96808f9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::GetStaticFieldValue Method
 Gets an interface pointer to an ICorDebugValue object that contains the value of the static field referenced by the specified field token in the specified stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldValue (  
     [in]  mdFieldDef        fieldDef,  
     [in]  ICorDebugFrame    *pFrame,  

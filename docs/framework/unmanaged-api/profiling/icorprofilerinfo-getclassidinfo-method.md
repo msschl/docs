@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e93b99e-5aca-415c-8e37-7f33753b612d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetClassIDInfo Method
 Gets the parent module and the metadata token for the specified class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo(  
     [in]  ClassID   classId,  
     [out] ModuleID  *pModuleId,  
@@ -55,4 +53,5 @@ HRESULT GetClassIDInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

@@ -16,35 +16,35 @@ Workflow persistence is the durable capture of a workflow instance's state, inde
   
  To store and load your application-specific data along with the workflow instance-related information, you can create persistence participants that extend the <xref:System.Activities.Persistence.PersistenceParticipant> class. A persistence participant participates in the persistence process to save custom serializable data into the persistence store, to load the data from the instance store into memory, and to perform any additional logic under a persistence transaction. For more information, see [Persistence Participants](persistence-participants.md).  
   
- Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [Persistence Concepts with Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkId=201200)  
+ Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [Persistence Concepts with Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Implicit Persistence Points  
  The following list contains examples of the conditions upon which a workflow is persisted when an instance store is associated with a workflow.  
   
--   When a **TransactionScope** activity completes or a **TransactedReceiveScope** activity completes.  
+- When a **TransactionScope** activity completes or a **TransactedReceiveScope** activity completes.  
   
--   When a workflow instance becomes idle and the **WorkflowIdleBehavior** is set on workflow host. This occurs, for example, when you use messaging activities or a **Delay** activity.  
+- When a workflow instance becomes idle and the **WorkflowIdleBehavior** is set on workflow host. This occurs, for example, when you use messaging activities or a **Delay** activity.  
   
--   When a WorkflowApplication becomes idle and the **PersistableIdle** property of the application is set to **PersistableIdleAction.Persist**.  
+- When a WorkflowApplication becomes idle and the **PersistableIdle** property of the application is set to **PersistableIdleAction.Persist**.  
   
--   When a host application is instructed to persist or unload a workflow instance.  
+- When a host application is instructed to persist or unload a workflow instance.  
   
--   When a workflow instance is terminated or finishes.  
+- When a workflow instance is terminated or finishes.  
   
--   When a **Persist** activity executes.  
+- When a **Persist** activity executes.  
   
--   When an instance of a workflow developed using a previous version of Windows Workflow Foundation encounters a persistence point during interoperable execution.  
+- When an instance of a workflow developed using a previous version of Windows Workflow Foundation encounters a persistence point during interoperable execution.  
   
 ## In This Section  
   
--   [SQL Workflow Instance Store](sql-workflow-instance-store.md)  
+- [SQL Workflow Instance Store](sql-workflow-instance-store.md)  
   
--   [Instance Stores](instance-stores.md)  
+- [Instance Stores](instance-stores.md)  
   
--   [Persistence Participants](persistence-participants.md)  
+- [Persistence Participants](persistence-participants.md)  
   
--   [Persistence Best Practices](persistence-best-practices.md)  
+- [Persistence Best Practices](persistence-best-practices.md)  
   
--   [Non-Persisted Workflow Instances](non-persisted-workflow-instances.md)  
+- [Non-Persisted Workflow Instances](non-persisted-workflow-instances.md)  
   
--   [Pausing and Resuming a Workflow](pausing-and-resuming-a-workflow.md)
+- [Pausing and Resuming a Workflow](pausing-and-resuming-a-workflow.md)

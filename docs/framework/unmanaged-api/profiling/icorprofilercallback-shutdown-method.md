@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1ea194f0-a331-4855-a2ce-37393b8e5f84
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::Shutdown Method
 Notifies the profiler that the application is shutting down.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Shutdown();  
 ```  
   
@@ -44,5 +42,6 @@ HRESULT Shutdown();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [Initialize Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md)

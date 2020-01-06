@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: be2f6e55-f46d-49aa-b477-80fd7e4515f7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameBuilder::AddName Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddName (  
     [in] LPCWSTR szName  
 );  
@@ -39,4 +37,5 @@ HRESULT AddName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8b35e7a9-b40e-40a9-8d8e-b82e823fc575
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::IsActive Method
 Gets a value that indicates whether this ICorDebugStepper is currently executing a step.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL   *pbActive  
 );  

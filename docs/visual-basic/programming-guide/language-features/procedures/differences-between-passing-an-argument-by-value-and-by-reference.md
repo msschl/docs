@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic)"
+title: "Differences Between Passing an Argument By Value and By Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"
@@ -34,6 +34,7 @@ When you pass one or more arguments to a procedure, each argument corresponds to
 |Reference type (contains a pointer to a class or structure instance)|The procedure cannot change the variable but can change members of the instance to which it points.|The procedure can change the variable and members of the instance to which it points.|  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)

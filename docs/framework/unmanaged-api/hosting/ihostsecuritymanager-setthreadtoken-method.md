@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::SetThreadToken Method
 Sets a handle for the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadToken (  
     [in] HANDLE hToken  
 );  
@@ -59,5 +57,6 @@ HRESULT SetThreadToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
 - [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 189f28f8-f9a1-4192-aedc-91084e4f8b99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::RevertToSelf Method
 Terminates impersonation of the current user identity and returns the original thread token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RevertToSelf ();  
 ```  
   
@@ -51,6 +49,7 @@ HRESULT RevertToSelf ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
 - [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
 - [ImpersonateLoggedOnUser Method](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-impersonateloggedonuser-method.md)

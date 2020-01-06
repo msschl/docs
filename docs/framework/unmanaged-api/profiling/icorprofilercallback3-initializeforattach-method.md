@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback3::InitializeForAttach Method
 Called by the common language runtime (CLR) to give the profiler an opportunity to initialize its state after an attach operation.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForAttach(  
             [in] IUnknown * pCorProfilerInfoUnk,  
             [in] void * pvClientData,  
@@ -53,6 +51,7 @@ HRESULT InitializeForAttach(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

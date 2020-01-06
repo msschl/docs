@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e8ab7c41-d508-4ed9-8a31-ead072b5a314
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugging::OpenVirtualProcess Method
 Gets the ICorDebugProcess interface that corresponds to a common language runtime (CLR) module loaded in the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenVirtualProcess(  
     [in] ULONG64 moduleBaseAddress,  
     [in] IUnknown * pDataTarget,  
@@ -72,7 +70,7 @@ HRESULT OpenVirtualProcess(
 |CORDBG_E_LIBRARY_PROVIDER_ERROR|The [ICLRDebuggingLibraryProvider](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md) callback returns an error or does not provide a valid handle.|  
 |CORDBG_E_MISSING_DATA_TARGET_INTERFACE|`pDataTarget` does not implement the required data target interfaces for this version of the runtime.|  
 |CORDBG_E_NOT_CLR|The indicated module is not a CLR module. This HRESULT is also returned when a CLR module cannot be detected because memory has been corrupted, the module is not available, or the CLR version is later than the shim version.|  
-|CORDBG_E_UNSUPPORTED_DEBUGGING_MODEL|This runtime version does not support this debugging model. Currently, the debugging model is not supported by CLR versions before the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. The `pwszVersion` output parameter is still set to the correct value after this error.|  
+|CORDBG_E_UNSUPPORTED_DEBUGGING_MODEL|This runtime version does not support this debugging model. Currently, the debugging model is not supported by CLR versions before the .NET Framework 4. The `pwszVersion` output parameter is still set to the correct value after this error.|  
 |CORDBG_E_UNSUPPORTED_FORWARD_COMPAT|The version of the CLR is greater than the version this debugger claims to support. The `pwszVersion` output parameter is still set to the correct value after this error.|  
 |E_NO_INTERFACE|The `riidProcess` interface is not available.|  
 |CORDBG_E_UNSUPPORTED_VERSION_STRUCT|The `CLR_DEBUGGING_VERSION` structure does not have a recognized value for `wStructVersion`. The only accepted value at this time is 0.|  
@@ -91,5 +89,6 @@ HRESULT OpenVirtualProcess(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

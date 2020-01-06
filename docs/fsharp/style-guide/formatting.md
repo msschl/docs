@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 02/08/2019
+ms.date: 11/04/2019
 ---
 # F# code formatting guidelines
 
@@ -68,7 +68,7 @@ let ( !> ) x f = f x
 let (!>) x f = f x
 ```
 
-For any custom operator that starts with `*`, you'll need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, it's recommended that you simply surround the definitions of all operators with a single white-space character.
+For any custom operator that starts with `*` and that has more than one character, you need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, we recommend that you simply surround the definitions of all operators with a single white-space character.
 
 ### Surround function parameter arrows with white space
 
@@ -80,6 +80,69 @@ type MyFun = int -> int -> string
 
 // Bad
 type MyFunBad = int->int->string
+```
+
+### Surround function arguments with white space
+
+When defining a function, use white space around each argument.
+
+```fsharp
+// OK
+let myFun (a: decimal) b c = a + b + c
+
+// Bad
+let myFunBad (a:decimal)(b)c = a + b + c
+```
+
+### Place parameters on a new line for very long member definitions
+
+If you have a very long member definition, place the parameters on new lines and indent them one scope.
+
+```fsharp
+type C() =
+    member _.LongMethodWithLotsOfParameters(
+        aVeryLongType: AVeryLongTypeThatYouNeedToUse
+        aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse
+        aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+        // ... the body of the method follows
+```
+
+This also applies to constructors:
+
+```fsharp
+type C(
+    aVeryLongType: AVeryLongTypeThatYouNeedToUse
+    aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse
+    aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+    // ... the body of the class follows
+```
+
+### Type annotations
+
+#### Right-pad function argument type annotations
+
+When defining arguments with type annotations, use white space after the `:` symbol:
+
+```fsharp
+// OK
+let complexFunction (a: int) (b: int) c = a + b + c
+
+// Bad
+let complexFunctionBad (a :int) (b :int) (c:int) = a + b + c
+```
+
+#### Surround return type annotations with white space
+
+In a let-bound function or value type annotation (return type in the case of a function), use white space before and after the `:` symbol:
+
+```fsharp
+// OK
+let expensiveToCompute : int = 0 // Type annotation for let-bound value
+let myFun (a: decimal) b c : decimal = a + b + c // Type annotation for the return type of a function
+// Bad
+let expensiveToComputeBad1:int = 1
+let expensiveToComputeBad2 :int = 2
+let myFunBad (a: decimal) b c:decimal = a + b + c
 ```
 
 ## Formatting blank lines
@@ -244,12 +307,13 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
 
-F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
+F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for five specific types:
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
-3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
-4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
+4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 
 For all other types, use the prefix form.
 
@@ -279,6 +343,7 @@ let update model msg =
     | 1 -> model + 1, []
     | _ -> model, [ msg ]
 ```
+
 In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
 
 ## Formatting discriminated union declarations
@@ -338,10 +403,10 @@ type PostalAddress =
     City: string
     Zip: string }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
-    
+
 // Unusual in F#
 type PostalAddress =
-    { 
+    {
         Address: string
         City: string
         Zip: string
@@ -353,13 +418,13 @@ Placing the opening token on a new line and the closing token on a new line is p
 ```fsharp
 // Declaring additional members on PostalAddress
 type PostalAddress =
-    { 
+    {
         Address: string
         City: string
         Zip: string
     } with
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
-    
+
 type MyRecord =
     {
         SomeField: int
@@ -401,7 +466,7 @@ let rainbow =
         Boss8 = "Jeffrey"
         Lackeys = ["Zippy"; "George"; "Bungle"]
     }
-    
+
 type MyRecord =
     {
         SomeField: int
@@ -439,12 +504,12 @@ let rainbow2 =
 
 And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. Note that in some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
 
-```fsharp    
+```fsharp
 type S = { F1: int; F2: string }
 type State = { F:  S option }
 
 let state = { F = Some { F1 = 1; F2 = "Hello" } }
-let newState = 
+let newState =
     {
         state with
             F = Some {
@@ -503,6 +568,48 @@ let pascalsTriangle =
 ```
 
 And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
+
+When generating arrays and lists programmatically, prefer `->` over `do ... yield` when a value is always generated:
+
+```fsharp
+// Preferred
+let squares = [ for x in 1..10 -> x*x ]
+
+// Not preferred
+let squares' = [ for x in 1..10 do yield x*x ]
+```
+
+Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
+
+```fsharp
+// Preferred
+let daysOfWeek includeWeekend =
+    [
+        "Monday"
+        "Tuesday"
+        "Wednesday"
+        "Thursday"
+        "Friday"
+        if includeWeekend then
+            "Saturday"
+            "Sunday"
+    ]
+
+// Not preferred
+let daysOfWeek' includeWeekend =
+    [
+        yield "Monday"
+        yield "Tuesday"
+        yield "Wednesday"
+        yield "Thursday"
+        yield "Friday"
+        if includeWeekend then
+            yield "Saturday"
+            yield "Sunday"
+    ]
+```
+
+In some cases, `do...yield` may aid in readability. These cases, though subjective, should be taken into consideration.
 
 ## Formatting if expressions
 
@@ -770,7 +877,7 @@ Attributes can also be places on parameters. In this case, place then on the sam
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.
 type C() =
-    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+    member _.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
 ```
 
 ### Formatting multiple attributes
@@ -789,14 +896,14 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use PascalCase naming:
 
 ```fsharp
 [<Literal>]
-let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let Path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let myUrl = "www.mywebsitethatiamworkingwith.com"
+let MyUrl = "www.mywebsitethatiamworkingwith.com"
 ```
 
 Avoid placing the attribute on the same line as the value.

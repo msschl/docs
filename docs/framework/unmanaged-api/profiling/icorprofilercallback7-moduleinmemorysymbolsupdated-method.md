@@ -9,8 +9,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method
 [Supported in the .NET Framework 4.6.1 and later versions]  
@@ -19,7 +17,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleInMemorySymbolsUpdated(  
      ModuleID moduleId  
 );  
@@ -33,7 +31,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
  This callback is controlled by setting the [COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) event mask flag when calling the [ICorProfilerCallback5::SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) method.  
   
 > [!NOTE]
->  This event is not currently raised for symbols implicitly created or modified via <xref:System.Reflection.Emit> APIs.  
+> This event is not currently raised for symbols implicitly created or modified via <xref:System.Reflection.Emit> APIs.  
   
  Even when symbols are provided up front in a call to one of the overloads of the managed <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> methods that includes a `rawSymbolStore` argument to specify the symbols for the assembly, the runtime may not actually associate the symbolic data with the module until after the [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) callback has occurred. This event provides a later opportunity to collect symbols for such modules.  
   
@@ -47,6 +45,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
 ## See also
+
 - [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
 - [SetEventMask2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)
 - [ICorProfilerCallback7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)

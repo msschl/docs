@@ -1,5 +1,5 @@
 ---
-title: "Shape of WordprocessingML Documents (Visual Basic)"
+title: "Shape of WordprocessingML Documents"
 ms.date: 07/20/2015
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
 ---
@@ -89,4 +89,5 @@ End Module
  [Office 2003: XML Reference Schemas Download page](https://go.microsoft.com/fwlink/?LinkId=98095)  
   
 ## See also
+
 - [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCThreadControl Interface
 Provides methods for participating in the scheduling of threads that would otherwise be blocked for a garbage collection.  
@@ -38,4 +36,5 @@ Provides methods for participating in the scheduling of threads that would other
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

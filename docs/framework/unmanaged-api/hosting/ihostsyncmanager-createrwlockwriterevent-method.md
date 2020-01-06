@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateRWLockWriterEvent Method
 Creates an auto-reset event object for the implementation of a writer lock.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockWriterEvent (  
     [in]  SIZE_T cookie,  
     [out] IHostAutoEvent **ppEvent  
@@ -62,6 +60,7 @@ HRESULT CreateRWLockWriterEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

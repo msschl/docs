@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b7723f58-c55c-4399-9972-1bbf3b866694
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeSuspendFinished Method
 Notifies the profiler that the runtime has completed suspension of all runtime threads.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeSuspendFinished();  
 ```  
   
@@ -42,5 +40,6 @@ HRESULT RuntimeSuspendFinished();
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [RuntimeSuspendAborted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimesuspendaborted-method.md)

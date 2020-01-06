@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 47915d33-b7bf-409e-b484-4ee1df15de22
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::TranslateSigWithScope Method
 Imports an assembly into the current scope and gets a new metadata signature for the merged scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TranslateSigWithScope (   
     [in]  IMetaDataAssemblyImport   *pAssemImport,   
     [in]  const void                *pbHashValue,   
@@ -83,6 +81,7 @@ HRESULT TranslateSigWithScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

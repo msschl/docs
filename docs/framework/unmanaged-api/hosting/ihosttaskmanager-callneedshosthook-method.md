@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b60f1f59-9825-4b57-961f-d2979518e6a7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::CallNeedsHostHook Method
 Enables the host to specify whether the common language runtime (CLR) can inline the specified call to an unmanaged function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CallNeedsHostHook (  
     [in]  SIZE_T target,   
     [out] BOOL   *pbCallNeedsHostHook  
@@ -63,6 +61,7 @@ HRESULT CallNeedsHostHook (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

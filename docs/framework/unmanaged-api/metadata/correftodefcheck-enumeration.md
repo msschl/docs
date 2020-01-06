@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: f9a80f1a-55af-4459-b095-8441aae16119
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorRefToDefCheck Enumeration
 Specifies flags to control which referenced items are converted to their definitions in order to optimize the code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorRefToDefCheck {  
     MDRefToDefDefault           = 0x00000003,  
     MDRefToDefAll               = 0xffffffff,  
@@ -50,4 +48,5 @@ typedef enum CorRefToDefCheck {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

@@ -1,5 +1,5 @@
 ---
-title: "Namespace Statement (Visual Basic)"
+title: "Namespace Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Namespace"
@@ -97,6 +97,7 @@ End Namespace
 ```  
   
 ## See also
+
 - [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
 - [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)

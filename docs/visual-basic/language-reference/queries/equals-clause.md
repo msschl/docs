@@ -1,5 +1,5 @@
 ---
-title: "Equals Clause (Visual Basic)"
+title: "Equals Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Equals"
@@ -18,4 +18,5 @@ Compares keys from collections being joined.
  [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 59417acb-4e59-46ad-acfe-d827e6ab6078
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IBindingDisplay::InitializeForProcess Method
 Initializes the [IBindingDisplay](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForProcess (  
     [in] ULONG32   pid  
 );  
@@ -46,4 +44,5 @@ HRESULT InitializeForProcess (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)

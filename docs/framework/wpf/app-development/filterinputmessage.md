@@ -11,7 +11,7 @@ Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FilterInputMessage( [in] MSG* pMsg ) ;  
 ```  
   
@@ -37,4 +37,5 @@ HRESULT FilterInputMessage( [in] MSG* pMsg ) ;
  The hosted application receives raw input messages by registering with the set of raw input devices (Human Interface Devices) returned by [GetRawInputDevices](getrawinputdevices.md).  
   
 ## See also
+
 - [WM_INPUT message](/windows/desktop/inputdev/wm-input)

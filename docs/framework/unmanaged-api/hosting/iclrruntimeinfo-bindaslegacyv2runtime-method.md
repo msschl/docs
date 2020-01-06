@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 65fd55ac-4a24-4479-9384-a2e8013bfb2b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::BindAsLegacyV2Runtime Method
 Binds the current runtime for all legacy common language runtime (CLR) version 2 activation policy decisions.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BindAsLegacyV2Runtime ();  
 ```  
   
@@ -48,6 +46,7 @@ HRESULT BindAsLegacyV2Runtime ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

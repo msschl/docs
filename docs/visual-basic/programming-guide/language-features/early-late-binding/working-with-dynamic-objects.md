@@ -1,5 +1,5 @@
 ---
-title: "Working with Dynamic Objects (Visual Basic)"
+title: "Working with Dynamic Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
@@ -13,6 +13,7 @@ Dynamic objects provide another way, other than the `Object` type, to late bind 
  If a late-bound call is made to an object that implements the `IDynamicMetaObjectProvider` interface, Visual Basic binds to the dynamic object by using that interface. If a late-bound call is made to an object that does not implement the `IDynamicMetaObjectProvider` interface, or if the call to the `IDynamicMetaObjectProvider` interface fails, Visual Basic binds to the object by using the late-binding capabilities of the Visual Basic runtime.  
   
 ## See also
+
 - <xref:System.Dynamic.DynamicObject>
 - <xref:System.Dynamic.ExpandoObject>
 - [Walkthrough: Creating and Using Dynamic Objects](../../../../csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

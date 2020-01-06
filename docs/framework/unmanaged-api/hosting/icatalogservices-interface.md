@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: f0d7e49b-2394-4ae0-8820-1b64cae0cfe8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICatalogServices Interface
 Provides methods for cataloging services.  
@@ -30,4 +28,5 @@ Provides methods for cataloging services.
 |[NotAutodone Method](../../../../docs/framework/unmanaged-api/hosting/icatalogservices-notautodone-method.md)|Reserved for internal use only.|  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

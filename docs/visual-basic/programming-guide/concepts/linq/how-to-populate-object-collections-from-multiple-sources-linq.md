@@ -1,5 +1,5 @@
 ---
-title: "How to: Populate Object Collections from Multiple Sources (LINQ) (Visual Basic)"
+title: "How to: Populate Object Collections from Multiple Sources (LINQ)"
 ms.date: 06/22/2018
 ms.assetid: 63062a22-e6a9-42c0-b357-c7c965f58f33
 ---
@@ -121,14 +121,6 @@ For Each s In queryNamesScores2
                       s.Last & " is " & s.ExamScores.Average())
 Next
 ```
-
-## Compiling the code
-
-Create and compile a project that targets one of the following options:
-
-- .NET Framework version 3.5 with a reference to System.Core.dll.
-- .NET Framework version 4.0 or higher.
-- .NET Core version 1.0 or higher.
 
 ## See also
 

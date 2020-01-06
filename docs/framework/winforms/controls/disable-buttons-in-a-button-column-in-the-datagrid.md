@@ -16,7 +16,7 @@ The <xref:System.Windows.Forms.DataGridView> control includes the <xref:System.W
  The following code example demonstrates how to customize the <xref:System.Windows.Forms.DataGridViewButtonCell> class to display buttons that can appear disabled. The example defines a new cell type, `DataGridViewDisableButtonCell`, that derives from <xref:System.Windows.Forms.DataGridViewButtonCell>. This cell type provides a new `Enabled` property that can be set to `false` to draw a disabled button in the cell. The example also defines a new column type, `DataGridViewDisableButtonColumn`, that displays `DataGridViewDisableButtonCell` objects. To demonstrate this new cell and column type, the current value of each <xref:System.Windows.Forms.DataGridViewCheckBoxCell> in the parent <xref:System.Windows.Forms.DataGridView> determines whether the `Enabled` property of the `DataGridViewDisableButtonCell` in the same row is `true` or `false`.  
   
 > [!NOTE]
->  When you derive from <xref:System.Windows.Forms.DataGridViewCell> or <xref:System.Windows.Forms.DataGridViewColumn> and add new properties to the derived class, be sure to override the `Clone` method to copy the new properties during cloning operations. You should also call the base class's `Clone` method so that the properties of the base class are copied to the new cell or column.  
+> When you derive from <xref:System.Windows.Forms.DataGridViewCell> or <xref:System.Windows.Forms.DataGridViewColumn> and add new properties to the derived class, be sure to override the `Clone` method to copy the new properties during cloning operations. You should also call the base class's `Clone` method so that the properties of the base class are copied to the new cell or column.  
   
 ## Example  
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#0)]
@@ -25,11 +25,10 @@ The <xref:System.Windows.Forms.DataGridView> control includes the <xref:System.W
 ## Compiling the Code  
  This example requires:  
   
--   References to the System, System.Drawing, System.Windows.Forms and System.Windows.Forms.VisualStyles assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System, System.Drawing, System.Windows.Forms and System.Windows.Forms.VisualStyles assemblies.  
   
 ## See also
+
 - [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)
 - [DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)
 - [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)

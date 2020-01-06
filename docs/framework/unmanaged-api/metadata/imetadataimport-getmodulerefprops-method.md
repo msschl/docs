@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b558e766-4c11-4628-ae47-b4e0a1800168
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetModuleRefProps Method
 Gets the name of the module referenced by the specified metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleRefProps (  
    [in]  mdModuleRef         mur,  
    [out] LPWSTR              szName,   
@@ -55,5 +53,6 @@ HRESULT GetModuleRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

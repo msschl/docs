@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateHeap Method
 Gets an enumerator for the objects on the managed heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHeap(  
     [out] ICorDebugHeapEnum **ppObjects  
 );  
@@ -48,5 +46,6 @@ HRESULT EnumerateHeap(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

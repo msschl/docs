@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3b5cff02-2005-44eb-a2bc-50214c4b0e1d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback4::ReJITCompilationFinished Method
 Notifies the profiler that the just-in-time (JIT) compiler has finished recompiling a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReJITCompilationFinished(  
     [in] FunctionID functionId,    [in] ReJITID rejitId,  
     [in] HRESULT    hrStatus,  
@@ -55,6 +53,7 @@ HRESULT ReJITCompilationFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)
 - [JITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md)

@@ -1,5 +1,5 @@
 ---
-title: "^= Operator (Visual Basic)"
+title: "^= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.^="
@@ -15,7 +15,7 @@ Raises the value of a variable or property to the power of an expression and ass
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty ^= expression  
 ```  
   
@@ -44,6 +44,7 @@ variableorproperty ^= expression
  [!code-vb[VbVbalrOperators#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#21)]  
   
 ## See also
+
 - [^ Operator](../../../visual-basic/language-reference/operators/exponentiation-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

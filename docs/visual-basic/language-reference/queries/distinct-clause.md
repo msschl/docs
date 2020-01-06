@@ -1,5 +1,5 @@
 ---
-title: "Distinct Clause (Visual Basic)"
+title: "Distinct Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryDistinct"
@@ -14,7 +14,7 @@ Restricts the values of the current range variable to eliminate duplicate values
   
 ## Syntax  
   
-```  
+```vb  
 Distinct  
 ```  
   
@@ -27,6 +27,7 @@ Distinct
  [!code-vb[VbSimpleQuerySamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)

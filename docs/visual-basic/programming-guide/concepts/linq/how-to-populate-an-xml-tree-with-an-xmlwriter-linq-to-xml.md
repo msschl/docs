@@ -1,5 +1,5 @@
 ---
-title: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML) (Visual Basic)"
+title: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 5792a0eb-94ee-440d-b601-58cca8c0ee0b
 ---
@@ -57,6 +57,7 @@ Console.WriteLine(newTree)
 ```  
   
 ## See also
+
 - <xref:System.Xml.Linq.XContainer.CreateWriter%2A>
 - <xref:System.Xml.XmlWriter>
 - <xref:System.Xml.Xsl.XslCompiledTransform>

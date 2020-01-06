@@ -1,5 +1,5 @@
 ---
-title: "Unicode (Visual Basic)"
+title: "Unicode"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Unicode"
@@ -28,6 +28,7 @@ Specifies that Visual Basic should marshal all strings to Unicode values regardl
  This keyword is not supported.  
   
 ## See also
+
 - [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)
 - [Auto](../../../visual-basic/language-reference/modifiers/auto.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

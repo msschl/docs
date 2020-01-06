@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e9d39c80-41a1-49e7-bb5e-ea3433bfb5d7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTask::SetCLRTask Method
 Associates an `ICLRTask` instance with the current [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRTask (  
     [in] ICLRTask *pCLRTask  
 );  
@@ -57,6 +55,7 @@ HRESULT SetCLRTask (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

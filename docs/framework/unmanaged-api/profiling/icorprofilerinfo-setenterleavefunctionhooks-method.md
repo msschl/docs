@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 72399636-c219-4ffd-8ac8-39432c9d4641
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::SetEnterLeaveFunctionHooks Method
 Specifies profiler-implemented functions to be called on "enter", "leave", and "tailcall" hooks of managed functions.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetEnterLeaveFunctionHooks(  
     [in] FunctionEnter    *pFuncEnter,  
     [in] FunctionLeave    *pFuncLeave,  
@@ -57,4 +55,5 @@ HRESULT SetEnterLeaveFunctionHooks(
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

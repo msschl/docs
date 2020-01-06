@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::IsValidToken Method
 Gets a value indicating whether the specified token holds a valid reference to a code object.  
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL IsValidToken (  
    [in] mdToken     tk  
 );  
@@ -46,5 +44,6 @@ BOOL IsValidToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

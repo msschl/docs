@@ -17,11 +17,11 @@ It can also return an `int`:
 
  [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
-If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. The following example shows how the return value from `Main` can be accessed.
+If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main` the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
 
 ## Example
 
-This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/using-with-xplat-cli.md).
+This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/cli-create-console-app.md).
 
 Modify the `Main` method in *program.cs* as follows:
 
@@ -89,8 +89,8 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 >If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
 ## See also
-- [C# Programming Guide](../../programming-guide/index.md)
+
+- [C# Programming Guide](../index.md)
 - [C# Reference](../index.md)
 - [Main() and Command-Line Arguments](index.md)
-- [How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-- [How to: Access Command-Line Arguments Using foreach](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
+- [How to display command line arguments](./how-to-display-command-line-arguments.md)

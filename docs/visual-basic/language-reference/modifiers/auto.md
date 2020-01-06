@@ -1,5 +1,5 @@
 ---
-title: "Auto (Visual Basic)"
+title: "Auto"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Auto"
@@ -28,6 +28,7 @@ Specifies that Visual Basic should marshal strings according to .NET Framework r
  This keyword is not supported.  
   
 ## See also
+
 - [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)
 - [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

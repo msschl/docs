@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f74ab4eb-cd1b-407c-a66d-8ec0d85647f3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::EvalComplete Method
 Notifies the debugger that an evaluation has been completed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalComplete (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  
@@ -51,4 +49,5 @@ HRESULT EvalComplete (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

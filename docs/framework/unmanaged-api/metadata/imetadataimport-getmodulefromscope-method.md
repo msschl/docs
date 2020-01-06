@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetModuleFromScope Method
 Gets a metadata token for the module referenced in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleFromScope (  
    [out] mdModule    *pmd  
 );  
@@ -43,5 +41,6 @@ HRESULT GetModuleFromScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

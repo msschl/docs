@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: 3bedbb7d-3cdd-4175-b370-10ae734062db
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromHandle Method
 Generates a hash over the contents of the file that has the specified file handle, using the specified hash algorithm.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromHandle (  
     [in]  HANDLE   hFile,  
     [in, out] unsigned int   *piHashAlg,  
@@ -63,4 +61,5 @@ HRESULT GetHashFromHandle (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

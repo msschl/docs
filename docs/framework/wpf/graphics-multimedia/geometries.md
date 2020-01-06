@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
 ---
 # Geometries
-<xref:System.Windows.Media.Geometry> is a versatile class, used to render [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] graphics, hit-test objects, and define clipping regions  
+<xref:System.Windows.Media.Geometry> is a versatile class, used to render 2-D graphics, hit-test objects, and define clipping regions  
   
 ## In This Section  
  [Path Markup Syntax](path-markup-syntax.md)  
@@ -19,6 +19,7 @@ ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
  [How-to Topics](geometries-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Brushes>
 - <xref:System.Windows.Shapes.Shape>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

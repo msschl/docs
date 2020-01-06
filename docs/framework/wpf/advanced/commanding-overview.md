@@ -21,15 +21,15 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
   
  This topic contains the following sections:  
   
--   [What Are Commands?](#commands_at_10000_feet)  
+- [What Are Commands?](#commands_at_10000_feet)  
   
--   [Simple Command Example in WPF](#simple_command)  
+- [Simple Command Example in WPF](#simple_command)  
   
--   [Four Main Concepts in WPF Commanding](#Four_main_Concepts)  
+- [Four Main Concepts in WPF Commanding](#Four_main_Concepts)  
   
--   [Command Library](#Command_Library)  
+- [Command Library](#Command_Library)  
   
--   [Creating Custom Commands](#creating_commands)  
+- [Creating Custom Commands](#creating_commands)  
   
 <a name="commands_at_10000_feet"></a>   
 ## What Are Commands?  
@@ -54,13 +54,13 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 ## Four Main Concepts in WPF Commanding  
  The routed command model in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can be broken up into four main concepts: the command, the command source, the command target, and the command binding:  
   
--   The *command* is the action to be executed.  
+- The *command* is the action to be executed.  
   
--   The *command source* is the object which invokes the command.  
+- The *command source* is the object which invokes the command.  
   
--   The *command target* is the object that the command is being executed on.  
+- The *command target* is the object that the command is being executed on.  
   
--   The *command binding* is the object which maps the command logic to the command.  
+- The *command binding* is the object which maps the command logic to the command.  
   
  In the previous example, the <xref:System.Windows.Input.ApplicationCommands.Paste%2A> command is the command, the <xref:System.Windows.Controls.MenuItem> is the command source, the <xref:System.Windows.Controls.TextBox> is the command target, and the command binding is supplied by the <xref:System.Windows.Controls.TextBox> control.  It is worth noting that it is not always the case that the <xref:System.Windows.Input.CommandBinding> is supplied by the control that is the command target class.  Quite often the <xref:System.Windows.Input.CommandBinding> must be created by the application developer, or the <xref:System.Windows.Input.CommandBinding> might be attached to an ancestor of the command target.  
   
@@ -82,11 +82,11 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
   
  <xref:System.Windows.Input.ICommandSource> exposes three properties: <xref:System.Windows.Input.ICommandSource.Command%2A>, <xref:System.Windows.Input.ICommandSource.CommandTarget%2A>, and <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>:  
   
--   <xref:System.Windows.Input.ICommandSource.Command%2A> is the command to execute when the command source is invoked.  
+- <xref:System.Windows.Input.ICommandSource.Command%2A> is the command to execute when the command source is invoked.  
   
--   <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is the object on which to execute the command.  It is worth noting that in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> property on <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is set on an <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored. If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is not set, the element with keyboard focus will be the command target.  
+- <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is the object on which to execute the command.  It is worth noting that in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> property on <xref:System.Windows.Input.ICommandSource> is only applicable when the <xref:System.Windows.Input.ICommand> is a <xref:System.Windows.Input.RoutedCommand>.  If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is set on an <xref:System.Windows.Input.ICommandSource> and the corresponding command is not a <xref:System.Windows.Input.RoutedCommand>, the command target is ignored. If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is not set, the element with keyboard focus will be the command target.  
   
--   <xref:System.Windows.Input.ICommandSource.CommandParameter%2A> is a user-defined data type used to pass information to the handlers implementing the command.  
+- <xref:System.Windows.Input.ICommandSource.CommandParameter%2A> is a user-defined data type used to pass information to the handlers implementing the command.  
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes that implement <xref:System.Windows.Input.ICommandSource> are <xref:System.Windows.Controls.Primitives.ButtonBase>, <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Documents.Hyperlink>, and <xref:System.Windows.Input.InputBinding>.  <xref:System.Windows.Controls.Primitives.ButtonBase>, <xref:System.Windows.Controls.MenuItem>, and <xref:System.Windows.Documents.Hyperlink> invoke a command when they are clicked, and an <xref:System.Windows.Input.InputBinding> invokes a command when the <xref:System.Windows.Input.InputGesture> associated with it is performed.  
   
@@ -167,7 +167,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 ## Command Library  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a set of predefined commands.  The command library consists of the following classes: <xref:System.Windows.Input.ApplicationCommands>, <xref:System.Windows.Input.NavigationCommands>, <xref:System.Windows.Input.MediaCommands>, <xref:System.Windows.Documents.EditingCommands>, and the <xref:System.Windows.Input.ComponentCommands>.  These classes provide commands such as <xref:System.Windows.Input.ApplicationCommands.Cut%2A>, <xref:System.Windows.Input.NavigationCommands.BrowseBack%2A> and <xref:System.Windows.Input.NavigationCommands.BrowseForward%2A>, <xref:System.Windows.Input.MediaCommands.Play%2A>, <xref:System.Windows.Input.MediaCommands.Stop%2A>, and <xref:System.Windows.Input.MediaCommands.Pause%2A>.  
   
- Many of these commands include a set of default input bindings.  For example, if you specify that your application handles the copy command, you automatically get the keyboard binding "CTRL+C" You also get bindings for other input devices, such as [!INCLUDE[TLA2#tla_tpc](../../../../includes/tla2sharptla-tpc-md.md)] pen gestures and speech information.  
+ Many of these commands include a set of default input bindings.  For example, if you specify that your application handles the copy command, you automatically get the keyboard binding "CTRL+C" You also get bindings for other input devices, such as Tablet PC pen gestures and speech information.  
   
  When you reference commands in the various command libraries using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you can usually omit the class name of the library class that exposes the static command property. Generally, the command names are unambiguous as strings, and the owning types exist to provide a logical grouping of commands but are not necessary for disambiguation. For instance, you can specify `Command="Cut"` rather than the more verbose `Command="ApplicationCommands.Cut"`. This is a convenience mechanism that is built in to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor for commands (more precisely, it is a type converter behavior of <xref:System.Windows.Input.ICommand>, which the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor references at load time).  
   
@@ -178,6 +178,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
  For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand).  
   
 ## See also
+
 - <xref:System.Windows.Input.RoutedCommand>
 - <xref:System.Windows.Input.CommandBinding>
 - <xref:System.Windows.Input.InputBinding>

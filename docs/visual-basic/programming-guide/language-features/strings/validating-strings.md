@@ -1,5 +1,5 @@
 ---
-title: "Validating Strings in Visual Basic"
+title: "Validating Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic, strings"
@@ -25,5 +25,6 @@ This section discusses how to validate strings in Visual Basic.
  How to determine whether a string has the characteristics of a strong password.  
   
 ## See also
+
 - [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
 - [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

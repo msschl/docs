@@ -1,7 +1,7 @@
 ---
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
-ms.date: 09/22/2017
+ms.date: 04/08/2019
 ---
 
 # Additions to the csproj format for .NET Core
@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](../packages.md). 
 
 ```xml
  <PropertyGroup>
@@ -26,15 +26,39 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ### Recommendations
 
-Since `Microsoft.NETCore.App` or `NetStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
+Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
-* When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NetStandard.Library` metapackages via a `<PackageReference>` item in your project file.
-* If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
-    * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
-* If you need a specific version of the `NetStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
-* Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NetStandard.Library` metapackage in .NET Framework projects. If any version of `NetStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+- When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
+- If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
+  - This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+- If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
+- Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+
+## Implicit version for some package references
+
+Most usages of [`<PackageReference>`](#packagereference) require setting the `Version` attribute to specify the NuGet package version to be used. When using .NET Core 2.1 or 2.2 and referencing [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) or [Microsoft.AspNetCore.All](/aspnet/core/fundamentals/metapackage), however, the  attribute is unnecessary. The .NET Core SDK can automatically select the version of these packages that should be used.
+
+### Recommendation
+
+When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` packages, do not specify their version. If a version is specified, the SDK may produce warning NETSDK1071. To fix this warning, remove the package version like in the following example:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.AspNetCore.App" />
+</ItemGroup>
+```
+
+> Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also uses Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
+
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../build/distribution-packaging.md).
+
+If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as an *exact* version for self-contained deployments. This can have the following consequences:
+
+- If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process fails to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
+- If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
 
 ## Default compilation includes in .NET Core projects
+
 With the move to the *csproj* format in the latest SDK versions, we've moved the default includes and excludes for compile items and embedded resources to the SDK properties files. This means that you no longer need to specify these items in your project file.
 
 The main reason for doing this is to reduce the clutter in your project file. The defaults that are present in the SDK should cover most common use cases, so there is no need to repeat them in every project that you create. This leads to smaller project files that are much easier to understand as well as edit by hand, if needed.
@@ -66,7 +90,13 @@ Setting this property to `false` will disable implicit inclusion, reverting to t
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
-`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can use `<EnableDefaultNoneItems>` to disable the implicit `None` glob.
+`<EnableDefaultCompileItems>` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob, which also applies to \*.cs items. Because of that, **Solution Explorer** will continue show \*.cs items as part of the project, included as `None` items. In a similar way, you can set `<EnableDefaultNoneItems>` to false to disable the implicit `None` glob, like this:
+
+```xml
+<PropertyGroup>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+</PropertyGroup>
+```
 
 To disable **all implicit globs**, you can set the `<EnableDefaultItems>` property to `false` as in the following example:
 
@@ -89,11 +119,14 @@ If the project has multiple target frameworks, the results of the command should
 ## Additions
 
 ### Sdk attribute
-The root `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship three main SDKs with the .NET Core tools:
+
+The root `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. The following SDKs are available for .NET Core:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
 3. The .NET Core Razor Class Library SDK with the ID of `Microsoft.NET.Sdk.Razor`
+4. The .NET Core Worker Service with the ID of `Microsoft.NET.Sdk.Worker` (since .NET Core 3.0)
+5. The .NET Core WinForms and WPF with the ID of `Microsoft.NET.Sdk.WindowsDesktop` (since .NET Core 3.0)
 
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code.
 
@@ -127,21 +160,21 @@ when this attribute is not present.
 These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than
 one is listed:
 
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the *contentfiles* folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
+- `Compile` – the contents of the *lib* folder are available to compile against.
+- `Runtime` – the contents of the *runtime* folder are distributed.
+- `ContentFiles` – the contents of the *contentfiles* folder are used.
+- `Build` – the props/targets in the *build* folder are used.
+- `Native` – the contents from native assets are copied to the *output* folder for runtime.
+- `Analyzers` – the analyzers are used.
 
 Alternatively, the attribute can contain:
 
-* `None` – none of the assets are used.
-* `All` – all assets are used.
+- `None` – none of the assets are used.
+- `All` – all assets are used.
 
 ### DotNetCliToolReference
-A `<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's
-a replacement for the `tools` node in *project.json*.
+
+A `<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's a replacement for the `tools` node in *project.json*.
 
 ```xml
 <DotNetCliToolReference Include="<package-id>" Version="" />
@@ -190,9 +223,34 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
 </PackageTargetFallback >
 ```
 
+## Build events
+
+The way that pre-build and post-build events are specified in the project file has changed. The properties PreBuildEvent and PostBuildEvent are not recommended in the SDK-style project format, because macros such as $(ProjectDir) are not resolved. For example, the following code is no longer supported:
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and set the `BeforeTargets` property for `PreBuild` or the `AfterTargets` property for `PostBuild`. For the preceding example, use the following code:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+
 ## NuGet metadata properties
 
-With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK.
+With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK:
 
 ### IsPackable
 
@@ -238,7 +296,7 @@ Here is the complete list of [SPDX license identifiers](https://spdx.org/license
 
 The exact syntax of the license expressions is described below in [ABNF](https://tools.ietf.org/html/rfc5234).
 
-```cli
+```abnf
 license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
 
 license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>
@@ -259,7 +317,7 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 ### PackageLicenseFile
 
-Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is prefered)
+Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
 
 Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
 
@@ -278,7 +336,6 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
-
 ### PackageIconUrl
 
 A URL for a 64x64 image with transparent background to use as the icon for the package in UI display.
@@ -296,8 +353,10 @@ A semicolon-delimited list of tags that designates the package.
 Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`.
 
 ### IncludeSymbols
+This Boolean value indicates whether the package should create an additional symbols package when the project is packed. The symbols package's format is controlled by the `SymbolPackageFormat` property.
 
-This Boolean value indicates whether the package should create an additional symbols package when the project is packed. This package will have a *.symbols.nupkg* extension and will copy the PDB files along with the DLL and other output files.
+### SymbolPackageFormat
+Specifies the format of the symbols package. If "symbols.nupkg", a legacy symbols package will be created with a *.symbols.nupkg* extension containing PDBs, DLLs, and other output files. If "snupkg", a snupkg symbol package will be created containing the portable PDBs. Default is "symbols.nupkg".
 
 ### IncludeSource
 
@@ -314,6 +373,12 @@ Specifies the URL for the repository where the source code for the package resid
 ### RepositoryType
 
 Specifies the type of the repository. Default is "git".
+
+### RepositoryBranch
+Specifies the name of the source branch in the repository. When the project is packaged in a NuGet package, it's added to the package metadata.
+
+### RepositoryCommit
+Optional repository commit or changeset to indicate which source the package was built against. `RepositoryUrl` must also be specified for this property to be included. When the project is packaged in a NuGet package, this commit or changeset is added to the package metadata.
 
 ### NoPackageAnalysis
 
@@ -356,7 +421,7 @@ Semicolon separated list of key=value pairs.
 
 ## AssemblyInfo properties
 
-[Assembly attributes](../../framework/app-domains/set-assembly-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
+[Assembly attributes](../../standard/assembly/set-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
 
 ### Properties per attribute
 
@@ -377,11 +442,11 @@ Each attribute has a property that control its content and another to disable it
 
 Notes:
 
-* `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
-* `InformationalVersion` defaults to the value of `$(Version)`.
-* `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
-* `Copyright` and `Description` properties are also used for NuGet metadata.
-* `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
+- `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
+- `InformationalVersion` defaults to the value of `$(Version)`.
+- `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
+- `Copyright` and `Description` properties are also used for NuGet metadata.
+- `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
 
 ### GenerateAssemblyInfo
 

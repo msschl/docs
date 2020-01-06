@@ -8,8 +8,6 @@ api_location:
   - "corprof.idl"
 api_type: 
   - "COM"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback8 Interface
 [Supported in the .NET Framework 4.7 and later versions]  
@@ -31,5 +29,6 @@ ms.author: "ronpet"
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
+
 - [Profiling Interfaces](profiling-interfaces.md)
 - [ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)

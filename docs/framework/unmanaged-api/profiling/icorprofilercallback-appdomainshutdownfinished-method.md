@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 52794819-0a59-4bb1-a265-0f158cd5cd65
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AppDomainShutdownFinished Method
 Notifies the profiler that an application domain has been unloaded from a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainShutdownFinished(  
     [in] AppDomainID appDomainId,  
     [in] HRESULT     hrStatus);  
@@ -51,4 +49,5 @@ HRESULT AppDomainShutdownFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

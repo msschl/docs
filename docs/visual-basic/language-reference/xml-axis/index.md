@@ -1,5 +1,5 @@
 ---
-title: "XML Axis Properties (Visual Basic)"
+title: "XML Axis Properties"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML axis properties [Visual Basic]"
@@ -22,4 +22,5 @@ The topics in this section document the syntax of XML axis properties in Visual 
 |[XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)|Describes how to access the value of the first element of a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects.|  
   
 ## See also
+
 - [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

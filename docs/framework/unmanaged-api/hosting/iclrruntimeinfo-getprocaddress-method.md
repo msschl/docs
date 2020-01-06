@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::GetProcAddress Method
 Gets the address of a specified function that was exported from the common language runtime (CLR) associated with this interface.  
@@ -25,7 +23,7 @@ Gets the address of a specified function that was exported from the common langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcAddress(  
      [in]  LPCSTR pszProcName,  
      [out, retval] LPVOID *ppProc);  
@@ -60,6 +58,7 @@ HRESULT GetProcAddress(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

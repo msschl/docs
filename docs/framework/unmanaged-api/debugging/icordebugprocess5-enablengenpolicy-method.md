@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3b8e15ca-3c72-4685-a937-da4c739cb9e9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnableNGENPolicy Method
 Sets a value that determines how an application loads native images while running under a managed debugger.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableNGENPolicy(  
     [in] CorDebugNGENPolicy ePolicy  
 );  
@@ -48,6 +46,7 @@ HRESULT EnableNGENPolicy(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

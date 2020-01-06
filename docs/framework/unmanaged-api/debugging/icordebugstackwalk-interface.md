@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 16d695e8-975d-431b-8421-e9e6c3e3f476
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStackWalk Interface
 Provides methods for getting the managed methods, or frames, on a thread’s stack.  
@@ -32,7 +30,7 @@ Provides methods for getting the managed methods, or frames, on a thread’s sta
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -44,5 +42,6 @@ Provides methods for getting the managed methods, or frames, on a thread’s sta
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

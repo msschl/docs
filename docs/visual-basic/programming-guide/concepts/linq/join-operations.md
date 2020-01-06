@@ -1,5 +1,5 @@
 ---
-title: "Join Operations (Visual Basic)"
+title: "Join Operations"
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
 ---
@@ -12,7 +12,7 @@ A *join* of two data sources is the association of objects in one data source wi
   
  The following illustration shows a conceptual view of two sets and the elements within those sets that are included in either an inner join or a left outer join.  
   
- ![Two overlapping circles showing inner&#47;outer.](../../../../csharp/programming-guide/concepts/linq/media/joincircles.png "JoinCircles")  
+ ![Two overlapping circles showing inner&#47;outer.](./media/join-operations/join-method-overlapping-circles.png)  
   
 ## Methods  
   

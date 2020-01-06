@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::OpenThreadToken Method
 Opens the discretionary access token associated with the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenThreadToken (  
     [in]  DWORD    dwDesiredAccess,   
     [in]  BOOL     bOpenAsSelf,   
@@ -67,5 +65,6 @@ HRESULT OpenThreadToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)
 - [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)

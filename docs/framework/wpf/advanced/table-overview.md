@@ -15,23 +15,23 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  This topic contains the following sections.  
   
--   [Table Basics](#table_basics)  
+- [Table Basics](#table_basics)  
   
--   [How is Table Different then Grid?](#table_vs_Grid)  
+- [How is Table Different then Grid?](#table_vs_Grid)  
   
--   [Basic Table Structure](#basic_table_structure)  
+- [Basic Table Structure](#basic_table_structure)  
   
--   [Table Containment](#table_containment)  
+- [Table Containment](#table_containment)  
   
--   [Row Groupings](#row_groupings)  
+- [Row Groupings](#row_groupings)  
   
--   [Background Rendering Precedence](#rendering_precedence)  
+- [Background Rendering Precedence](#rendering_precedence)  
   
--   [Spanning Rows or Columns](#spanning_rows_or_columns)  
+- [Spanning Rows or Columns](#spanning_rows_or_columns)  
   
--   [Building a Table With Code](#building_a_table_with_code)  
+- [Building a Table With Code](#building_a_table_with_code)  
   
--   [Related Topics] 
+- [Related Topics] 
   
 <a name="table_basics"></a>   
 ## Table Basics  
@@ -44,53 +44,53 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
 ### Basic Table Structure  
  <xref:System.Windows.Documents.Table> provides a grid-based presentation consisting of columns (represented by <xref:System.Windows.Documents.TableColumn> elements) and rows (represented by <xref:System.Windows.Documents.TableRow> elements). <xref:System.Windows.Documents.TableColumn> elements do not host content; they simply define columns and characteristics of columns. <xref:System.Windows.Documents.TableRow> elements must be hosted in a <xref:System.Windows.Documents.TableRowGroup> element, which defines a grouping of rows for the table. <xref:System.Windows.Documents.TableCell> elements, which contain the actual content to be presented by the table, must be hosted in a <xref:System.Windows.Documents.TableRow> element. <xref:System.Windows.Documents.TableCell> may only contain elements that derive from <xref:System.Windows.Documents.Block>.  Valid child elements for a <xref:System.Windows.Documents.TableCell> include.  
   
--   <xref:System.Windows.Documents.BlockUIContainer>  
+- <xref:System.Windows.Documents.BlockUIContainer>  
   
--   <xref:System.Windows.Documents.List>  
+- <xref:System.Windows.Documents.List>  
   
--   <xref:System.Windows.Documents.Paragraph>  
+- <xref:System.Windows.Documents.Paragraph>  
   
--   <xref:System.Windows.Documents.Section>  
+- <xref:System.Windows.Documents.Section>  
   
--   <xref:System.Windows.Documents.Table>  
-  
-> [!NOTE]
->  <xref:System.Windows.Documents.TableCell> elements may not directly host text content. For more information about the containment rules for flow content elements like <xref:System.Windows.Documents.TableCell>, see [Flow Document Overview](flow-document-overview.md).  
+- <xref:System.Windows.Documents.Table>  
   
 > [!NOTE]
->  <xref:System.Windows.Documents.Table> is similar to the <xref:System.Windows.Controls.Grid> element but has more capabilities and, therefore, requires greater resource overhead.  
+> <xref:System.Windows.Documents.TableCell> elements may not directly host text content. For more information about the containment rules for flow content elements like <xref:System.Windows.Documents.TableCell>, see [Flow Document Overview](flow-document-overview.md).  
   
- The following example defines a simple 2 x 3 table with [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)].  
+> [!NOTE]
+> <xref:System.Windows.Documents.Table> is similar to the <xref:System.Windows.Controls.Grid> element but has more capabilities and, therefore, requires greater resource overhead.  
+  
+ The following example defines a simple 2 x 3 table with XAML.  
   
  [!code-xaml[TableSnippets2#_Table_BasicLayout](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_basiclayout)]  
   
  The following figure shows how this example renders.  
   
- ![Screenshot: Render a basic table](./media/basictablerrender.png "BasicTablerRender")  
+ ![Screenshot that shows how a basic table renders.](./media/table-overview/basic-table-render-example.png)  
   
 <a name="table_containment"></a>   
 ### Table Containment  
  <xref:System.Windows.Documents.Table> derives from the <xref:System.Windows.Documents.Block> element, and adheres to the common rules for <xref:System.Windows.Documents.Block> level elements.  A <xref:System.Windows.Documents.Table> element may be contained by any of the following elements:  
   
--   <xref:System.Windows.Documents.FlowDocument>  
+- <xref:System.Windows.Documents.FlowDocument>  
   
--   <xref:System.Windows.Documents.TableCell>  
+- <xref:System.Windows.Documents.TableCell>  
   
--   <xref:System.Windows.Controls.ListBoxItem>  
+- <xref:System.Windows.Controls.ListBoxItem>  
   
--   <xref:System.Windows.Controls.ListViewItem>  
+- <xref:System.Windows.Controls.ListViewItem>  
   
--   <xref:System.Windows.Documents.Section>  
+- <xref:System.Windows.Documents.Section>  
   
--   <xref:System.Windows.Documents.Floater>  
+- <xref:System.Windows.Documents.Floater>  
   
--   <xref:System.Windows.Documents.Figure>  
+- <xref:System.Windows.Documents.Figure>  
   
 <a name="row_groupings"></a>   
 ### Row Groupings  
  The <xref:System.Windows.Documents.TableRowGroup> element provides a way to arbitrarily group rows within a table; every row in a table must belong to a row grouping.  Rows within a row group often share a common intent, and may be styled as a group.  A common use for row groupings is to separate special-purpose rows, such as a title, header, and footer rows, from the primary content contained by the table.  
   
- The following example uses [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] to define a table with styled header and footer rows.  
+ The following example uses XAML to define a table with styled header and footer rows.  
   
  [!code-xaml[TableSnippets2#_Table_RowGroups](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml#_table_rowgroups)]  
   
@@ -102,15 +102,15 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
 ### Background Rendering Precedence  
  Table elements render in the following order (z-order from lowest to highest). This order cannot be changed. For example, there is no "Z-order" property for these elements that you can use to override this established order.  
   
-1.  <xref:System.Windows.Documents.Table>  
+1. <xref:System.Windows.Documents.Table>  
   
-2.  <xref:System.Windows.Documents.TableColumn>  
+2. <xref:System.Windows.Documents.TableColumn>  
   
-3.  <xref:System.Windows.Documents.TableRowGroup>  
+3. <xref:System.Windows.Documents.TableRowGroup>  
   
-4.  <xref:System.Windows.Documents.TableRow>  
+4. <xref:System.Windows.Documents.TableRow>  
   
-5.  <xref:System.Windows.Documents.TableCell>  
+5. <xref:System.Windows.Documents.TableCell>  
   
  Consider the following example, which defines background colors for each of these elements within a table.  
   
@@ -144,7 +144,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
  Next, six <xref:System.Windows.Documents.TableColumn> objects are created and added to the table's <xref:System.Windows.Documents.Table.Columns%2A> collection, with some formatting applied.  
   
 > [!NOTE]
->  Note that the table's <xref:System.Windows.Documents.Table.Columns%2A> collection uses standard zero-based indexing.  
+> Note that the table's <xref:System.Windows.Documents.Table.Columns%2A> collection uses standard zero-based indexing.  
   
  [!code-csharp[TableSnippets#_TableCreateColumns](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets/CSharp/Table.cs#_tablecreatecolumns)]
  [!code-vb[TableSnippets#_TableCreateColumns](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tablecreatecolumns)]  
@@ -170,6 +170,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
  [!code-vb[TableSnippets#_TableAddFooterRow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
 ## See also
+
 - [Flow Document Overview](flow-document-overview.md)
 - [Define a Table with XAML](how-to-define-a-table-with-xaml.md)
 - [Documents in WPF](documents-in-wpf.md)

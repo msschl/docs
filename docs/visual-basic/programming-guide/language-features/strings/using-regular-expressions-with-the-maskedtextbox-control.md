@@ -1,5 +1,5 @@
 ---
-title: "Using Regular Expressions with the MaskedTextBox Control in Visual Basic"
+title: "Using Regular Expressions with the MaskedTextBox Control"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], regular expressions"
@@ -50,6 +50,7 @@ This example demonstrates how to convert simple regular expressions to work with
 |`$\d{6}.00`|`$999,999.00`|A currency value in the range of 0 to 999999. The currency, thousandth, and decimal characters will be replaced at run-time with their culture-specific equivalents.|  
   
 ## See also
+
 - <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>
 - <xref:System.Windows.Forms.MaskedTextBox>
 - [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)

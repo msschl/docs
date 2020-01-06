@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 55674b68-678a-4747-ae06-4e91519c7305
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassUnloadFinished Method
 Notifies the profiler that a class has finished unloading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassUnloadFinished(  
     [in] ClassID classId,  
     [in] HRESULT hrStatus);  
@@ -49,5 +47,6 @@ HRESULT ClassUnloadFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ClassUnloadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classunloadstarted-method.md)

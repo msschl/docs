@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert an Object to Another Type in Visual Basic"
+title: "How to: Convert an Object to Another Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
@@ -11,7 +11,7 @@ You convert an `Object` variable to another data type by using a conversion keyw
 ## Example  
  The following example converts an `Object` variable to an `Integer` and a `String`.  
   
-```  
+```vb  
 Public Sub objectConversion(ByVal anObject As Object)  
     Dim anInteger As Integer  
     Dim aString As String  
@@ -22,12 +22,13 @@ End Sub
   
  If you know that the contents of an `Object` variable are of a particular data type, it is better to convert the variable to that data type. If you continue to use the `Object` variable, you incur either *boxing* and *unboxing* (for a value type) or *late binding* (for a reference type). These operations all take extra execution time and make your performance slower.  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
--   A reference to the <xref:System?displayProperty=nameWithType> namespace.  
+- A reference to the <xref:System?displayProperty=nameWithType> namespace.  
   
 ## See also
+
 - <xref:System.Object>
 - [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

@@ -1,5 +1,5 @@
 ---
-title: "Option Strict Statement (Visual Basic)"
+title: "Option Strict Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Strict"
@@ -17,7 +17,7 @@ Restricts implicit data type conversions to only widening conversions, disallows
   
 ## Syntax  
   
-```  
+```vb  
 Option Strict { On | Off }  
 ```  
   
@@ -31,14 +31,14 @@ Option Strict { On | Off }
 ## Remarks  
  When `Option Strict On` or `Option Strict` appears in a file, the following conditions cause a compile-time error:  
   
--   Implicit narrowing conversions  
+- Implicit narrowing conversions  
   
--   Late binding  
+- Late binding  
   
--   Implicit typing that results in an `Object` type  
+- Implicit typing that results in an `Object` type  
   
 > [!NOTE]
->  In the warning configurations that you can set on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), there are three settings that correspond to the three conditions that cause a compile-time error. For information about how to use these settings, see [To set warning configurations in the IDE](../../../visual-basic/language-reference/statements/option-strict-statement.md#conditions) later in this topic.  
+> In the warning configurations that you can set on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic), there are three settings that correspond to the three conditions that cause a compile-time error. For information about how to use these settings, see [To set warning configurations in the IDE](../../../visual-basic/language-reference/statements/option-strict-statement.md#conditions) later in this topic.  
   
  The `Option Strict Off` statement turns off error and warning checking for all three conditions, even if the associated IDE settings specify to turn on these errors or warnings. The `Option Strict On` statement turns on error and warning checking for all three conditions, even if the associated IDE settings specify to turn off these errors or warnings.  
   
@@ -46,11 +46,11 @@ Option Strict { On | Off }
   
  When you set `Option Strict` to `On`, Visual Basic checks that data types are specified for all programming elements. Data types can be specified explicitly, or specified by using local type inference. Specifying data types for all your programming elements is recommended, for the following reasons:  
   
--   It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
+- It enables IntelliSense support for your variables and parameters. This enables you to see their properties and other members as you type code.  
   
--   It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
+- It enables the compiler to perform type checking. Type checking helps you find statements that can fail at run time because of type conversion errors. It also identifies calls to methods on objects that do not support those methods.  
   
--   It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
+- It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## Implicit Narrowing Conversion Errors  
  Implicit narrowing conversion errors occur when there is an implicit data type conversion that is a narrowing conversion.  
@@ -59,15 +59,15 @@ Option Strict { On | Off }
   
  Conversions that can cause errors include implicit conversions that occur in expressions. For more information, see the following topics:  
   
--   [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
+- [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
   
--   [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
   
--   [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
+- [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
   
--   [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
+- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
   
--   [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
+- [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
   
  When you concatenate strings by using the [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md), all conversions to the strings are considered to be widening. So these conversions do not generate an implicit narrowing conversion error, even if `Option Strict` is on.  
   
@@ -98,23 +98,23 @@ Option Strict { On | Off }
 ## When an Option Strict Statement Is Not Present  
  If the source code does not contain an `Option Strict` statement, the **Option strict** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. The **Compile Page** has settings that provide additional control over the conditions that generate an error.  
   
- If you are using the command-line compiler, you can use the [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option to specify a setting for `Option Strict`.  
+ If you are using the command-line compiler, you can use the [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option to specify a setting for `Option Strict`.  
   
 ### To set Option Strict in the IDE  
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  On the **Compile** tab, set the value in the **Option Strict** box.  
+2. On the **Compile** tab, set the value in the **Option Strict** box.  
   
 ### <a name="conditions"></a> To set warning configurations in the IDE  
  When you use the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) instead of an `Option Strict` statement, you have additional control over the conditions that generate errors. The **Warning configurations** section of the **Compile Page** has settings that correspond to the three conditions that cause a compile-time error when `Option Strict` is on. Following are these settings:  
   
--   **Implicit conversion**  
+- **Implicit conversion**  
   
--   **Late binding; call could fail at run time**  
+- **Late binding; call could fail at run time**  
   
--   **Implicit type; object assumed**  
+- **Implicit type; object assumed**  
   
  When you set **Option Strict** to **On**, all three of these warning configuration settings are set to **Error**. When you set **Option Strict** to **Off**, all three settings are set to **None**.  
   
@@ -126,7 +126,7 @@ Option Strict { On | Off }
  To set `Option Strict` in this dialog box, on the **Tools** menu, click **Options**. In the **Options** dialog box, expand **Projects and Solutions**, and then click **VB Defaults**. The initial default setting in **VB Defaults** is `Off`.  
   
 ### To set Option Strict on the command line  
- Include the [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option in the **vbc** command.  
+ Include the [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option in the **vbc** command.  
   
 ## Example  
  The following examples demonstrate compile-time errors caused by implicit type conversions that are narrowing conversions. This category of errors corresponds to the **Implicit conversion** condition on the **Compile Page**.  
@@ -156,5 +156,5 @@ Option Strict { On | Off }
 - [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
 - [Relaxed Delegate Conversion](../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
 - [Late Binding in Office Solutions](/visualstudio/vsto/late-binding-in-office-solutions)
-- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

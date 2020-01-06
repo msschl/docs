@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dda867b5-1050-49ba-b01c-fcc83b7a5617
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::ResetEnum Method
 Resets the specified enumerator to the specified position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetEnum (  
    [in] HCORENUM    hEnum,   
    [in] ULONG       ulPos  
@@ -47,5 +45,6 @@ HRESULT ResetEnum (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

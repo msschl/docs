@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ef3cd619-912d-40c5-a449-03ba02a39ee7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ManagedToUnmanagedTransition Method
 Notifies the profiler that a transition from managed code to unmanaged code has occurred.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ManagedToUnmanagedTransition(  
     [in] FunctionID functionId,  
     [in] COR_PRF_TRANSITION_REASON reason);  
@@ -49,6 +47,7 @@ HRESULT ManagedToUnmanagedTransition(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [UnmanagedToManagedTransition Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-unmanagedtomanagedtransition-method.md)
 - [Using Explicit PInvoke in C++ (DllImport Attribute)](/cpp/dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute)

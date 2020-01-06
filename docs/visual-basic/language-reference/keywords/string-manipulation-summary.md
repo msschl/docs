@@ -1,5 +1,5 @@
 ---
-title: "String Manipulation Summary (Visual Basic)"
+title: "String Manipulation Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "string functions"
@@ -27,5 +27,6 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Return a specified number of substrings.|<xref:Microsoft.VisualBasic.Strings.Split%2A>, <xref:Microsoft.VisualBasic.Strings.Join%2A>|  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

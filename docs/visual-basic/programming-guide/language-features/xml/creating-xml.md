@@ -1,5 +1,5 @@
 ---
-title: "Creating XML in Visual Basic"
+title: "Creating XML"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [Visual Basic], creating"
@@ -23,4 +23,5 @@ Visual Basic enables you to use *XML literals* directly in your code. The XML li
 |[Names of Declared XML Elements and Attributes](../../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)|Describes guidelines for naming XML elements and attributes.|  
   
 ## See also
+
 - [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "Finding the Default Paragraph Style (Visual Basic)"
+title: "Finding the Default Paragraph Style"
 ms.date: 07/20/2015
 ms.assetid: 9d094a4a-ec8c-41b0-b7ab-a3deb2a01d45
 ---
@@ -76,14 +76,15 @@ End Module
 ### Comments  
  This example produces the following output:  
   
-```  
+```console  
 The default style is: Normal  
 ```  
   
 ## Next Steps  
  In the next example, you'll create a similar query that finds all the paragraphs in a document and their styles:  
   
--   [Retrieving the Paragraphs and Their Styles (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)  
+- [Retrieving the Paragraphs and Their Styles (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md)  
   
 ## See also
+
 - [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

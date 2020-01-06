@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoggingLevelEnum Enumeration
 Indicates the severity level of a descriptive message that is written to the event log when a managed thread logs an event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum LoggingLevelEnum {  
     LTraceLevel0 = 0,  
     LTraceLevel1,  
@@ -71,5 +69,6 @@ typedef enum LoggingLevelEnum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - <xref:System.Diagnostics.EventLog>
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

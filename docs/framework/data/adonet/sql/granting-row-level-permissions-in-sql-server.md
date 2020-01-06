@@ -18,35 +18,35 @@ The following example describes how to configure row-level filtering based on a 
 
 - Enable row-level filtering:
 
-    - If you are using SQL Server 2016 or higher, or [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/), create a security policy that adds a predicate on the table restricting the rows returned to those that match either the current database user (using the CURRENT_USER() built-in function) or the current login name (using the SUSER_SNAME() built-in function):
+  - If you are using SQL Server 2016 or higher, or [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/), create a security policy that adds a predicate on the table restricting the rows returned to those that match either the current database user (using the CURRENT_USER() built-in function) or the current login name (using the SUSER_SNAME() built-in function):
 
-        ```sql
-        CREATE SCHEMA Security
-        GO
+      ```sql
+      CREATE SCHEMA Security
+      GO
 
-        CREATE FUNCTION Security.userAccessPredicate(@UserName sysname)
-            RETURNS TABLE
-            WITH SCHEMABINDING
-        AS
-            RETURN SELECT 1 AS accessResult
-            WHERE @UserName = SUSER_SNAME()
-        GO
+      CREATE FUNCTION Security.userAccessPredicate(@UserName sysname)
+          RETURNS TABLE
+          WITH SCHEMABINDING
+      AS
+          RETURN SELECT 1 AS accessResult
+          WHERE @UserName = SUSER_SNAME()
+      GO
 
-        CREATE SECURITY POLICY Security.userAccessPolicy
-            ADD FILTER PREDICATE Security.userAccessPredicate(UserName) ON dbo.MyTable,
-            ADD BLOCK PREDICATE Security.userAccessPredicate(UserName) ON dbo.MyTable
-        GO
-        ```
+      CREATE SECURITY POLICY Security.userAccessPolicy
+          ADD FILTER PREDICATE Security.userAccessPredicate(UserName) ON dbo.MyTable,
+          ADD BLOCK PREDICATE Security.userAccessPredicate(UserName) ON dbo.MyTable
+      GO
+      ```
 
-    - If you are using a version of SQL Server prior to 2016, you can achieve similar functionality using a view:
+  - If you are using a version of SQL Server prior to 2016, you can achieve similar functionality using a view:
 
-        ```sql
-        CREATE VIEW vw_MyTable
-        AS
-            RETURN SELECT * FROM MyTable
-            WHERE UserName = SUSER_SNAME()
-        GO
-        ```
+      ```sql
+      CREATE VIEW vw_MyTable
+      AS
+          RETURN SELECT * FROM MyTable
+          WHERE UserName = SUSER_SNAME()
+      GO
+      ```
 
 - Create stored procedures to select, insert, update, and delete data. If the filtering is enacted by a security policy, the stored procedures should perform these operations on the base table directly; otherwise, if the filtering is enacted by a view, the stored procedures should instead operate against the view. The security policy or view will automatically filter the rows returned or modified by user queries, and the stored procedure will provide a harder security boundary to prevent users with direct query access from successfully running queries that can infer the existence of filtered data.
 
@@ -59,9 +59,9 @@ The following example describes how to configure row-level filtering based on a 
 ## See also
 
 - [Row-Level Security](/sql/relational-databases/security/row-level-security)
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
-- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
-- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
-- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Overview of SQL Server Security](overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
+- [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
+- [Writing Secure Dynamic SQL in SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

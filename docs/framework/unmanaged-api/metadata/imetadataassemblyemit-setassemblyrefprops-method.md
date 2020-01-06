@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetAssemblyRefProps Method
 Modifies the specified `AssemblyRef` metadata structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyRefProps (  
     [in] mdAssemblyRef              ar,  
     [in] const void                 *pbPublicKeyOrToken,  
@@ -74,4 +72,5 @@ HRESULT SetAssemblyRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

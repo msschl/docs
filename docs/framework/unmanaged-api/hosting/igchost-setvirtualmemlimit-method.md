@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7e7c2d0-e58c-4650-b40c-47b2be2cda45
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::SetVirtualMemLimit Method
 Sets the maximum size of the runtime's virtual memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetVirtualMemLimit (  
     [in] SIZE_T sztMaxVirtualMemMB  
 );  
@@ -46,4 +44,5 @@ HRESULT SetVirtualMemLimit (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

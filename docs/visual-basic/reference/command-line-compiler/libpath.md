@@ -12,7 +12,7 @@ Specifies the location of referenced assemblies.
   
 ## Syntax  
   
-```  
+```console  
 -libpath:dirList  
 ```  
   
@@ -27,19 +27,19 @@ Specifies the location of referenced assemblies.
   
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
-1.  Current working directory. This is the directory from which the compiler is invoked.  
+1. Current working directory. This is the directory from which the compiler is invoked.  
   
-2.  The common language runtime system directory.  
+2. The common language runtime system directory.  
   
-3.  Directories specified by `/libpath`.  
+3. Directories specified by `-libpath`.  
   
-4.  Directories specified by the LIB environment variable.  
+4. Directories specified by the LIB environment variable.  
   
  The `-libpath` option is additive; specifying it more than once appends to any prior values.  
   
  Use `-reference` to specify an assembly reference.  
   
-|To set /libpath in the Visual Studio integrated development environment|  
+|To set -libpath in the Visual Studio integrated development environment|  
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **References** tab.<br />3.  Click the **Reference Paths...** button.<br />4.  In the **Reference Paths** dialog box, enter the directory name in the **Folder:** box.<br />5.  Click **Add Folder**.|  
   
@@ -51,6 +51,7 @@ vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb
 ```  
   
 ## See also
+
 - [Assemblies in .NET](../../../standard/assembly/index.md)
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

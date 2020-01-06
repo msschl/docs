@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "type libraries"
   - "COM interop, importing type library"
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Reference .NET Types from COM
 From the point of view of client and server code, the differences between COM and the .NET Framework are largely invisible. Microsoft Visual Basic clients can view a .NET object in the object browser, which exposes the object methods and syntax, properties, and fields exactly as if it were any other COM object.  
@@ -22,7 +20,7 @@ From the point of view of client and server code, the differences between COM an
   
 ### To import a library  
   
--   Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
+- Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
   
     ```cpp  
     #import "..\LoanLib\LoanLib.tlb" raw_interfaces_only  
@@ -30,7 +28,7 @@ From the point of view of client and server code, the differences between COM an
   
      -or-  
   
--   Include an #import directive for Mscorlib.tlb. For example:  
+- Include an #import directive for Mscorlib.tlb. For example:  
   
     ```cpp  
     #import "mscorlib.tlb"  
@@ -38,6 +36,7 @@ From the point of view of client and server code, the differences between COM an
     ```  
   
 ## See also
+
 - [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)
 - [Calling a .NET Object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))

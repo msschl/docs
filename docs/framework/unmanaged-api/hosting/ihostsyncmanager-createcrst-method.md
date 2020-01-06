@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ac278cc8-2540-4a6c-b5c6-b90c3970b4f4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateCrst Method
 Creates a critical section object for synchronization.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrst (  
     [out] IHostCrst** ppCrst  
 );  
@@ -58,9 +56,10 @@ HRESULT CreateCrst (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
 - [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)
-- [Mutexes](../../../../docs/standard/threading/mutexes.md)
-- [Semaphore and SemaphoreSlim](../../../../docs/standard/threading/semaphore-and-semaphoreslim.md)
+- [Mutexes](../../../standard/threading/mutexes.md)
+- [Semaphore and SemaphoreSlim](../../../standard/threading/semaphore-and-semaphoreslim.md)

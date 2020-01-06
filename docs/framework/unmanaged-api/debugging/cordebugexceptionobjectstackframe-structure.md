@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 542cdd81-5ae7-4361-b0ef-1ae4775df258
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugExceptionObjectStackFrame Structure
 Represents stack frame information from an exception object.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct CorDebugExceptionObjectStackFrame {  
     ICorDebugModule* pModule;  
     CORDB_ADDRESS ip;  
@@ -53,5 +51,6 @@ typedef struct CorDebugExceptionObjectStackFrame {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

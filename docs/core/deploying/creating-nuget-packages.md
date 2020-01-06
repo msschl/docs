@@ -1,5 +1,5 @@
 ---
-title: Create a NuGet Package with .NET Core command-line interface (CLI) tools
+title: Create a NuGet package with .NET Core CLI
 description: Learn how to create a NuGet package with the 'dotnet pack' command.
 author: cartermp
 ms.date: 06/20/2016
@@ -27,15 +27,14 @@ cd src/SuperAwesomeLibrary
 
 Then it's just a single command from the command line:
 
-```console
+```dotnetcli
 dotnet pack
 ```
 
-Your `/bin/Debug` folder will now look like this:
+Your */bin/Debug* folder will now look like this:
 
 ```console
 $ ls bin/Debug
-
 netstandard1.0/
 SuperAwesomeLibrary.1.0.0.nupkg
 SuperAwesomeLibrary.1.0.0.symbols.nupkg
@@ -43,15 +42,14 @@ SuperAwesomeLibrary.1.0.0.symbols.nupkg
 
 Note that this will produce a package which is capable of being debugged. If you want to build a NuGet package with release binaries, all you need to do is add the `--configuration` (or `-c`) switch and use `release` as the argument.
 
-```console
+```dotnetcli
 dotnet pack --configuration release
 ```
 
-Your `/bin` folder will now have a `release` folder containing your NuGet package with release binaries:
+Your */bin* folder will now have a *release* folder containing your NuGet package with release binaries:
 
 ```console
 $ ls bin/release
-
 netstandard1.0/
 SuperAwesomeLibrary.1.0.0.nupkg
 SuperAwesomeLibrary.1.0.0.symbols.nupkg

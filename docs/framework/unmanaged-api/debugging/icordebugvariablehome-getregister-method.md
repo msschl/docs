@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a5eecd7b-b04c-4266-bff2-7c8771d519a8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome::GetRegister Method
 Gets the register that contains a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegister(  
     [out] CorDebugRegister *pRegister  
 );  
@@ -51,5 +49,6 @@ HRESULT GetRegister(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
+
 - [VariableLocationType Enumeration](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
 - [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)

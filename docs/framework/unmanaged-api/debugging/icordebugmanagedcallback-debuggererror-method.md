@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e983d11-eaf3-4741-b936-29ec456384a3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::DebuggerError Method
 Notifies the debugger that an error has occurred while attempting to handle an event from the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebuggerError (  
     [in] ICorDebugProcess *pProcess,  
     [in] HRESULT           errorHR,  
@@ -56,4 +54,5 @@ HRESULT DebuggerError (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

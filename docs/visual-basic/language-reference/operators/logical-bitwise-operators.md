@@ -1,5 +1,5 @@
 ---
-title: "Logical-Bitwise Operators (Visual Basic)"
+title: "Logical-Bitwise Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], logical"
@@ -26,5 +26,6 @@ The following are the logical/bitwise operators defined in Visual Basic.
  [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
   
 ## See also
+
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
 - [Logical and Bitwise Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)

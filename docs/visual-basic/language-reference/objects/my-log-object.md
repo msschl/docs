@@ -1,5 +1,5 @@
 ---
-title: "My.Log Object (Visual Basic)"
+title: "My.Log Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Log object"
@@ -18,4 +18,4 @@ Provides a property and methods for writing event and exception information to t
   
  **Class:** <xref:Microsoft.VisualBasic.Logging.AspLog>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)

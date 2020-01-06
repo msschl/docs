@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 88fb7ef3-bbdf-429c-b678-c9c153456461
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineUserString Method
 Gets a metadata token for the specified literal string.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineUserString (   
     [in]  LPCWSTR     szString,   
     [in]  ULONG       cchString,   
@@ -51,5 +49,6 @@ HRESULT DefineUserString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

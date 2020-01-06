@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d7a7f733-677d-481c-b3d5-444fcc502b8e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetMinThreads Method
 Gets the minimum number of threads that the host provides for processing I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *pdwMinIOCompletionThreads  
 );  
@@ -58,5 +56,6 @@ HRESULT GetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

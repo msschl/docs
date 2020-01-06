@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 75594833-bed3-47b2-a426-b75c5fe6fbcf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_SUSPEND_REASON Enumeration
 Indicates the reason that the runtime is suspended.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_SUSPEND_OTHER                   = 0x00,  
     COR_PRF_SUSPEND_FOR_GC                  = 0x01,  
@@ -60,4 +58,5 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 185e3327-9f9c-44bc-8a5c-febea9a6bb5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ModuleUnloadFinished Method
 Notifies the profiler that a module has finished unloading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleUnloadFinished(  
     [in] ModuleID moduleId,  
     [in] HRESULT  hrStatus);  
@@ -51,4 +49,5 @@ HRESULT ModuleUnloadFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

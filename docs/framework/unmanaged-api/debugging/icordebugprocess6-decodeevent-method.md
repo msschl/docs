@@ -2,15 +2,13 @@
 title: "ICorDebugProcess6::DecodeEvent Method"
 ms.date: "03/30/2017"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::DecodeEvent Method
 Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
@@ -43,7 +41,7 @@ HRESULT DecodeEvent(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,5 +53,6 @@ HRESULT DecodeEvent(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

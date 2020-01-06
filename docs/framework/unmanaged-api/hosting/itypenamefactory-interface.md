@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: fa4247c4-f4f1-4855-9241-e04d737f5f73
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameFactory Interface
 Provides methods for deconstructing a type name.  
@@ -32,5 +30,6 @@ Provides methods for deconstructing a type name.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [TypeNameFactory Coclass](../../../../docs/framework/unmanaged-api/hosting/typenamefactory-coclass.md)

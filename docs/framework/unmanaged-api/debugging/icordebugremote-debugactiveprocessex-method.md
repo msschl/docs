@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote::DebugActiveProcessEx Method
 Launches a process on a remote machine under the debugger.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugActiveProcessEx (  
     [in]  ICorDebugRemoteTarget *   pRemoteTarget,  
     [in]  DWORD                     dwProcessId,  
@@ -65,6 +63,7 @@ HRESULT DebugActiveProcessEx (
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

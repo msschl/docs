@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b1edba68-9c36-4f69-be9f-678ce0b33480
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateHeapRegions Method
 Gets an enumerator for the memory ranges of the managed heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHeapRegions(  
    [out] ICorDebugHeapSegmentEnum **ppRegions  
 );  
@@ -50,5 +48,6 @@ HRESULT EnumerateHeapRegions(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

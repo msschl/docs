@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c8bbd76d-a9ff-44f2-87a6-be052819da36
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::ThreadNameChanged Method
 Notifies the code profiler that the name of a thread has changed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadNameChanged(  
     [in] ThreadID threadId,  
     [in] ULONG cchName,  
@@ -50,5 +48,6 @@ HRESULT ThreadNameChanged(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

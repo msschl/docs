@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d627e8b7-a605-40ac-b9bb-da9a3f1b66d9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::WriteVirtual Method
 Writes data from the specified buffer to the specified virtual memory address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteVirtual (  
     [in] CLRDATA_ADDRESS    address,  
     [in, size_is(bytesRequested)]   
@@ -56,4 +54,5 @@ HRESULT WriteVirtual (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

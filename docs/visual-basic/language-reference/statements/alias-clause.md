@@ -1,5 +1,5 @@
 ---
-title: "Alias Clause (Visual Basic)"
+title: "Alias Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Alias"
@@ -20,4 +20,5 @@ Indicates that an external procedure has another name in its DLL.
  [!code-vb[VbVbalrStatements#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#15)]  
   
 ## See also
+
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

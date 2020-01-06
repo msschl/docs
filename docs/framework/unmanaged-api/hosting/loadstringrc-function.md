@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 752e49b4-987c-4c28-a118-1a0c1ed510c5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadStringRC Function
 Translates an HRESULT value into an error message by using the default culture of the current thread.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadStringRC (  
     [in]  UINT    iResourceID,   
     [out] LPWSTR  szBuffer,   
@@ -67,5 +65,6 @@ HRESULT LoadStringRC (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [LoadStringRCEx Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrcex-function.md)
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

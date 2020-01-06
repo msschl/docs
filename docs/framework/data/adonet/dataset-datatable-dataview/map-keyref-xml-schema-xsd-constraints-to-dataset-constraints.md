@@ -62,26 +62,26 @@ The **keyref** element allows you to establish links between elements within a d
   
  The XML Schema definition language (XSD) schema mapping process produces the following **DataSet** with two tables:  
   
-```  
+```text  
 OrderDetail(OrderNo, ItemNo) and  
 Order(OrderNumber, EmpNumber)  
 ```  
   
  In addition, the **DataSet** defines the following constraints:  
   
--   A unique constraint on the **Order** table.  
+- A unique constraint on the **Order** table.  
   
-    ```  
+    ```text
               Table: Order  
-    Columns: OrderNumber   
+    Columns: OrderNumber
     ConstraintName: OrderNumberKey  
     Type: UniqueConstraint  
     IsPrimaryKey: False  
     ```  
   
--   A relationship between the **Order** and **OrderDetail** tables. The **Nested** property is set to **False** because the two elements are not nested in the schema.  
+- A relationship between the **Order** and **OrderDetail** tables. The **Nested** property is set to **False** because the two elements are not nested in the schema.  
   
-    ```  
+    ```text
               ParentTable: Order  
     ParentColumns: OrderNumber   
     ChildTable: OrderDetail  
@@ -92,18 +92,19 @@ Order(OrderNumber, EmpNumber)
     Nested: False  
     ```  
   
--   A foreign key constraint on the **OrderDetail** table.  
+- A foreign key constraint on the **OrderDetail** table.  
   
-    ```  
+    ```text  
               ConstraintName: OrderNoRef  
     Type: ForeignKeyConstraint  
     Table: OrderDetail  
-    Columns: OrderNo   
+    Columns: OrderNo
     RelatedTable: Order  
-    RelatedColumns: OrderNumber   
+    RelatedColumns: OrderNumber
     ```  
   
 ## See also
-- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
-- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
+- [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 91d688f3-a80e-419d-9755-ff94bc04188a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectsAllocatedByClass Method
 Notifies the profiler about the number of instances of each specified class that have been created since the most recent garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectsAllocatedByClass(  
     [in] ULONG   cClassCount,  
     [in, size_is(cClassCount)] ClassID classIds[] ,  
@@ -57,4 +55,5 @@ HRESULT ObjectsAllocatedByClass(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

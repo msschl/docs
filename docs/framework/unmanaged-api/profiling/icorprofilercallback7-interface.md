@@ -9,8 +9,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback7 Interface
 [Supported in the .NET Framework 4.6.1 and later versions]  
@@ -31,4 +29,5 @@ ms.author: "ronpet"
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
 ## See also
+
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

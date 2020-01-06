@@ -1,5 +1,5 @@
 ---
-title: "Constant and Literal Data Types (Visual Basic)"
+title: "Constant and Literal Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring constants [Visual Basic], literal data types"
@@ -22,7 +22,7 @@ A literal is a value that is expressed as itself rather than as a variable's val
 ## Literals and Type Coercion  
  In some cases, you might want to force a literal to a particular data type; for example, when assigning a particularly large integral literal value to a variable of type `Decimal`. The following example produces an error:  
   
-```  
+```vb  
 Dim myDecimal as Decimal  
 myDecimal = 100000000000000000000   ' This causes a compiler error.  
 ```  
@@ -56,6 +56,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`String`|"|(none)|  
   
 ## See also
+
 - [User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)
 - [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)
 - [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)

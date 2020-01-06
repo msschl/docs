@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0beb909a-5095-40e5-909d-9ecc280300b8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName::GetNameCount Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNameCount (  
     [out, retval] DWORD* pCount  
 );  
@@ -39,4 +37,5 @@ HRESULT GetNameCount (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

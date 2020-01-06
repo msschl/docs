@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::HasQueuedCallbacks Method
 Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasQueuedCallbacks (  
     [in] ICorDebugThread *pThread,  
     [out] BOOL           *pbQueued  
@@ -54,4 +52,3 @@ HRESULT HasQueuedCallbacks (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

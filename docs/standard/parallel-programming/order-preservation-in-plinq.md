@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, order preservation"
 ms.assetid: 10d202bc-19e1-4b5c-bbf1-9a977322a9ca
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Order Preservation in PLINQ
 In PLINQ, the goal is to maximize performance while maintaining correctness. A query should run as fast as possible but still produce the correct results. In some cases, correctness requires the order of the source sequence to be preserved; however, ordering can be computationally expensive. Therefore, by default, PLINQ does not preserve the order of the source sequence. In this regard, PLINQ resembles [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)], but is unlike LINQ to Objects, which does preserve ordering.  
@@ -38,25 +36,25 @@ In PLINQ, the goal is to maximize performance while maintaining correctness. A q
 ## Query Operators and Ordering  
  The following query operators introduce order preservation into all subsequent operations in a query, or until <xref:System.Linq.ParallelEnumerable.AsUnordered%2A> is called:  
   
--   <xref:System.Linq.ParallelEnumerable.OrderBy%2A>  
+- <xref:System.Linq.ParallelEnumerable.OrderBy%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.OrderByDescending%2A>  
+- <xref:System.Linq.ParallelEnumerable.OrderByDescending%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.ThenBy%2A>  
+- <xref:System.Linq.ParallelEnumerable.ThenBy%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.ThenByDescending%2A>  
+- <xref:System.Linq.ParallelEnumerable.ThenByDescending%2A>  
   
  The following PLINQ query operators may in some cases require ordered source sequences to produce correct results:  
   
--   <xref:System.Linq.ParallelEnumerable.Reverse%2A>  
+- <xref:System.Linq.ParallelEnumerable.Reverse%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.SequenceEqual%2A>  
+- <xref:System.Linq.ParallelEnumerable.SequenceEqual%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.TakeWhile%2A>  
+- <xref:System.Linq.ParallelEnumerable.TakeWhile%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.SkipWhile%2A>  
+- <xref:System.Linq.ParallelEnumerable.SkipWhile%2A>  
   
--   <xref:System.Linq.ParallelEnumerable.Zip%2A>  
+- <xref:System.Linq.ParallelEnumerable.Zip%2A>  
   
  Some PLINQ query operators behave differently, depending on whether their source sequence is ordered or unordered. The following table lists these operators.  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e2146726-0084-4c9e-a2d2-e8d461b13b21
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SaveDeltaToMemory Method
 Saves changes from the current edit-and-continue session to memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDeltaToMemory (  
     [out] void        *pbData,   
     [in]  ULONG       cbData  
@@ -47,5 +45,6 @@ HRESULT SaveDeltaToMemory (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

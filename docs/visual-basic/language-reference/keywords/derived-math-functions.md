@@ -1,5 +1,5 @@
 ---
-title: "Derived Math Functions (Visual Basic)"
+title: "Derived Math Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arithmetic operations, derived math functions"
@@ -49,4 +49,5 @@ The following table shows non-intrinsic math functions that can be derived from 
 |Inverse hyperbolic cotangent (Acoth(x))|Log((x + 1) / (x – 1)) / 2|  
   
 ## See also
+
 - [Math Functions](../../../visual-basic/language-reference/functions/math-functions.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ASSEMBLYMETADATA Structure
 Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     USHORT  usMajorVersion;  
     USHORT  usMinorVersion;  
@@ -62,6 +60,7 @@ typedef struct {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
 - [OSINFO Structure](../../../../docs/framework/unmanaged-api/metadata/osinfo-structure.md)

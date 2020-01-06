@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "PutMethod function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PutMethod function
 Creates a method.
@@ -24,7 +22,7 @@ Creates a method.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT PutMethod (
    [in] int                vFunc, 
    [in] IWbemClassObject*  ptr, 
@@ -54,7 +52,6 @@ HRESULT PutMethod (
 
 `pSignatureOut`  
 [in]  A pointer to a copy of the [__Parameters system class](/windows/desktop/WmiSdk/--parameters) that contains the `out` parameters for the method. This parameter is ignored if set to `null`.
- 
 
 ## Return value
 
@@ -89,11 +86,12 @@ Each property in a [__Parameters](/windows/desktop/WmiSdk/--parameters) class ob
 For an example, see the [IWbemClassObject::PutMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-putmethod) method.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

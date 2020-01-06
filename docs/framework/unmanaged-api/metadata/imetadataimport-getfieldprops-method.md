@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7b0e9b10-8cef-4ba6-8432-40bf63e65ab1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetFieldProps Method
 Gets metadata associated with the field referenced by the specified FieldDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldProps (  
    [in]  mdFieldDef        mb,   
    [out] mdTypeDef         *pClass,  
@@ -83,5 +81,6 @@ HRESULT GetFieldProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c3af1575-cbe6-457a-bc08-c53460edcbc8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetCurrentVersionNumber Method
 Gets the version number of the latest edit made to the function represented by this ICorDebugFunction object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentVersionNumber (  
     [out] ULONG32 *pnCurrentVersion  
 );  
